@@ -144,9 +144,9 @@
             <h1 class="heading">skills</h1>
             <div class="skills-container">
                 <div class="skill-card">
-                    <img src="img/html.png" class="skill-img" alt="">
+                    <img src="./img/scrum.png" class="skill-img" alt="">
                     <div class="skill-level">98%</div>
-                    <h1 class="skill-name">HTML</h1>
+                    <h1 class="skill-name">QA</h1>
                     <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur,
                         delectus!
                     </p>
@@ -244,7 +244,7 @@
     </section>
     <!-- contact section -->
     <section class="contact-section active">
-        <form class="contact-form">
+        <form action="#" class="contact-form" id="form" netlify>
             <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
             <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
             <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
@@ -252,8 +252,11 @@
         </form>
         <!-- map -->
         <div class="map">
-            <iframe src="https://goo.gl/maps/pwA4f7DY2JXC35uA9" width="600" height="450" style="border:0;"
-                allowfullscreen="" loading="lazy"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2543.8113063724672!2d30.3796202!3d50.388716!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ca2a570a6d55%3A0x3626f7d1abd34461!2z0JLQuNGI0L3QtdCy0LU!5e0!3m2!1suk!2sua!4v1690531497263!5m2!1suk!2sua"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+               
         </div>
     </section>
 
@@ -264,17 +267,50 @@
 
 
     <script src="./app.js"></script>
-    <script>
+    <!-- <script>
         function redirectTo(url) {
             window.open(url, '_blank');
         }
-    </script>
-    <script>
-        function openResume() {
-            // Відкрити посилання у новому вікні
-            window.open("./img/Mykola_QA.pdf", "_blank");
-        }
-    </script>
+    </script> -->
+    <!-- <script>
+    //     function openResume() {
+    //         // Відкрити посилання у новому вікні
+    //         window.open("./img/Mykola_QA.pdf", "_blank");
+    //     }
+    // </script>
+     -->
+    <!-- JavaScript для обробки форми -->
+    <!-- <script>
+        document.querySelector('.contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('msg').value;
+
+            const formData = {
+                name: name,
+                email: email,
+                message: message
+            };
+
+            fetch('/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams(formData).toString()
+            })
+                .then(response => {
+                    console.log('Дані успішно надіслані');
+                    // Можна вивести повідомлення про успішне надсилання або перенаправити на іншу сторінку
+                })
+                .catch(error => {
+                    console.error('Помилка надсилання даних:', error);
+                    // Можна вивести повідомлення про помилку або зробити додаткові дії
+                });
+        }); -->
+    <!-- </script> -->
 </body>
 
 </html>
