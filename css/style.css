@@ -352,24 +352,13 @@ body {
 .card {
   width: 45%;
   height: 250px;
-  padding: 30px;
+  padding: 20px;
   border-radius: 10px;
   color: #fff;
   display: block;
   margin: -80px 0;
   position: relative;
   background: #f00;
-}
-
-
-h2 {
-  padding-top: 10px;
-}
-h3 {
-  padding-top: 10px;
-}
-p {
-    padding-top: 10px;
 }
 
 .card:nth-child(even) {
@@ -457,9 +446,23 @@ p {
 }
 
 .card-title {
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.card-title-info {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.card-title-description {
+  font-size: 18px;
   font-weight: 300;
-  margin-bottom: 5px;
+  line-height: 1.25;
+}
+.card-title-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
 }
 
 /* contact section */
