@@ -219,6 +219,7 @@ body {
   display: block;
   margin: auto;
   height: 200px;
+  border-radius: 20px;
 }
 
 .skill-name {
@@ -252,8 +253,8 @@ body {
 
 .skill-card:nth-child(1) .skill-level {
   background: #ff4f4f28;
-  border-color: #ff4f4f;
-  color: #ff4f4f;
+  border-color: blueviolet;
+  color: blueviolet;
 }
 
 .skill-card:nth-child(2) .skill-level {
@@ -458,7 +459,7 @@ p {
 .card-title {
   font-size: 30px;
   font-weight: 300;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 /* contact section */
