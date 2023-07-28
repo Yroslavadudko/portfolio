@@ -44,9 +44,9 @@ body {
   text-transform: capitalize;
   padding: 10px 30px;
   margin: 0 20px;
-  line-height: 80px;
   transition: 0.5s;
   font-size: 20px;
+  line-height: 4;
 }
 
 .link a:hover,
@@ -317,7 +317,7 @@ body {
   color: #fff;
   opacity: 0.6;
   font-size: 20px;
-  line-height: 40px;
+  line-height: 2;
 }
 
 .about-img {
@@ -539,15 +539,18 @@ body {
 }
 
 @media (max-width: 1270px) {
+  /* home */
   .home-section {
     padding: 0 125px;
   }
   .home-heading {
     font-size: 100px;
+    font-weight: 600;
   }
   .home-img {
     width: 60%;
   }
+  /* project */
   .project-section {
     padding: 125px 80px 80px;
   }
@@ -572,9 +575,11 @@ body {
     font-size: 18px;
     line-height: 1.25;
   }
+  /* about */
   .about-section {
     padding: 100px 80px 0;
   }
+  /* skill */
   .skill-section {
     margin: 80px 0;
   }
@@ -602,16 +607,18 @@ body {
     font-size: 16px;
     line-height: 1.25;
   }
+  /* timeline */
   .timeline {
     margin: 125px auto;
   }
-  .timeline .heading {
+  .heading {
     margin-bottom: 100px;
   }
 
   .card {
     height: 320px;
   }
+  /* contact */
   .contact-section {
     padding: 75px 75px;
   }
@@ -620,7 +627,144 @@ body {
     height: 350px;
   }
 }
- 
-@media (max-width:1000px) {
-  
+
+@media (max-width: 1000px) {
+  /* navbar */
+  .navbar {
+    height: 70px;
+  }
+  .link a {
+    padding: 8px 25px;
+    margin: 0 18px;
+    font-size: 18px;
+    line-height: 3.5;
+  }
+  /* home */
+  .home-section {
+    padding: 0 100px;
+  }
+  .home-heading {
+    font-size: 80px;
+    font-weight: 500;
+  }
+  .home-img {
+    width: 70%;
+  }
+  /* project */
+  .project-section {
+    padding: 100px 70px 70px;
+  }
+  .project-heading {
+    font-size: 65px;
+    margin-bottom: 30px;
+  }
+  .project-container {
+    grid-gap: 80px;
+  }
+  .project-card {
+    height: 300px;
+  }
+  .project-content {
+    padding: 30px;
+  }
+  .project-title {
+    font-size: 40px;
+  }
+  .project-info {
+    padding: 10px 25px 25px 25px;
+    font-size: 16px;
+    line-height: 1;
+  }
+  .project-btn-grp {
+    grid-gap: 18px;
+  }
+  .project-btn {
+    height: 35px;
+    font-size: 16px;
+  }
+  /* about */
+  .about-section {
+    padding: 80px 50px 0;
+  }
+  .about-info {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .download-cv-btn {
+    bottom: 16px;
+    font-size: 12px;
+  }
+  /* skill */
+  .skill-section {
+    margin: 60px 0;
+  }
+  .heading {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+  .skills-container {
+    grid-gap: 45px;
+  }
+  .skill-img {
+    height: 140px;
+  }
+  .skill-level {
+    width: 90px;
+    height: 90px;
+    font-size: 16px;
+    border: 7px solid;
+  }
+  .skill-name {
+    font-size: 20px;
+    margin: 20px 0 10px;
+  }
+
+  .skill-info {
+    font-size: 14px;
+    line-height: 1.25;
+  }
+  /* timeline */
+  .timeline {
+    margin: 50px auto;
+  }
+  .heading {
+    margin-bottom: 50px;
+  }
+  .card {
+    height: 260px;
+  }
+  .card-body {
+    padding: 10px;
+  }
+  .card-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .card-title-info {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+  }
+  .card-title-description {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1;
+  }
+  .card-title-text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1;
+  }
+  /* contact */
+  .contact-section {
+    padding: 75px 45px;
+  }
+  .map {
+    width: 450px;
+    height: 350px;
+  }
+  .form-submit-btn {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
 }
