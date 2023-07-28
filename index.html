@@ -12,251 +12,257 @@
 </head>
 
 <body>
+    <div class="container-fluid">
+        <!-- navbar -->
+        <nav class="navbar">
+            <ul class="link-group">
+                <li class="link active"><a href="#">home</a></li>
+                <li class="link"><a href="#">projects</a></li>
+                <li class="link"><a href="#">about</a></li>
+                <li class="link"><a href="#">contact</a></li>
+            </ul>
+        </nav>
 
-    <!-- navbar -->
-    <nav class="navbar">
-        <ul class="link-group">
-            <li class="link active"><a href="#">home</a></li>
-            <li class="link"><a href="#">projects</a></li>
-            <li class="link"><a href="#">about</a></li>
-            <li class="link"><a href="#">contact</a></li>
-        </ul>
-    </nav>
+        <!-- home section -->
+        <section class="home-section active">
+            <h1 class="hero-heading">hello, i am <br>Mykola</h1>
+            <img src="./img/IMG_7162.jpeg" class="home-img" class="image-fluid" alt="">
+        </section>
 
-    <!-- home section -->
-    <section class="home-section active">
-        <h1 class="hero-heading">hello, i am <br>Mykola</h1>
-        <img src="./img/IMG_7162.jpeg" class="home-img" alt="">
-    </section>
+        <!-- project section -->
+        <section class="project-section active">
+            <h1 class="project-heading">some of my projects</h1>
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="./img/project-1.png" class="project-img" alt="">
+                    <div class="project-content">
+                        <h1 class="project-title">project 01</h1>
+                        <p class="project-info">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque
+                            repudiandae
+                            aliquam optio accusamus natus nobis! Nam, sunt?
+                        </p>
+                        <div class="project-btn-grp">
 
-    <!-- project section -->
-    <section class="project-section active">
-        <h1 class="project-heading">some of my projects</h1>
-        <div class="project-container">
-            <div class="project-card">
-                <img src="./img/project-1.png" class="project-img" alt="">
-                <div class="project-content">
-                    <h1 class="project-title">project 01</h1>
-                    <p class="project-info">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque
-                        repudiandae
-                        aliquam optio accusamus natus nobis! Nam, sunt?
-                    </p>
-                    <div class="project-btn-grp">
-
-                        <button class="project-btn github">github repo</button>
+                            <button class="project-btn github">github repo</button>
 
 
-                        <button class="project-btn live">see live </button>
+                            <button class="project-btn live">see live </button>
 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- // +3 more cards -->
-            <div class="project-card">
-                <img src="./img/project-2.png" class="project-img" alt="">
-                <div class="project-content">
-                    <h1 class="project-title">Banderogus</h1>
-                    <p class="project-info">
-                        Special combat goose from the biolaboratories of Ukraine. I am proud of my achievements, I
-                        defend the Motherland and
-                        support the positive spirit of the people. Glory to Ukraine!
-                    </p>
-                    <!-- <div class="project-btn-grp">
+                <!-- // +3 more cards -->
+                <div class="project-card">
+                    <img src="./img/project-2.png" class="project-img" alt="">
+                    <div class="project-content">
+                        <h1 class="project-title">Banderogus</h1>
+                        <p class="project-info">
+                            Special combat goose from the biolaboratories of Ukraine. I am proud of my achievements, I
+                            defend the Motherland and
+                            support the positive spirit of the people. Glory to Ukraine!
+                        </p>
+                        <!-- <div class="project-btn-grp">
                         <a href="https://github.com/Yroslavadudko/banderogus" target="_blank"><button class="project-btn github">github repo</button></a>
                         <a href="https://silly-croquembouche-bdae86.netlify.app/" target="_blank"><button class="project-btn live">see live</button></a>
                         
                     </div> -->
-                    <!-- <div class="project-btn-grp">
+                        <!-- <div class="project-btn-grp">
                         <button class="project-btn github"
                             onclick="window.location.href='http://github.com/Yroslavadudko/banderogus'">github repo</button>
                         <button class="project-btn live"
                             onclick="window.location.href='http://silly-croquembouche-bdae86.netlify.app/'">see live</button>
                     </div> -->
-                    <div class="project-btn-grp">
-                        <button class="project-btn github"
-                            onclick="redirectTo('http://github.com/Yroslavadudko/banderogus')">github
-                            repo</button>
-                        <button class="project-btn live"
-                            onclick="redirectTo('http://silly-croquembouche-bdae86.netlify.app/')">see
-                            live</button>
-                    </div>
+                        <div class="project-btn-grp">
+                            <button class="project-btn github"
+                                onclick="redirectTo('http://github.com/Yroslavadudko/banderogus')">github
+                                repo</button>
+                            <button class="project-btn live"
+                                onclick="redirectTo('http://silly-croquembouche-bdae86.netlify.app/')">see
+                                live</button>
+                        </div>
 
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="./img/project-3.png" class="project-img" alt="">
-                <div class="project-content">
-                    <h1 class="project-title">Kapusta</h1>
-                    <p class="project-info">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque
-                        repudiandae
-                        aliquam optio accusamus natus nobis! Nam, sunt?
-                    </p>
-                    <div class="project-btn-grp">
-                        <button class="project-btn github">github repo</button>
-                        <button class="project-btn live">see live</button>
                     </div>
                 </div>
-            </div>
-            <div class="project-card">
-                <img src="./img/project-4.png" class="project-img" alt="">
-                <div class="project-content">
-                    <h1 class="project-title">Drink Master</h1>
-                    <p class="project-info">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque
-                        repudiandae
-                        aliquam optio accusamus natus nobis! Nam, sunt?
-                    </p>
-                    <div class="project-btn-grp">
-                        <button class="project-btn github">github repo</button>
-                        <button class="project-btn live">see live</button>
+                <div class="project-card">
+                    <img src="./img/project-3.png" class="project-img" alt="">
+                    <div class="project-content">
+                        <h1 class="project-title">Kapusta</h1>
+                        <p class="project-info">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque
+                            repudiandae
+                            aliquam optio accusamus natus nobis! Nam, sunt?
+                        </p>
+                        <div class="project-btn-grp">
+                            <button class="project-btn github">github repo</button>
+                            <button class="project-btn live">see live</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="./img/project-4.png" class="project-img" alt="">
+                    <div class="project-content">
+                        <h1 class="project-title">Drink Master</h1>
+                        <p class="project-info">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque
+                            repudiandae
+                            aliquam optio accusamus natus nobis! Nam, sunt?
+                        </p>
+                        <div class="project-btn-grp">
+                            <button class="project-btn github">github repo</button>
+                            <button class="project-btn live">see live</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- about section -->
-    <section class="about-section active">
+        <!-- about section -->
+        <section class="about-section active">
 
-        <div class="about">
-            <div class="about-img-container">
-                <img src="./img/IMG_7162.jpeg" class="about-img" alt="">
-                <!-- <button class="download-cv-btn">downlaod cv</button> -->
-                <button class="download-cv-btn" onclick="openResume()">download cv</button>
+            <div class="about">
+                <div class="about-img-container">
+                    <img src="./img/IMG_7162.jpeg" class="about-img" alt="">
+                    <!-- <button class="download-cv-btn">downlaod cv</button> -->
+                    <button class="download-cv-btn" onclick="openResume()">download cv</button>
+
+                </div>
+                <p class="about-info">I am Mykola Dudko.
+                    I am from Ukraine, from Vyshneve.
+                    I am 45.
+                    I am QA Engineer.
+                    Iam hard working, helpful, organised and punctual.
+                    I love chellenges.
+                    I know how to work with testing documentation sush as test-plan, test-strategy, test-cases,
+                    bug-reports and othen kinds
+                    of documentation. Also, i have experience in Test Rail, Jira, Postman, Qase, VS Code, Git, DBeaver,
+                    Trello and XCode.
+                    I did four individual projects. One of then was dissemination of the blood sugar monitoring program
+                    for patients with
+                    type 1 diabetes.
+                    I value freedom and would like to work remotely.
+                    This role will allow me to use my experience.
+                    I like your company because i realized that my true passion is working as QA engineer.</p>
+            </div>
+            <!-- skills -->
+            <div class="skill-section">
+                <h1 class="heading">skills</h1>
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <img src="./img/qa-eng.png" class="skill-img" alt="">
+                        <div class="skill-level">90%</div>
+                        <h1 class="skill-name">QA</h1>
+                        <p class="skill-info">I know how to work with testing documentation such as test-plan, test
+                            strategies,
+                            test cases, bug reports, and other
+                            kinds of documentation.
+                        </p>
+                    </div>
+                    <!-- // +4 more cards -->
+                    <div class="skill-card">
+                        <img src="./img/aqa.jpeg" class="skill-img" alt="">
+                        <div class="skill-level">25%</div>
+                        <h1 class="skill-name">AQA</h1>
+                        <p class="skill-info">In the process of training, Cypress was used in extreme projects.
+                        </p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="./img/js.png" class="skill-img" alt="">
+                        <div class="skill-level">45%</div>
+                        <h1 class="skill-name">JS</h1>
+                        <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur,
+                            delectus!
+                        </p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="./img/reactjs.png" class="skill-img" alt="">
+                        <div class="skill-level">18%</div>
+                        <h1 class="skill-name">React.JS</h1>
+                        <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur,
+                            delectus!
+                        </p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="./img/nodejs.png" class="skill-img" alt="">
+                        <div class="skill-level">38%</div>
+                        <h1 class="skill-name">Node.JS</h1>
+                        <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur,
+                            delectus!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- timeline -->
+            <div class="timeline">
+                <h1 class="heading">education and experience</h1>
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">1995-2000</h1>
+                        <h2 class="card-title-info">National University of Ukraine on Physical Education and Sport</h2>
+                        <h3 class="card-title-description">coach, teacher of physicaleducation</h3>
+                        <p class="card-title-text">I still played sports and went to university to get a professional
+                            education.
+                        </p>
+                    </div>
+                </div>
+                <!-- //+4 more cards -->
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">2001-2013</h1>
+                        <h2 class="card-title-info">Ltd "Vant" Ltd</h2>
+                        <h3 class="card-title-description">Sales Manager</h3>
+                        <p class="card-title-text">Made his way from a storekeeper to a sales manager of a regional
+                            branch.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">2013-2015</h1>
+                        <h2 class="card-title-info">Ltd "Vant" Ltd</h2>
+                        <h3 class="card-title-description">Senior branch manager</h3>
+                        <p class="card-title-text">Appointment as a senior manager.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">2015-2022</h1>
+                        <h2 class="card-title-info">Ltd "Vant" Ltd</h2>
+                        <h3 class="card-title-description">Head of direction "chemistry"</h3>
+                        <p class="card-title-text">Appointment as the head of the "Chemistry" department.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">2023</h1>
+                        <h2 class="card-title-info">IT School GoIT (Kyiv)</h2>
+                        <h3 class="card-title-description">QA Engineer</h3>
+                        <p class="card-title-text">Completed the full course in QA Engineer. Took part in 2 team
+                            projects. Now I
+                            am studying automated testing and Java
+                            Script.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact section -->
+        <section class="contact-section active">
+            <form action="#" class="contact-form" id="form" netlify>
+                <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
+                <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
+                <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
+                <button type="submit" class="form-submit-btn">contact</button>
+            </form>
+            <!-- map -->
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2543.8113063724672!2d30.3796202!3d50.388716!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ca2a570a6d55%3A0x3626f7d1abd34461!2z0JLQuNGI0L3QtdCy0LU!5e0!3m2!1suk!2sua!4v1690531497263!5m2!1suk!2sua"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             </div>
-            <p class="about-info">I am Mykola Dudko.
-                I am from Ukraine, from Vyshneve.
-                I am 45.
-                I am QA Engineer.
-                Iam hard working, helpful, organised and punctual.
-                I love chellenges.
-                I know how to work with testing documentation sush as test-plan, test-strategy, test-cases,
-                bug-reports and othen kinds
-                of documentation. Also, i have experience in Test Rail, Jira, Postman, Qase, VS Code, Git, DBeaver,
-                Trello and XCode.
-                I did four individual projects. One of then was dissemination of the blood sugar monitoring program
-                for patients with
-                type 1 diabetes.
-                I value freedom and would like to work remotely.
-                This role will allow me to use my experience.
-                I like your company because i realized that my true passion is working as QA engineer.</p>
-        </div>
-        <!-- skills -->
-        <div class="skill-section">
-            <h1 class="heading">skills</h1>
-            <div class="skills-container">
-                <div class="skill-card">
-                    <img src="./img/qa-eng.png" class="skill-img" alt="">
-                    <div class="skill-level">90%</div>
-                    <h1 class="skill-name">QA</h1>
-                    <p class="skill-info">I know how to work with testing documentation such as test-plan, test strategies, test cases, bug reports, and other
-                    kinds of documentation.
-                    </p>
-                </div>
-                <!-- // +4 more cards -->
-                <div class="skill-card">
-                    <img src="./img/aqa.jpeg" class="skill-img" alt="">
-                    <div class="skill-level">25%</div>
-                    <h1 class="skill-name">AQA</h1>
-                    <p class="skill-info">In the process of training, Cypress was used in extreme projects.
-                    </p>
-                </div>
-                <div class="skill-card">
-                    <img src="./img/js.png" class="skill-img" alt="">
-                    <div class="skill-level">45%</div>
-                    <h1 class="skill-name">JS</h1>
-                    <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur,
-                        delectus!
-                    </p>
-                </div>
-                <div class="skill-card">
-                    <img src="./img/reactjs.png" class="skill-img" alt="">
-                    <div class="skill-level">18%</div>
-                    <h1 class="skill-name">React.JS</h1>
-                    <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur,
-                        delectus!
-                    </p>
-                </div>
-                <div class="skill-card">
-                    <img src="./img/nodejs.png" class="skill-img" alt="">
-                    <div class="skill-level">38%</div>
-                    <h1 class="skill-name">Node.JS</h1>
-                    <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur,
-                        delectus!
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- timeline -->
-        <div class="timeline">
-            <h1 class="heading">education and experience</h1>
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">1995-2000</h1>
-                    <h2 class="card-title-info">National University of Ukraine on Physical Education and Sport</h2>
-                    <h3 class="card-title-description">coach, teacher of physicaleducation</h3>
-                    <p class="card-title-text">I still played sports and went to university to get a professional education.
-                    </p>
-                </div>
-            </div>
-            <!-- //+4 more cards -->
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">2001-2013</h1>
-                    <h2 class="card-title-info">Ltd "Vant" Ltd</h2>
-                    <h3 class="card-title-description">Sales Manager</h3>
-                    <p class="card-title-text">Made his way from a storekeeper to a sales manager of a regional branch.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">2013-2015</h1>
-                    <h2 class="card-title-info">Ltd "Vant" Ltd</h2>
-                    <h3 class="card-title-description">Senior branch manager</h3>
-                    <p class="card-title-text">Appointment as a senior manager.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">2015-2022</h1>
-                    <h2 class="card-title-info">Ltd "Vant" Ltd</h2>
-                    <h3 class="card-title-description">Head of direction "chemistry"</h3>
-                    <p class="card-title-text">Appointment as the head of the "Chemistry" department.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">2023</h1>
-                    <h2 class="card-title-info">IT School GoIT (Kyiv)</h2>
-                    <h3 class="card-title-description">QA Engineer</h3>
-                    <p class="card-title-text">Completed the full course in QA Engineer. Took part in 2 team projects. Now I
-                        am studying automated testing and Java
-                        Script.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- contact section -->
-    <section class="contact-section active">
-        <form action="#" class="contact-form" id="form" netlify>
-            <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
-            <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
-            <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
-            <button type="submit" class="form-submit-btn">contact</button>
-        </form>
-        <!-- map -->
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2543.8113063724672!2d30.3796202!3d50.388716!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ca2a570a6d55%3A0x3626f7d1abd34461!2z0JLQuNGI0L3QtdCy0LU!5e0!3m2!1suk!2sua!4v1690531497263!5m2!1suk!2sua"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
 
-        </div>
-    </section>
-
+    </div>
 
 
 
