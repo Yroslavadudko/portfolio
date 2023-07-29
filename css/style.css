@@ -216,7 +216,7 @@ body {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 100px;
+  grid-gap: 80px;
   color: #fff;
 }
 
@@ -274,8 +274,8 @@ body {
 
 .skill-card:nth-child(3) .skill-level {
   background: #ffed4f28;
-  border-color: #ffed4f;
-  color: #ffed4f;
+  border-color: gray;
+  color: gray;
 }
 
 .skill-card:nth-child(4) .skill-level {
@@ -588,7 +588,7 @@ body {
     margin-bottom: 80px;
   }
   .skills-container {
-    grid-gap: 75px;
+    grid-gap: 50px;
   }
   .skill-img {
     height: 180px;
@@ -628,7 +628,7 @@ body {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1070px) {
   /* navbar */
   .navbar {
     height: 70px;
@@ -767,4 +767,11 @@ body {
     padding: 10px 30px;
     font-size: 14px;
   }
+}
+
+@media (max-width: 850px) {
+
+}
+@media (max-width: 600px) {
+
 }
