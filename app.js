@@ -1,3 +1,4 @@
+// active link
 const links = document.querySelectorAll(".link");
 const sections = document.querySelectorAll("section");
 
@@ -18,15 +19,17 @@ links.forEach((link, i) => {
   });
 });
 
+// URL new page
 function redirectTo(url) {
   window.open(url, "_blank");
 }
 
+// download CV new page
 function openResume() {
-  // Відкрити посилання у новому вікні
   window.open("./img/Mykola_QA.pdf", "_blank");
 }
 
+// mail
 document
   .querySelector(".contact-form")
   .addEventListener("submit", function (event) {
@@ -58,3 +61,10 @@ document
         // Можна вивести повідомлення про помилку або зробити додаткові дії
       });
   });
+
+// Bootstrap
+import { Toast } from "bootstrap.esm.min.js";
+
+Array.from(document.querySelectorAll(".toast")).forEach(
+  (toastNode) => new Toast(toastNode)
+);
