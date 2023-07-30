@@ -824,7 +824,7 @@ body {
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 920px) {
 
   /* navbar */
   .navbar {
@@ -985,7 +985,7 @@ body {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
 
   /* navbar */
   .navbar {
