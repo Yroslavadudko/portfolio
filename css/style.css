@@ -91,13 +91,12 @@ body {
 .project-section.active,
 .about-section.active,
 .contact-section.active {
-  /* margin-top: 80px; */
   position: relative;
   opacity: 1;
   z-index: 8;
 }
-/* project-section */
 
+/* project-section */
 .project-section {
   width: 100%;
   min-height: 100vh;
@@ -196,7 +195,6 @@ body {
 }
 
 /* about-section */
-
 .about-section {
   width: 100%;
   min-height: 100vh;
@@ -252,7 +250,6 @@ body {
 }
 
 /* skills */
-
 .skill-section {
   position: relative;
   margin: 100px 0;
@@ -347,7 +344,6 @@ body {
 }
 
 /* timeline */
-
 .timeline {
   display: block;
   width: 80%;
