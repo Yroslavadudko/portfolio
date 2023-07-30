@@ -825,6 +825,7 @@ body {
 }
 
 @media (max-width: 850px) {
+
   /* navbar */
   .navbar {
     height: 60px;
@@ -835,17 +836,15 @@ body {
     font-size: 16px;
     line-height: 3;
   }
+
   /* home */
   .home-section {
     padding: 0 50px;
   }
-  .home-heading {
-    font-size: 48px;
-    font-weight: 400;
-  }
   .home-img {
     width: 80%;
   }
+
   /* project */
   .project-section {
     padding: 75px 45px 45px;
@@ -901,12 +900,15 @@ body {
     margin-bottom: 40px;
   }
   .skills-container {
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 35px;
   }
   .skill-img {
-    height: 120px;
+    height: 160px;
   }
   .skill-level {
+    top: 120px;
+    right: 40px;
     width: 65px;
     height: 65px;
     font-size: 14px;
@@ -958,6 +960,7 @@ body {
   }
   /* contact */
   .contact-section {
+    grid-template-columns: repeat(1, 1fr);
     padding: 75px auto;
     grid-gap: 30px;
   }
@@ -983,5 +986,157 @@ body {
 }
 
 @media (max-width: 600px) {
-}
 
+  /* navbar */
+  .navbar {
+    height: 50px;
+  }
+  .link a {
+    padding: 5px 10px;
+    margin: 0 16px;
+    font-size: 14px;
+    line-height: 3;
+  }
+
+  /* home */
+  .home-section {
+    padding: 0 30px;
+  }
+  .home-img {
+    width: 90%;
+  }
+/* project */
+  .project-section {
+    padding: 60px 25px 25px;
+  }
+  .project-heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .project-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+ 
+  .project-content {
+    padding: 18px;
+  }
+  .project-title {
+    font-size: 40px;
+  }
+  .project-info {
+    padding: 8px 20px 20px 20px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .project-btn-grp {
+    grid-gap: 14px;
+  }
+  .project-btn {
+    height: 25px;
+    font-size: 16px;
+  }
+ /* about */
+ .about {
+  grid-template-columns: repeat(1, 1fr);
+ }
+  .about-section {
+    padding: 60px 45px 0;
+  }
+  .about-info {
+    font-size: 14px;
+    line-height: 1.25;
+  }
+  .download-cv-btn {
+    bottom: 20px;
+    font-size: 14px;
+  }
+/* skill */
+  .skill-section {
+    margin: 20px auto;
+  }
+  .heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .skills-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+  .skill-img {
+    height: 200px;
+  }
+  .skill-level {
+    top: 150px;
+    right: 5px;
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+    border: 8px solid;
+  }
+  .skill-name {
+    font-size: 26px;
+    margin: 18px 0 8px;
+  }
+
+  .skill-info {
+    font-size: 14px;
+    line-height: 1.25;
+  }
+/* timeline */
+  .timeline {
+    margin: 20px auto;
+  }
+  .timeline .heading {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+
+ .card {
+    width: 100%;
+    height: 350px;
+    margin: 10px auto;
+
+  }
+
+  .card:nth-child(even),
+  .card:nth-child(odd) {
+    margin-left: 0;
+    margin-bottom: 10px; /* Додаємо відступ між картками */
+  }
+
+  .card:before,
+  .card:after {
+    top: 10px;
+    left: -12%; /* Змінюємо положення позначення для всіх карток */
+  }
+  .card-body {
+    padding: 8px;
+  }
+  .card-title {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 4px;
+  }
+  .card-title-info {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.25;
+    padding-bottom: 4px;
+  }
+  .card-title-description {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.25;
+    padding-bottom: 2px;
+  }
+  .card-title-text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.25;
+  }
+
+
+
+
+}
