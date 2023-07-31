@@ -1051,9 +1051,9 @@ body {
   }
   .card {
     width: 100%;
-    height: 250px;
+    height: 230px;
     margin: 10px auto;
-    padding: 12px;
+    padding: 5px;
   }
   .card:nth-child(even),
   .card:nth-child(odd) {
@@ -1069,15 +1069,15 @@ body {
     padding: 8px;
   }
   .card-title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
-    padding-bottom: 4px;
+    padding-bottom: 2px;
   }
   .card-title-info {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 1.25;
-    padding-bottom: 4px;
+    line-height: 1;
+    padding-bottom: 2px;
   }
   .card-title-description {
     font-size: 18px;
@@ -1088,6 +1088,6 @@ body {
   .card-title-text {
     font-size: 14px;
     font-weight: 300;
-    line-height: 1.25;
+    line-height: 1;
   }
 }
