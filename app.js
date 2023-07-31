@@ -30,36 +30,6 @@ function openResume() {
 }
 
 // mail
-// document
-//   .querySelector(".contact-form")
-//   .addEventListener("submit", function (event) {
-//     event.preventDefault();
-
-//     const name = document.getElementById("name").value;
-//     const email = document.getElementById("email").value;
-//     const message = document.getElementById("msg").value;
-
-//     const formData = {
-//       name: name,
-//       email: email,
-//       message: message,
-//     };
-
-//     fetch("/", {
-//       method: "POST",
-//       headers: {
-//         "Content-Type": "application/x-www-form-urlencoded",
-//       },
-//       body: new URLSearchParams(formData).toString(),
-//     })
-//       .then((response) => {
-//         console.log("Data sent successfully");
-//       })
-//       .catch((error) => {
-//         console.error("Error sending data:", error);
-//       });
-//   });
-
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("form");
 
@@ -75,17 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
       email: email,
       msg: msg,
     };
-
-    // Викликаємо функцію для надсилання даних форми
     submitFormData(data);
   });
 
   function submitFormData(data) {
-    // Ваша логіка для надсилання даних форми за допомогою AJAX
-    // Наприклад, використовуйте fetch або XMLHttpRequest для відправлення даних на сервер
-    // Тут ви також можете додати логіку для обробки успішного відправлення даних
-    // наприклад, відобразити повідомлення про успішну відправку або очистити поля форми.
-
     fetch("/", {
       method: "POST",
       headers: {
@@ -95,7 +58,6 @@ document.addEventListener("DOMContentLoaded", function () {
     })
       .then((response) => {
         console.log("Data sent successfully");
-        // Очищаємо поля форми після успішної відправки
         document.getElementById("name").value = "";
         document.getElementById("email").value = "";
         document.getElementById("msg").value = "";
