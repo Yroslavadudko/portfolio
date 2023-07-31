@@ -85,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Наприклад, використовуйте fetch або XMLHttpRequest для відправлення даних на сервер
     // Тут ви також можете додати логіку для обробки успішного відправлення даних
     // наприклад, відобразити повідомлення про успішну відправку або очистити поля форми.
+
     fetch("/", {
       method: "POST",
       headers: {
@@ -94,9 +95,14 @@ document.addEventListener("DOMContentLoaded", function () {
     })
       .then((response) => {
         console.log("Data sent successfully");
+        // Очищаємо поля форми після успішної відправки
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("msg").value = "";
       })
       .catch((error) => {
         console.error("Error sending data:", error);
       });
   }
 });
+
