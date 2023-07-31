@@ -29,40 +29,5 @@ function openResume() {
   window.open("./img/Mykola_QA.pdf", "_blank");
 }
 
-// mail
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("form");
 
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const msg = document.getElementById("msg").value;
-
-    const data = {
-      name: name,
-      email: email,
-      msg: msg,
-    };
-    submitFormData(data);
-  });
-
-  function submitFormData(data) {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(data).toString(),
-    })
-      .then((response) => {
-        console.log("Data sent successfully");
-        document.getElementById("name").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("msg").value = "";
-      })
-      .catch((error) => {
-        console.error("Error sending data:", error);
-      });
-  }
-});
 
