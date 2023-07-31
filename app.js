@@ -51,9 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function submitFormData(data) {
     fetch("/", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(data).toString(),
     })
       .then((response) => {
