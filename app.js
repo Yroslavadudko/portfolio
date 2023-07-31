@@ -30,36 +30,73 @@ function openResume() {
 }
 
 // mail
-document
-  .querySelector(".contact-form")
-  .addEventListener("submit", function (event) {
+// document
+//   .querySelector(".contact-form")
+//   .addEventListener("submit", function (event) {
+//     event.preventDefault();
+
+//     const name = document.getElementById("name").value;
+//     const email = document.getElementById("email").value;
+//     const message = document.getElementById("msg").value;
+
+//     const formData = {
+//       name: name,
+//       email: email,
+//       message: message,
+//     };
+
+//     fetch("/", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/x-www-form-urlencoded",
+//       },
+//       body: new URLSearchParams(formData).toString(),
+//     })
+//       .then((response) => {
+//         console.log("Data sent successfully");
+//       })
+//       .catch((error) => {
+//         console.error("Error sending data:", error);
+//       });
+//   });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("form");
+
+  form.addEventListener("submit", function (event) {
     event.preventDefault();
 
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
-    const message = document.getElementById("msg").value;
+    const msg = document.getElementById("msg").value;
 
-    const formData = {
+    const data = {
       name: name,
       email: email,
-      message: message,
+      msg: msg,
     };
 
+    // Викликаємо функцію для надсилання даних форми
+    submitFormData(data);
+  });
+
+  function submitFormData(data) {
+    // Ваша логіка для надсилання даних форми за допомогою AJAX
+    // Наприклад, використовуйте fetch або XMLHttpRequest для відправлення даних на сервер
+    // Тут ви також можете додати логіку для обробки успішного відправлення даних
+    // наприклад, відобразити повідомлення про успішну відправку або очистити поля форми.
     fetch("/", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
-      body: new URLSearchParams(formData).toString(),
+      body: new URLSearchParams(data).toString(),
     })
       .then((response) => {
-        console.log("Дані успішно надіслані");
-        // Можна вивести повідомлення про успішне надсилання або перенаправити на іншу сторінку
+        console.log("Data sent successfully");
       })
       .catch((error) => {
-        console.error("Помилка надсилання даних:", error);
-        // Можна вивести повідомлення про помилку або зробити додаткові дії
+        console.error("Error sending data:", error);
       });
-  });
-
-
+  }
+});
