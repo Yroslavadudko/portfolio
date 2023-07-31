@@ -1,6 +1,6 @@
 {
-  "short_name": "Weather",
-  "name": "Weather: Do I need an umbrella?",
+  "short_name": "Portfolio",
+  "name": "I am Mykola Dudko, this is my portfolio.",
   "icons": [
     {
       "src": "/images/icons-vector.svg",
@@ -19,7 +19,7 @@
     }
   ],
   "id": "/?source=pwa",
-  "start_url": "/?source=pwa",
+  "start_url": "https://mykola-dudko.netlify.app",
   "background_color": "#191919",
   "display": "standalone",
   "scope": "/",
