@@ -500,7 +500,7 @@ body {
   cursor: pointer;
 }
 .form-submit-btn:hover {
-  background: #ff6f6f;
+  background: green;
 }
 .map {
   width: 600px;
