@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -12,12 +10,14 @@ body {
   display: block;
   margin: auto;
   min-height: 100vh;
-  background: #191919;
   font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  background: #191919;
 }
 
 /* navbar */
-
 .navbar {
   width: 100%;
   position: fixed;
@@ -31,14 +31,12 @@ body {
   cursor: pointer;
   padding: 0;
 }
-
 .link-group {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
-
 .link a {
   color: #ffffff;
   opacity: 0.5;
@@ -50,7 +48,6 @@ body {
   font-size: 20px;
   line-height: 4;
 }
-
 .link a:hover,
 .link.active a {
   opacity: 1;
@@ -63,13 +60,11 @@ body {
   padding: 0 150px;
   display: flex;
   align-items: center;
-  /* position: relative; */
   position: fixed;
   top: 0;
   opacity: 0;
   transition: 1s;
 }
-
 .hero-heading {
   position: absolute;
   top: 50%;
@@ -84,7 +79,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .home-img {
   position: absolute;
   top: 0;
@@ -113,7 +107,6 @@ body {
   transition: 1s;
   opacity: 0;
 }
-
 .project-heading {
   font-size: 100px;
   background: yellow;
@@ -125,18 +118,15 @@ body {
   -webkit-background-clip: text;
   -webkit-text-stroke: 8px transparent;
 }
-
 .project-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 100px;
 }
-
 .project-card {
   height: 400px;
   position: relative;
 }
-
 .project-img {
   width: 100%;
   height: 100%;
@@ -146,7 +136,6 @@ body {
   object-fit: cover;
   transition: 0.5s;
 }
-
 .project-content {
   position: relative;
   padding: 40px;
@@ -154,7 +143,6 @@ body {
   transition: 0.5s;
   opacity: 0;
 }
-
 .project-title {
   font-size: 50px;
   text-transform: capitalize;
@@ -163,7 +151,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .project-info {
   padding: 20px 40px 40px 40px;
   margin: 0;
@@ -171,13 +158,11 @@ body {
   line-height: 1.5;
   text-align: center;
 }
-
 .project-btn-grp {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
 }
-
 .project-btn {
   height: 40px;
   text-transform: capitalize;
@@ -187,16 +172,13 @@ body {
   color: #fff;
   cursor: pointer;
 }
-
 .project-btn.live {
   background: none;
   border: 2px solid #fff;
 }
-
 .project-card:hover .project-img {
   filter: blur(20px);
 }
-
 .project-card:hover .project-content {
   opacity: 1;
 }
@@ -211,32 +193,27 @@ body {
   opacity: 0;
   transition: 1s;
 }
-
 .about {
   width: 100%;
   display: grid;
   grid-template-columns: 30% 65%;
   grid-gap: 40px;
 }
-
 .about-img-container {
   position: relative;
 }
-
 .about-info {
   color: #fff;
   opacity: 0.6;
   font-size: 20px;
   line-height: 2;
 }
-
 .about-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
 }
-
 .download-cv-btn {
   position: absolute;
   bottom: 20px;
@@ -251,7 +228,6 @@ body {
   transition: 0.5s;
   background: rgba(0, 0, 0, 0.5);
 }
-
 .download-cv-btn:hover {
   background: #000;
 }
@@ -261,7 +237,6 @@ body {
   position: relative;
   margin: 100px 0;
 }
-
 .heading {
   text-align: center;
   font-size: 60px;
@@ -270,7 +245,6 @@ body {
   font-weight: 300;
   margin-bottom: 100px;
 }
-
 .skills-container {
   width: 95%;
   margin: auto;
@@ -279,18 +253,15 @@ body {
   grid-gap: 80px;
   color: #fff;
 }
-
 .skill-card {
   position: relative;
 }
-
 .skill-img {
   display: block;
   margin: auto;
   height: 200px;
   border-radius: 20px;
 }
-
 .skill-name {
   font-size: 30px;
   font-weight: 300;
@@ -298,14 +269,12 @@ body {
   text-transform: capitalize;
   margin: 30px 0 20px;
 }
-
 .skill-info {
   text-align: center;
   opacity: 0.5;
   font-size: 18px;
   line-height: 1.5;
 }
-
 .skill-level {
   position: absolute;
   top: 80px;
@@ -319,31 +288,26 @@ body {
   border-radius: 50%;
   border: 10px solid;
 }
-
 .skill-card:nth-child(1) .skill-level {
   background: #ff4f4f28;
   border-color: blueviolet;
   color: blueviolet;
 }
-
 .skill-card:nth-child(2) .skill-level {
   background: #4fa0ff28;
   border-color: yellow;
   color: yellow;
 }
-
 .skill-card:nth-child(3) .skill-level {
   background: #ffed4f28;
   border-color: gray;
   color: gray;
 }
-
 .skill-card:nth-child(4) .skill-level {
   background: #52ff4f28;
   border-color: #52ff4f;
   color: #52ff4f;
 }
-
 .skill-card:nth-child(5) .skill-level {
   background: #4fdfff28;
   border-color: #4fdfff;
@@ -356,11 +320,9 @@ body {
   width: 80%;
   margin: 150px auto;
 }
-
 .timeline .heading {
   margin-bottom: 150px;
 }
-
 .card {
   width: 45%;
   height: 250px;
@@ -372,11 +334,9 @@ body {
   position: relative;
   background: #f00;
 }
-
 .card:nth-child(even) {
   margin-left: auto;
 }
-
 .card:nth-child(even):before {
   content: "";
   position: absolute;
@@ -388,7 +348,6 @@ body {
   border: 5px solid #191919;
   border-radius: 50%;
 }
-
 .card:nth-child(even):after {
   content: "";
   position: absolute;
@@ -400,7 +359,6 @@ body {
   background: #fff;
   z-index: -1;
 }
-
 .card:nth-child(odd):before {
   content: "";
   position: absolute;
@@ -412,7 +370,6 @@ body {
   border: 5px solid #191919;
   border-radius: 50%;
 }
-
 .card:nth-child(odd):after {
   content: "";
   position: absolute;
@@ -424,7 +381,6 @@ body {
   background: #fff;
   z-index: -1;
 }
-
 .card:nth-child(2),
 .card:nth-child(2):before {
   background: hsl(0, 100%, 65%);
@@ -445,7 +401,6 @@ body {
 .card:nth-child(6):before {
   background: hsl(212, 100%, 65%);
 }
-
 .card:nth-child(even) .card-body:before {
   content: "";
   position: absolute;
@@ -456,7 +411,6 @@ body {
   border: 1px dashed #fff;
   z-index: -1;
 }
-
 .card-title {
   font-size: 20px;
   font-weight: 700;
@@ -489,7 +443,6 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
 }
-
 .contact-list {
   width: 100%;
   list-style: none;
@@ -498,7 +451,6 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .contact-list-icon {
   padding-right: 30px;
 }
@@ -508,7 +460,6 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
-
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -520,7 +471,6 @@ body {
   color: #fff;
   padding: 5px 10px;
 }
-
 ::placeholder {
   color: #fff;
 }
@@ -533,13 +483,11 @@ body {
 .contact-form-msq {
   text-transform: capitalize;
 }
-
 #msg {
   height: 120px;
   resize: none;
   font-family: sans-serif;
 }
-
 .form-submit-btn {
   background: #ff4f4f;
   color: #fff;
@@ -559,7 +507,6 @@ body {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
 }
-
 .map iframe {
   width: 100%;
   height: 100%;
@@ -578,6 +525,7 @@ body {
   .home-img {
     width: 60%;
   }
+
   /* project */
   .project-section {
     padding: 125px 80px 80px;
@@ -603,10 +551,12 @@ body {
     font-size: 18px;
     line-height: 1.25;
   }
+
   /* about */
   .about-section {
     padding: 100px 80px 0;
   }
+
   /* skill */
   .skill-section {
     margin: 80px 0;
@@ -635,6 +585,7 @@ body {
     font-size: 16px;
     line-height: 1.25;
   }
+
   /* timeline */
   .timeline {
     margin: 125px auto;
@@ -646,6 +597,7 @@ body {
   .card {
     height: 320px;
   }
+
   /* contact */
   .contact-section {
     padding: 95px 35px;
@@ -662,7 +614,6 @@ body {
     width: 50px;
     height: 50px;
   }
-
   .map {
     width: 100%;
     height: 400px;
@@ -680,6 +631,7 @@ body {
     font-size: 18px;
     line-height: 3.5;
   }
+
   /* home */
   .home-section {
     padding: 0 100px;
@@ -691,6 +643,7 @@ body {
   .home-img {
     width: 70%;
   }
+
   /* project */
   .project-section {
     padding: 100px 70px 70px;
@@ -723,6 +676,7 @@ body {
     height: 35px;
     font-size: 16px;
   }
+
   /* about */
   .about-section {
     padding: 80px 50px 0;
@@ -735,6 +689,7 @@ body {
     bottom: 16px;
     font-size: 12px;
   }
+
   /* skill */
   .skill-section {
     margin: 60px 0;
@@ -764,13 +719,11 @@ body {
     font-size: 14px;
     line-height: 1.25;
   }
+
   /* timeline */
   .timeline {
     margin: 50px auto;
   }
-  /* .heading {
-    margin-bottom: 50px;
-  } */
   .card {
     height: 260px;
   }
@@ -799,6 +752,7 @@ body {
     font-weight: 300;
     line-height: 1.25;
   }
+
   /* contact */
   .contact-section {
     padding: 75px 40px;
@@ -807,11 +761,9 @@ body {
   .contact-list {
     height: 70px;
   }
-
   .contact-list-icon {
     padding-right: 25px;
   }
-
   .contact-list-logo {
     width: 45px;
     height: 45px;
@@ -924,13 +876,11 @@ body {
     font-size: 12px;
     line-height: 1.25;
   }
+
   /* timeline */
   .timeline {
     margin: 40px auto;
   }
-  /* .heading {
-    margin-bottom: 50px;
-  } */
   .card {
     height: 220px;
   }
@@ -959,6 +909,7 @@ body {
     font-weight: 300;
     line-height: 1.25;
   }
+
   /* contact */
   .contact-section {
     grid-template-columns: repeat(1, 1fr);
@@ -971,7 +922,6 @@ body {
   .contact-list-icon {
     padding-right: 20px;
   }
-
   .contact-list-logo {
     width: 40px;
     height: 40px;
@@ -1005,6 +955,7 @@ body {
   .home-img {
     width: 90%;
   }
+
   /* project */
   .project-section {
     padding: 60px 25px 25px;
@@ -1017,7 +968,6 @@ body {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
   }
-
   .project-content {
     padding: 18px;
   }
@@ -1036,6 +986,7 @@ body {
     height: 25px;
     font-size: 16px;
   }
+
   /* about */
   .about {
     grid-template-columns: repeat(1, 1fr);
@@ -1051,6 +1002,7 @@ body {
     bottom: 20px;
     font-size: 14px;
   }
+
   /* skill */
   .skill-section {
     margin: 20px auto;
@@ -1078,11 +1030,11 @@ body {
     font-size: 26px;
     margin: 18px 0 8px;
   }
-
   .skill-info {
     font-size: 14px;
     line-height: 1.25;
   }
+
   /* timeline */
   .timeline {
     margin: 20px auto;
@@ -1091,19 +1043,16 @@ body {
     margin-bottom: 20px;
     font-size: 36px;
   }
-
   .card {
     width: 100%;
     height: 350px;
     margin: 10px auto;
   }
-
   .card:nth-child(even),
   .card:nth-child(odd) {
     margin-left: 0;
     margin-bottom: 10px; /* Додаємо відступ між картками */
   }
-
   .card:before,
   .card:after {
     top: 10px;
