@@ -598,7 +598,8 @@ body {
   }
 
   .card {
-    height: 320px;
+    height: 250px;
+    padding: 15px;
   }
 
   /* contact */
@@ -728,7 +729,8 @@ body {
     margin: 50px auto;
   }
   .card {
-    height: 260px;
+    height: 250px;
+    padding: 10px;
   }
   .card-body {
     padding: 10px;
@@ -885,10 +887,11 @@ body {
     margin: 40px auto;
   }
   .card {
-    height: 220px;
+    height: 230px;
+    padding: 8px;
   }
   .card-body {
-    padding: 8px;
+    padding: 4px;
   }
   .card-title {
     font-size: 16px;
@@ -1048,8 +1051,9 @@ body {
   }
   .card {
     width: 100%;
-    height: 350px;
+    height: 250px;
     margin: 10px auto;
+    padding: 12px;
   }
   .card:nth-child(even),
   .card:nth-child(odd) {
