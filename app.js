@@ -29,19 +29,15 @@ function openResume() {
   window.open("./img/Mykola_QA.pdf", "_blank");
 }
 
-
+// тап для мобілок
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("form");
   const projectCard = document.getElementById("projectCard");
 
-  // Додайте обробник подій Hammer.js до елемента projectCard
   const hammer = new Hammer(projectCard);
   hammer.on("tap", function (event) {
     // Ваш код, який виконується при тапі на елемент projectCard
     // Наприклад, відкриття посилання або показ додаткової інформації
   });
-
-  // Інші функції і обробники подій залишаються без змін
-  // ...
 });
 
