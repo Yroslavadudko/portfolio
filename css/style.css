@@ -120,9 +120,10 @@ body {
   -webkit-text-stroke: 8px transparent;
 }
 .project-container {
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 100px;
+  grid-gap: 80px;
 }
 .project-card {
   height: 400px;
