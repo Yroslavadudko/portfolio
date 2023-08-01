@@ -38,7 +38,11 @@
     <!-- home section -->
     <section class="home-section active">
         <h1 class="hero-heading">hello, i am <br>Mykola</h1>
-        <img src="./img/i'm.avif" class="home-img" alt="i am">
+        <picture>
+            <source srcset="./img/i'm.avif" class="home-img" type="image/avif">
+            <source srcset="./img/i'm.webp" class="home-img" type="image/webp">
+            <img src="./img/i'm.jpg" class="home-img" alt="i am" loading="lazy">
+        </picture>
     </section>
 
     <!-- project section -->
@@ -195,7 +199,11 @@
 
         <div class="about">
             <div class="about-img-container">
-                <img src="./img/i'm(2).avif" class="about-img" alt="i am">
+            <picture>
+                <source srcset="./img/we.avif" class="about-img" type="image/avif">
+                <source srcset="./img/we.webp" class="about-img" type="image/webp">
+                <img src="./img/we.jpg" class="about-img" alt="family dudko" loading="lazy">
+            </picture>
                 <!-- <button class="download-cv-btn">downlaod cv</button> -->
                 <button class="download-cv-btn" onclick="openResume()">download cv</button>
 
