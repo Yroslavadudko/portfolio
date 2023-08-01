@@ -40,8 +40,13 @@
     <section class="project-section active">
         <h1 class="project-heading">some of my projects</h1>
         <div class="project-container">
+            <!-- progect_1 -->
             <div class="project-card">
-                <img src="./img/project-1.avif" class="project-img" alt="project-1">
+                <picture>
+                    <source srcset="./img/project-1.avif" type="image/avif">
+                    <source srcset="./img/project-1.webp" type="image/webp">
+                    <img src="./img/project-1.jpg" class="project-img" alt="project-1" loading="lazy">
+                </picture>
                 <div class="project-content">
                     <h1 class="project-title">Filmoteka</h1>
                     <p class="project-info">
@@ -57,13 +62,17 @@
                             onclick="redirectTo('https://goitstudentsworks.github.io/js_70_melvinsz/index.html')">see
                             live
                         </button>
-
                     </div>
                 </div>
             </div>
-            <!-- // +3 more cards -->
+            <!-- progect_2 -->
             <div class="project-card">
-                <img src="./img/project-2.avif" class="project-img" alt="project-2">
+                <picture>
+                    <source srcset="./img/project-2.avif" type="image/avif">
+                    <source srcset="./img/project-2.webp" type="image/webp">
+                    <img src="./img/project-2.jpg" class="project-img" alt="project-2" loading="lazy">
+                </picture>
+               
                 <div class="project-content">
                     <h1 class="project-title">Banderogus</h1>
                     <p class="project-info">
