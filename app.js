@@ -41,3 +41,68 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+
+// Paginator
+document.addEventListener("DOMContentLoaded", function () {
+  const projects = document.querySelectorAll(".project-card");
+  const itemsPerPage = 4;
+  let currentPage = 1;
+
+  function showPage(pageNumber) {
+    const startIndex = (pageNumber - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+
+    projects.forEach((project, index) => {
+      if (index >= startIndex && index < endIndex) {
+        project.classList.remove("hidden");
+      } else {
+        project.classList.add("hidden");
+      }
+    });
+  }
+
+  function updatePaginationButtons() {
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    if (currentPage === 1) {
+      prevBtn.disabled = true;
+    } else {
+      prevBtn.disabled = false;
+    }
+
+    if (currentPage === Math.ceil(projects.length / itemsPerPage)) {
+      nextBtn.disabled = true;
+    } else {
+      nextBtn.disabled = false;
+    }
+  }
+
+  function goToPrevPage() {
+    if (currentPage > 1) {
+      currentPage--;
+      showPage(currentPage);
+      updatePaginationButtons();
+    }
+  }
+
+  function goToNextPage() {
+    if (currentPage < Math.ceil(projects.length / itemsPerPage)) {
+      currentPage++;
+      showPage(currentPage);
+      updatePaginationButtons();
+    }
+  }
+
+  // Додайте обробник подій до кнопок пагінатора
+  const prevBtn = document.getElementById("prevBtn");
+  prevBtn.addEventListener("click", goToPrevPage);
+
+  const nextBtn = document.getElementById("nextBtn");
+  nextBtn.addEventListener("click", goToNextPage);
+
+  // Показати першу сторінку при завантаженні сторінки
+  showPage(currentPage);
+  updatePaginationButtons();
+});
