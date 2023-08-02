@@ -106,3 +106,49 @@ document.addEventListener("DOMContentLoaded", function () {
   showPage(currentPage);
   updatePaginationButtons();
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("form");
+  const projectCard = document.getElementById("projectCard");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+  const currentPageSpan = document.getElementById("currentPage"); // Отримуємо посилання на елемент, де будемо показувати номер поточної сторінки
+
+  let currentPage = 1; // Початкова сторінка
+
+  // Додайте обробники подій Hammer.js до елементів prevBtn і nextBtn
+  // ...
+
+  // Функція для оновлення номеру поточної сторінки
+  function updateCurrentPage() {
+    currentPageSpan.textContent = currentPage; // Оновлюємо значення елементу, що показує номер поточної сторінки
+  }
+
+  // Функція, яка виконується при переході на попередню сторінку
+  function goToPrevPage() {
+    // Ваш код для переходу на попередню сторінку
+    // ...
+
+    // Оновлюємо номер поточної сторінки і оновлюємо його відображення
+    currentPage--;
+    updateCurrentPage();
+  }
+
+  // Функція, яка виконується при переході на наступну сторінку
+  function goToNextPage() {
+    // Ваш код для переходу на наступну сторінку
+    // ...
+
+    // Оновлюємо номер поточної сторінки і оновлюємо його відображення
+    currentPage++;
+    updateCurrentPage();
+  }
+
+  // Додаємо обробники подій для кнопок prevBtn і nextBtn
+  prevBtn.addEventListener("click", goToPrevPage);
+  nextBtn.addEventListener("click", goToNextPage);
+
+  // Оновлюємо номер поточної сторінки при завантаженні сторінки
+  updateCurrentPage();
+});

@@ -202,8 +202,35 @@ body {
 .project-card:hover .project-content {
   opacity: 1;
 }
+
 .hidden {
   display: none;
+}
+
+.pagination {
+  margin-top: 60px;
+
+}
+
+.pagination-button {
+  width: 100px;
+  height: 40px;
+  text-transform: capitalize;
+  font-size: 18px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 45px;
+}
+
+.pagination-button :hover {
+  background: #ffffff;
+}
+
+.pagination-button-numbe {
+  font-size: 20px;
+  color: #fff;
 }
 
 /* about-section */
