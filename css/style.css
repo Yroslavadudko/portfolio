@@ -320,7 +320,7 @@ body {
   align-items: center;
   font-size: 22px;
   border-radius: 50%;
-  border: 10px solid;
+  border: 9px solid;
 }
 
 .skill-card:nth-child(1) .skill-level {
@@ -628,7 +628,7 @@ body {
   }
 
   .project-info {
-    padding: 15px 35px 35px 35px;
+    padding: 15px 15px 15px 15px;
     font-size: 18px;
     line-height: 1.25;
   }
