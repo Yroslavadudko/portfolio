@@ -289,7 +289,7 @@ body {
 .skill-img {
   display: block;
   margin: auto;
-  width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 20px;
 }
@@ -988,10 +988,9 @@ body {
   }
 
   .skill-level {
-    top: 120px;
-    right: 40px;
-    width: 65px;
-    height: 65px;
+    top: 140px;
+    width: 85px;
+    height: 85px;
     font-size: 14px;
     border: 6px solid;
   }
@@ -1174,7 +1173,6 @@ body {
 
   .skill-level {
     top: 150px;
-    right: 5px;
     width: 80px;
     height: 80px;
     font-size: 16px;
