@@ -1,6 +1,3 @@
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -35,12 +32,14 @@ body {
   cursor: pointer;
   padding: 0;
 }
+
 .link-group {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
+
 .link a {
   color: #ffffff;
   opacity: 0.5;
@@ -52,6 +51,7 @@ body {
   font-size: 20px;
   line-height: 4;
 }
+
 .link a:hover,
 .link.active a {
   opacity: 1;
@@ -69,6 +69,7 @@ body {
   opacity: 0;
   transition: 1s;
 }
+
 .hero-heading {
   position: absolute;
   top: 50%;
@@ -83,6 +84,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .home-img {
   position: absolute;
   top: 0;
@@ -92,6 +94,7 @@ body {
   object-fit: cover;
   opacity: 0.2;
 }
+
 .home-section.active,
 .project-section.active,
 .about-section.active,
@@ -111,6 +114,7 @@ body {
   transition: 1s;
   opacity: 0;
 }
+
 .project-heading {
   font-size: 100px;
   background: yellow;
@@ -122,16 +126,19 @@ body {
   -webkit-background-clip: text;
   -webkit-text-stroke: 8px transparent;
 }
+
 .project-container {
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 80px;
 }
+
 .project-card {
   height: 400px;
   position: relative;
 }
+
 .project-img {
   width: 100%;
   height: 100%;
@@ -141,6 +148,7 @@ body {
   object-fit: cover;
   transition: 0.5s;
 }
+
 .project-content {
   position: relative;
   padding: 40px;
@@ -148,6 +156,7 @@ body {
   transition: 0.5s;
   opacity: 0;
 }
+
 .project-title {
   font-size: 50px;
   text-transform: capitalize;
@@ -156,6 +165,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .project-info {
   padding: 20px 40px 40px 40px;
   margin: 0;
@@ -163,11 +173,13 @@ body {
   line-height: 1.5;
   text-align: center;
 }
+
 .project-btn-grp {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
 }
+
 .project-btn {
   height: 40px;
   text-transform: capitalize;
@@ -177,13 +189,16 @@ body {
   color: #fff;
   cursor: pointer;
 }
+
 .project-btn.live {
   background: none;
   border: 2px solid #fff;
 }
+
 .project-card:hover .project-img {
   filter: blur(20px);
 }
+
 .project-card:hover .project-content {
   opacity: 1;
 }
@@ -198,27 +213,32 @@ body {
   opacity: 0;
   transition: 1s;
 }
+
 .about {
   width: 100%;
   display: grid;
   grid-template-columns: 30% 65%;
   grid-gap: 40px;
 }
+
 .about-img-container {
   position: relative;
 }
+
 .about-info {
   color: #fff;
   opacity: 0.6;
   font-size: 20px;
   line-height: 2;
 }
+
 .about-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
 }
+
 .download-cv-btn {
   position: absolute;
   bottom: 20px;
@@ -233,6 +253,7 @@ body {
   transition: 0.5s;
   background: rgba(0, 0, 0, 0.5);
 }
+
 .download-cv-btn:hover {
   background: #000;
 }
@@ -242,6 +263,7 @@ body {
   position: relative;
   margin: 100px 0;
 }
+
 .heading {
   text-align: center;
   font-size: 60px;
@@ -250,6 +272,7 @@ body {
   font-weight: 300;
   margin-bottom: 100px;
 }
+
 .skills-container {
   width: 95%;
   margin: auto;
@@ -258,15 +281,19 @@ body {
   grid-gap: 80px;
   color: #fff;
 }
+
 .skill-card {
   position: relative;
 }
+
 .skill-img {
   display: block;
   margin: auto;
-  height: 200px;
+  width: 100%;
+  height: auto;
   border-radius: 20px;
 }
+
 .skill-name {
   font-size: 30px;
   font-weight: 300;
@@ -274,12 +301,14 @@ body {
   text-transform: capitalize;
   margin: 30px 0 20px;
 }
+
 .skill-info {
   text-align: center;
   opacity: 0.5;
   font-size: 18px;
   line-height: 1.5;
 }
+
 .skill-level {
   position: absolute;
   top: 80px;
@@ -293,26 +322,31 @@ body {
   border-radius: 50%;
   border: 10px solid;
 }
+
 .skill-card:nth-child(1) .skill-level {
   background: #ff4f4f28;
   border-color: blueviolet;
   color: blueviolet;
 }
+
 .skill-card:nth-child(2) .skill-level {
   background: #4fa0ff28;
   border-color: yellow;
   color: yellow;
 }
+
 .skill-card:nth-child(3) .skill-level {
   background: #ffed4f28;
   border-color: gray;
   color: gray;
 }
+
 .skill-card:nth-child(4) .skill-level {
   background: #52ff4f28;
   border-color: #52ff4f;
   color: #52ff4f;
 }
+
 .skill-card:nth-child(5) .skill-level {
   background: #4fdfff28;
   border-color: #4fdfff;
@@ -325,9 +359,11 @@ body {
   width: 80%;
   margin: 150px auto;
 }
+
 .timeline .heading {
   margin-bottom: 150px;
 }
+
 .card {
   width: 45%;
   height: 250px;
@@ -339,9 +375,11 @@ body {
   position: relative;
   background: #f00;
 }
+
 .card:nth-child(even) {
   margin-left: auto;
 }
+
 .card:nth-child(even):before {
   content: "";
   position: absolute;
@@ -353,6 +391,7 @@ body {
   border: 5px solid #191919;
   border-radius: 50%;
 }
+
 .card:nth-child(even):after {
   content: "";
   position: absolute;
@@ -364,6 +403,7 @@ body {
   background: #fff;
   z-index: -1;
 }
+
 .card:nth-child(odd):before {
   content: "";
   position: absolute;
@@ -375,6 +415,7 @@ body {
   border: 5px solid #191919;
   border-radius: 50%;
 }
+
 .card:nth-child(odd):after {
   content: "";
   position: absolute;
@@ -386,26 +427,32 @@ body {
   background: #fff;
   z-index: -1;
 }
+
 .card:nth-child(2),
 .card:nth-child(2):before {
   background: hsl(0, 100%, 65%);
 }
+
 .card:nth-child(3),
 .card:nth-child(3):before {
   background: hsl(36, 92%, 68%);
 }
+
 .card:nth-child(4),
 .card:nth-child(4):before {
   background: hsl(133, 57%, 52%);
 }
+
 .card:nth-child(5),
 .card:nth-child(5):before {
   background: hsl(0, 2%, 33%);
 }
+
 .card:nth-child(6),
 .card:nth-child(6):before {
   background: hsl(212, 100%, 65%);
 }
+
 .card:nth-child(even) .card-body:before {
   content: "";
   position: absolute;
@@ -416,20 +463,24 @@ body {
   border: 1px dashed #fff;
   z-index: -1;
 }
+
 .card-title {
   font-size: 20px;
   font-weight: 700;
 }
+
 .card-title-info {
   font-size: 24px;
   font-weight: 500;
   line-height: 1.25;
 }
+
 .card-title-description {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.25;
 }
+
 .card-title-text {
   font-size: 16px;
   font-weight: 400;
@@ -448,6 +499,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
 }
+
 .contact-list {
   width: 100%;
   list-style: none;
@@ -456,15 +508,18 @@ body {
   padding: 0;
   margin: 0;
 }
+
 .contact-list-icon {
   padding-right: 30px;
 }
+
 .contact-list-logo {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   cursor: pointer;
 }
+
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -476,23 +531,29 @@ body {
   color: #fff;
   padding: 5px 10px;
 }
+
 ::placeholder {
   color: #fff;
 }
+
 .contact-form-name {
   text-transform: capitalize;
 }
+
 .contact-form-email {
   text-transform: lowercase;
 }
+
 .contact-form-msq {
   text-transform: capitalize;
 }
+
 #msg {
   height: 120px;
   resize: none;
   font-family: sans-serif;
 }
+
 .form-submit-btn {
   background: #ff4f4f;
   color: #fff;
@@ -504,9 +565,11 @@ body {
   border-radius: 10px;
   cursor: pointer;
 }
+
 .form-submit-btn:hover {
   background: green;
 }
+
 .map {
   width: 600px;
   height: 450px;
@@ -515,6 +578,7 @@ body {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
 }
+
 .map iframe {
   width: 100%;
   height: 100%;
@@ -522,14 +586,17 @@ body {
 }
 
 @media (max-width: 1270px) {
+
   /* home */
   .home-section {
     padding: 0 125px;
   }
+
   .home-heading {
     font-size: 100px;
     font-weight: 600;
   }
+
   .home-img {
     width: 60%;
   }
@@ -538,22 +605,28 @@ body {
   .project-section {
     padding: 125px 80px 80px;
   }
+
   .project-heading {
     font-size: 80px;
     margin-bottom: 40px;
   }
+
   .project-container {
     grid-gap: 90px;
   }
+
   .project-card {
     height: 350px;
   }
+
   .project-content {
     padding: 35px;
   }
+
   .project-title {
     font-size: 45px;
   }
+
   .project-info {
     padding: 15px 35px 35px 35px;
     font-size: 18px;
@@ -569,26 +642,28 @@ body {
   .skill-section {
     margin: 80px 0;
   }
+
   .heading {
     font-size: 55px;
     margin-bottom: 80px;
   }
+
   .skills-container {
     grid-gap: 50px;
   }
-  .skill-img {
-    height: 180px;
-  }
+
   .skill-level {
     width: 125px;
     height: 125px;
     font-size: 20px;
     border: 8px solid;
   }
+
   .skill-name {
     font-size: 26px;
     margin: 25px 0 15px;
   }
+
   .skill-info {
     font-size: 16px;
     line-height: 1.25;
@@ -598,6 +673,7 @@ body {
   .timeline {
     margin: 125px auto;
   }
+
   .heading {
     margin-bottom: 100px;
   }
@@ -612,9 +688,11 @@ body {
     padding: 95px 35px;
     grid-gap: 45px;
   }
+
   .contact-list {
     height: 70px;
   }
+
   .contact-list-icon {
     padding-right: 25px;
   }
@@ -623,6 +701,7 @@ body {
     width: 50px;
     height: 50px;
   }
+
   .map {
     width: 100%;
     height: 400px;
@@ -630,10 +709,12 @@ body {
 }
 
 @media (max-width: 1070px) {
+
   /* navbar */
   .navbar {
     height: 70px;
   }
+
   .link a {
     padding: 8px 25px;
     margin: 0 18px;
@@ -645,10 +726,12 @@ body {
   .home-section {
     padding: 0 100px;
   }
+
   .home-heading {
     font-size: 80px;
     font-weight: 500;
   }
+
   .home-img {
     width: 70%;
   }
@@ -657,30 +740,38 @@ body {
   .project-section {
     padding: 100px 70px 70px;
   }
+
   .project-heading {
     font-size: 65px;
     margin-bottom: 30px;
   }
+
   .project-container {
     grid-gap: 80px;
   }
+
   .project-card {
     height: 300px;
   }
+
   .project-content {
     padding: 30px;
   }
+
   .project-title {
     font-size: 40px;
   }
+
   .project-info {
     padding: 10px 25px 25px 25px;
     font-size: 16px;
     line-height: 1;
   }
+
   .project-btn-grp {
     grid-gap: 18px;
   }
+
   .project-btn {
     height: 35px;
     font-size: 16px;
@@ -690,10 +781,12 @@ body {
   .about-section {
     padding: 80px 50px 0;
   }
+
   .about-info {
     font-size: 14px;
     line-height: 1.5;
   }
+
   .download-cv-btn {
     bottom: 16px;
     font-size: 12px;
@@ -703,22 +796,23 @@ body {
   .skill-section {
     margin: 60px 0;
   }
+
   .heading {
     font-size: 40px;
     margin-bottom: 50px;
   }
+
   .skills-container {
     grid-gap: 45px;
   }
-  .skill-img {
-    height: 140px;
-  }
+
   .skill-level {
     width: 90px;
     height: 90px;
     font-size: 16px;
     border: 7px solid;
   }
+
   .skill-name {
     font-size: 20px;
     margin: 20px 0 10px;
@@ -733,30 +827,36 @@ body {
   .timeline {
     margin: 50px auto;
   }
+
   .card {
     height: 250px;
     padding: 10px;
   }
+
   .card-body {
     padding: 10px;
   }
+
   .card-title {
     font-size: 18px;
     font-weight: 600;
     padding-bottom: 6px;
   }
+
   .card-title-info {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.25;
     padding-bottom: 6px;
   }
+
   .card-title-description {
     font-size: 16px;
     font-weight: 300;
     line-height: 1.25;
     padding-bottom: 4px;
   }
+
   .card-title-text {
     font-size: 14px;
     font-weight: 300;
@@ -768,20 +868,25 @@ body {
     padding: 75px 40px;
     grid-gap: 40px;
   }
+
   .contact-list {
     height: 70px;
   }
+
   .contact-list-icon {
     padding-right: 25px;
   }
+
   .contact-list-logo {
     width: 45px;
     height: 45px;
   }
+
   .map {
     width: 100%;
     height: 400px;
   }
+
   .form-submit-btn {
     padding: 10px 30px;
     font-size: 14px;
@@ -789,10 +894,12 @@ body {
 }
 
 @media (max-width: 920px) {
+
   /* navbar */
   .navbar {
     height: 60px;
   }
+
   .link a {
     padding: 8px 20px;
     margin: 0 16px;
@@ -804,6 +911,7 @@ body {
   .home-section {
     padding: 0 50px;
   }
+
   .home-img {
     width: 80%;
   }
@@ -812,30 +920,38 @@ body {
   .project-section {
     padding: 75px 45px 45px;
   }
+
   .project-heading {
     font-size: 45px;
     margin-bottom: 20px;
   }
+
   .project-container {
     grid-gap: 50px;
   }
+
   .project-card {
     height: 250px;
   }
+
   .project-content {
     padding: 20px;
   }
+
   .project-title {
     font-size: 36px;
   }
+
   .project-info {
     padding: 8px 20px 20px 20px;
     font-size: 14px;
     line-height: 1;
   }
+
   .project-btn-grp {
     grid-gap: 14px;
   }
+
   .project-btn {
     height: 25px;
     font-size: 14px;
@@ -845,10 +961,12 @@ body {
   .about-section {
     padding: 75px 45px 0;
   }
+
   .about-info {
     font-size: 12px;
     line-height: 1.25;
   }
+
   .download-cv-btn {
     bottom: 14px;
     font-size: 10px;
@@ -858,17 +976,17 @@ body {
   .skill-section {
     margin: 40px auto;
   }
+
   .heading {
     font-size: 36px;
     margin-bottom: 40px;
   }
+
   .skills-container {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 35px;
   }
-  .skill-img {
-    height: 160px;
-  }
+
   .skill-level {
     top: 120px;
     right: 40px;
@@ -877,6 +995,7 @@ body {
     font-size: 14px;
     border: 6px solid;
   }
+
   .skill-name {
     font-size: 18px;
     margin: 18px 0 8px;
@@ -891,30 +1010,36 @@ body {
   .timeline {
     margin: 40px auto;
   }
+
   .card {
     height: 230px;
     padding: 8px;
   }
+
   .card-body {
     padding: 4px;
   }
+
   .card-title {
     font-size: 16px;
     font-weight: 500;
     padding-bottom: 4px;
   }
+
   .card-title-info {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.25;
     padding-bottom: 4px;
   }
+
   .card-title-description {
     font-size: 14px;
     font-weight: 300;
     line-height: 1.25;
     padding-bottom: 2px;
   }
+
   .card-title-text {
     font-size: 12px;
     font-weight: 300;
@@ -927,20 +1052,25 @@ body {
     padding: 75px 30px;
     grid-gap: 30px;
   }
+
   .contact-list {
     height: 60px;
   }
+
   .contact-list-icon {
     padding-right: 20px;
   }
+
   .contact-list-logo {
     width: 40px;
     height: 40px;
   }
+
   .map {
     width: 100%;
     height: 400px;
   }
+
   .form-submit-btn {
     padding: 8px 25px;
     font-size: 12px;
@@ -948,10 +1078,12 @@ body {
 }
 
 @media (max-width: 660px) {
+
   /* navbar */
   .navbar {
     height: 50px;
   }
+
   .link a {
     padding: 5px 10px;
     margin: 0 16px;
@@ -963,6 +1095,7 @@ body {
   .home-section {
     padding: 0 30px;
   }
+
   .home-img {
     width: 90%;
   }
@@ -971,28 +1104,35 @@ body {
   .project-section {
     padding: 60px 25px 25px;
   }
+
   .project-heading {
     font-size: 32px;
     margin-bottom: 20px;
   }
+
   .project-container {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
   }
+
   .project-content {
     padding: 18px;
   }
+
   .project-title {
     font-size: 40px;
   }
+
   .project-info {
     padding: 8px 20px 20px 20px;
     font-size: 16px;
     line-height: 1.25;
   }
+
   .project-btn-grp {
     grid-gap: 14px;
   }
+
   .project-btn {
     height: 25px;
     font-size: 16px;
@@ -1002,13 +1142,16 @@ body {
   .about {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .about-section {
     padding: 60px 45px 0;
   }
+
   .about-info {
     font-size: 14px;
     line-height: 1.25;
   }
+
   .download-cv-btn {
     bottom: 20px;
     font-size: 14px;
@@ -1018,17 +1161,17 @@ body {
   .skill-section {
     margin: 20px auto;
   }
+
   .heading {
     font-size: 36px;
     margin-bottom: 20px;
   }
+
   .skills-container {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
   }
-  .skill-img {
-    height: 200px;
-  }
+
   .skill-level {
     top: 150px;
     right: 5px;
@@ -1037,10 +1180,12 @@ body {
     font-size: 16px;
     border: 8px solid;
   }
+
   .skill-name {
     font-size: 26px;
     margin: 18px 0 8px;
   }
+
   .skill-info {
     font-size: 14px;
     line-height: 1.25;
@@ -1050,46 +1195,57 @@ body {
   .timeline {
     margin: 20px auto;
   }
+
   .timeline .heading {
     margin-bottom: 20px;
     font-size: 36px;
   }
+
   .card {
     width: 100%;
     height: 230px;
     margin: 10px auto;
     padding: 5px;
   }
+
   .card:nth-child(even),
   .card:nth-child(odd) {
     margin-left: 0;
-    margin-bottom: 10px; /* Додаємо відступ між картками */
+    margin-bottom: 10px;
+    /* Додаємо відступ між картками */
   }
+
   .card:before,
   .card:after {
     top: 10px;
-    left: -12%; /* Змінюємо положення позначення для всіх карток */
+    left: -12%;
+    /* Змінюємо положення позначення для всіх карток */
   }
+
   .card-body {
     padding: 8px;
   }
+
   .card-title {
     font-size: 16px;
     font-weight: 500;
     padding-bottom: 2px;
   }
+
   .card-title-info {
     font-size: 18px;
     font-weight: 500;
     line-height: 1;
     padding-bottom: 2px;
   }
+
   .card-title-description {
     font-size: 18px;
     font-weight: 300;
     line-height: 1.25;
     padding-bottom: 2px;
   }
+
   .card-title-text {
     font-size: 14px;
     font-weight: 300;
