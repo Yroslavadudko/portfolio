@@ -196,6 +196,7 @@ body {
   background: none;
   border: 2px solid #fff;
 }
+
 .project-btn:hover {
   background: gray;
 }
@@ -248,7 +249,6 @@ body {
 }
 
 .pagination-btn-nb {
-  width: 40px;
   margin: 0 10px;
   font-size: 20px;
   color: #fff;
@@ -685,6 +685,7 @@ body {
     line-height: 1.25;
   }
 
+
   /* about */
   .about-section {
     padding: 100px 80px 0;
@@ -827,6 +828,23 @@ body {
   .project-btn {
     height: 35px;
     font-size: 16px;
+  }
+
+  .pagination {
+    margin-top: 50px;
+  }
+
+  .pagination-btn-grp {
+    grid-gap: 18px;
+  }
+
+  .pagination-btn {
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .pagination-btn-nb {
+    font-size: 18px;
   }
 
   /* about */
@@ -1009,6 +1027,25 @@ body {
     font-size: 14px;
   }
 
+  .pagination {
+    margin-top: 40px;
+  }
+
+  .pagination-btn-grp {
+    grid-template-columns: 150px 20px 150px;
+    grid-gap: 10px;
+  }
+
+  .pagination-btn {
+    height: 25px;
+    font-size: 14px;
+  }
+
+  .pagination-btn-nb {
+    font-size: 14px;
+    margin: 0 6px;
+  }
+
   /* about */
   .about-section {
     padding: 75px 45px 0;
@@ -1174,17 +1211,21 @@ body {
   }
 
   .project-info {
-    padding: 8px 20px 20px 20px;
     font-size: 16px;
     line-height: 1.25;
   }
 
-  .project-btn-grp {
-    grid-gap: 14px;
+  .project-btn {
+    height: 30px;
+    font-size: 16px;
   }
 
-  .project-btn {
-    height: 25px;
+  .pagination-btn {
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .pagination-btn-nb {
     font-size: 16px;
   }
 
