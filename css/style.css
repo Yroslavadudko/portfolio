@@ -14,7 +14,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-display: swap;
+  /* font-display: swap; */
   background: #343232;
 }
 
@@ -921,7 +921,7 @@ body {
   /* contact */
   .contact-section {
     grid-template-columns: repeat(1, 1fr);
-    padding: 75px auto;
+    padding: 75px 30px;
     grid-gap: 30px;
   }
   .contact-list {
