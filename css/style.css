@@ -182,8 +182,8 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
-  left: 0;
-  right: 0;
+  left: 80px;
+  right: 80px;
   justify-content: center;
   opacity: 0;
   transition: opacity 0.5s;
@@ -694,6 +694,18 @@ body {
     line-height: 1.25;
   }
 
+  .project-btn-grp {
+    left: 70px;
+    right: 70px;
+  }
+
+  .pagination {
+    margin-top: 90px;
+  }
+
+  .pagination-btn-grp {
+    grid-template-columns: 140px 40px 140px;
+  }
 
   /* about */
   .about-section {
@@ -809,7 +821,7 @@ body {
   }
 
   .project-container {
-    grid-gap: 80px;
+    grid-gap: 60px;
   }
 
   .project-card {
@@ -832,6 +844,8 @@ body {
 
   .project-btn-grp {
     grid-gap: 18px;
+    left: 55px;
+    right: 55px;
   }
 
   .project-btn {
@@ -840,11 +854,12 @@ body {
   }
 
   .pagination {
-    margin-top: 50px;
+    margin-top: 60px;
   }
 
   .pagination-btn-grp {
     grid-gap: 18px;
+    grid-template-columns: 130px 35px 130px;
   }
 
   .pagination-btn {
@@ -1006,7 +1021,7 @@ body {
   }
 
   .project-container {
-    grid-gap: 50px;
+    grid-gap: 30px;
   }
 
   .project-card {
@@ -1028,7 +1043,9 @@ body {
   }
 
   .project-btn-grp {
-    grid-gap: 14px;
+    grid-gap: 12px;
+    left: 30px;
+    right: 30px;
   }
 
   .project-btn {
@@ -1037,11 +1054,11 @@ body {
   }
 
   .pagination {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 
   .pagination-btn-grp {
-    grid-template-columns: 150px 20px 150px;
+    grid-template-columns: 110px 20px 110px;
     grid-gap: 10px;
   }
 
@@ -1228,7 +1245,9 @@ body {
     height: 30px;
     font-size: 16px;
   }
-
+.pagination {
+  margin-top: 20px;
+}
   .pagination-btn {
     height: 30px;
     font-size: 16px;
