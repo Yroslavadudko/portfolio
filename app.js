@@ -29,17 +29,33 @@ function openResume() {
   window.open("./img/Mykola_QA.pdf", "_blank");
 }
 
-// тап для мобілок
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("form");
-  const projectCard = document.getElementById("projectCard");
+// tap on mobile
+ function handleTapEvent(event) {
+   const projectContent = event.currentTarget.querySelector(".project-content");
+   const projectBtnGrp = event.currentTarget.querySelector(".project-btn-grp");
 
-  const hammer = new Hammer(projectCard);
-  hammer.on("tap", function (event) {
-    // Ваш код, який виконується при тапі на елемент projectCard
-    // Наприклад, відкриття посилання або показ додаткової інформації
-  });
-});
+   projectContent.style.opacity = "1";
+   projectBtnGrp.style.opacity = "1";
+ }
+
+ // A function that removes the contents of the project at the end of the tap (for mobile)
+ function handleTapEndEvent(event) {
+   const projectContent = event.currentTarget.querySelector(".project-content");
+   const projectBtnGrp = event.currentTarget.querySelector(".project-btn-grp");
+
+   projectContent.style.opacity = "0";
+   projectBtnGrp.style.opacity = "0";
+ }
+
+ // We add event handlers on touch events for all projects
+ const projectCards = document.querySelectorAll(".project-card");
+
+ projectCards.forEach((projectCard) => {
+   const hammer = new Hammer(projectCard);
+   hammer.on("tap", handleTapEvent);
+   hammer.on("pressup", handleTapEndEvent);
+ });
+
 
 // Paginator
 document.addEventListener("DOMContentLoaded", function () {
@@ -93,14 +109,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Додайте обробник подій до кнопок пагінатора
+  // Add an event handler for the paginator buttons
   const prevBtn = document.getElementById("prevBtn");
   prevBtn.addEventListener("click", goToPrevPage);
 
   const nextBtn = document.getElementById("nextBtn");
   nextBtn.addEventListener("click", goToNextPage);
 
-  // Показати першу сторінку при завантаженні сторінки
+  // Show first page on page load
   showPage(currentPage);
   updatePaginationButtons();
 });
@@ -110,11 +126,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const projectCard = document.getElementById("projectCard");
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
-  const currentPageSpan = document.getElementById("currentPage"); // Отримуємо посилання на елемент, де будемо показувати номер поточної сторінки
+  const currentPageSpan = document.getElementById("currentPage"); // We get a link to the element where we will show the number of the current page
 
-  let currentPage = 1; // Початкова сторінка
+  let currentPage = 1; // Home page
 
-  // Додайте обробники подій Hammer.js до елементів prevBtn і nextBtn
+  // Add Hammer.js event handlers to the prevBtn and nextBtn elements
   // ...
 
   // Функція для оновлення номеру поточної сторінки
