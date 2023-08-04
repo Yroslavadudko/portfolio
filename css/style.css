@@ -171,6 +171,7 @@ body {
 
 .project-title {
   font-size: 50px;
+  line-height: 1.75;
   text-transform: capitalize;
   text-align: center;
   font-weight: 300;
@@ -245,7 +246,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .pagination-btn-grp {
@@ -298,7 +299,7 @@ body {
   display: grid;
   grid-template-columns: 30% 65%;
   grid-gap: 40px;
-  
+
 }
 
 .about-img-container {
@@ -336,7 +337,7 @@ body {
   text-transform: capitalize;
   cursor: pointer;
   transition: 0.5s;
-  background: rgba(0, 0, 0, 0.5);
+  background: #343232;
 }
 
 .download-cv-btn:hover {
@@ -382,6 +383,7 @@ body {
 .skill-name {
   font-size: 30px;
   font-weight: 300;
+  line-height: 1.75;
   text-align: center;
   text-transform: capitalize;
   margin: 30px 0 20px;
@@ -404,6 +406,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 22px;
+  line-height: 2;
   border-radius: 50%;
   border: 9px solid;
 }
@@ -552,6 +555,7 @@ body {
 .card-title {
   font-size: 20px;
   font-weight: 700;
+  line-height: 1.25;
 }
 
 .card-title-info {
@@ -562,14 +566,14 @@ body {
 
 .card-title-description {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.25;
 }
 
 .card-title-text {
   font-size: 16px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 /* contact section */
@@ -670,7 +674,7 @@ body {
   border-radius: 5px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1320px) {
 
   /* home */
   .home-section {
@@ -678,7 +682,6 @@ body {
   }
 
   .home-heading {
-    font-size: 100px;
     font-weight: 600;
   }
 
@@ -688,7 +691,7 @@ body {
 
   /* project */
   .project-section {
-    padding: 125px 80px 80px;
+    padding: 140px 90px 00px;
   }
 
   .project-heading {
@@ -697,7 +700,7 @@ body {
   }
 
   .project-container {
-    grid-gap: 90px;
+    grid-gap: 70px;
   }
 
   .project-card {
@@ -710,11 +713,12 @@ body {
 
   .project-title {
     font-size: 45px;
+    line-height: 1.5;
   }
 
   .project-info {
-    padding: 15px 15px 15px 15px;
-    font-size: 18px;
+    padding: 15px 30px 30px 30px;
+    font-size: 20px;
     line-height: 1.25;
   }
 
@@ -724,7 +728,7 @@ body {
   }
 
   .pagination {
-    margin-top: 90px;
+    margin-top: 70px;
   }
 
   .pagination-btn-grp {
@@ -733,51 +737,53 @@ body {
 
   /* about */
   .about-section {
-    padding: 100px 80px 0;
+    padding: 140px 90px 0;
   }
 
   .about-info {
-    font-size: 18px;
+    line-height: 1.75;
   }
 
   /* skill */
   .skill-section {
-    margin: 80px 0;
+    margin: 90px 0;
   }
 
   .heading {
     font-size: 55px;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
   }
 
   .skills-container {
-    grid-gap: 50px;
+    grid-gap: 70px;
+  }
+
+  .skill-name {
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 25px 0 15px;
+  }
+
+  .skill-info {
+    font-size: 18px;
+    line-height: 1.25;
   }
 
   .skill-level {
     width: 85px;
     height: 85px;
-    font-size: 20px;
+    font-size: 22px;
+    line-height: 1.75;
     border: 8px solid;
-  }
-
-  .skill-name {
-    font-size: 26px;
-    margin: 25px 0 15px;
-  }
-
-  .skill-info {
-    font-size: 16px;
-    line-height: 1.25;
   }
 
   /* timeline */
   .timeline {
-    margin: 125px auto;
+    margin: 140px auto;
   }
 
-  .heading {
-    margin-bottom: 100px;
+  .timeline .heading {
+    margin-bottom: 140px;
   }
 
   .card {
@@ -787,7 +793,7 @@ body {
 
   /* contact */
   .contact-section {
-    padding: 95px 35px;
+    padding: 90px 40px;
     grid-gap: 45px;
   }
 
@@ -810,7 +816,7 @@ body {
   }
 }
 
-@media (max-width: 1090px) {
+@media (max-width: 1140px) {
 
   /* navbar */
   .navbar {
@@ -821,6 +827,7 @@ body {
     padding: 8px 25px;
     margin: 0 18px;
     font-size: 18px;
+    font-weight: 400;
     line-height: 3.5;
   }
 
@@ -840,11 +847,11 @@ body {
 
   /* project */
   .project-section {
-    padding: 100px 70px 70px;
+    padding: 120px 75px 75px;
   }
 
   .project-heading {
-    font-size: 65px;
+    font-size: 70px;
     margin-bottom: 30px;
   }
 
@@ -853,7 +860,7 @@ body {
   }
 
   .project-card {
-    height: 300px;
+    height: 320px;
   }
 
   .project-content {
@@ -862,11 +869,12 @@ body {
 
   .project-title {
     font-size: 40px;
+    line-height: 1.25;
   }
 
   .project-info {
     padding: 10px 25px 25px 25px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1;
   }
 
@@ -901,52 +909,59 @@ body {
 
   /* about */
   .about-section {
-    padding: 80px 50px 0;
+    padding: 120px 70px 0;
   }
 
   .about-info {
+    font-size: 18px;
     line-height: 1.75;
   }
 
   .download-cv-btn {
     bottom: 16px;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   /* skill */
   .skill-section {
-    margin: 60px 0;
+    margin: 75px 0;
   }
 
   .heading {
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
 
   .skills-container {
-    grid-gap: 45px;
+    grid-gap: 55px;
+  }
+
+  .skill-name {
+    font-size: 25px;
+    margin: 20px 0 10px;
+  }
+
+  .skill-info {
+    font-size: 16px;
+    line-height: 1.25;
   }
 
   .skill-level {
     width: 80px;
     height: 80px;
-    font-size: 16px;
+    font-size: 20px;
     border: 7px solid;
   }
 
-  .skill-name {
-    font-size: 20px;
-    margin: 20px 0 10px;
-  }
 
-  .skill-info {
-    font-size: 14px;
-    line-height: 1.25;
-  }
 
   /* timeline */
   .timeline {
-    margin: 50px auto;
+    margin: 120px auto;
+  }
+
+  .timeline .heading {
+    margin-bottom: 120px;
   }
 
   .card {
@@ -960,26 +975,25 @@ body {
 
   .card-title {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
+    line-height: 1;
     padding-bottom: 6px;
   }
 
   .card-title-info {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
-    line-height: 1.25;
+    line-height: 1;
     padding-bottom: 6px;
   }
 
   .card-title-description {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.25;
+    font-size: 18px;
     padding-bottom: 4px;
   }
 
   .card-title-text {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.25;
   }
@@ -1014,15 +1028,226 @@ body {
   }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 960px) {
 
   /* navbar */
   .navbar {
-    height: 60px;
+    height: 70px;
   }
 
   .link a {
-    padding: 8px 20px;
+    padding: 8px 25px;
+    margin: 0 16px;
+    font-size: 18px;
+    line-height: 3;
+  }
+
+  /* home */
+  .home-section {
+    padding: 0 70px;
+  }
+
+  .home-img {
+    width: 80%;
+  }
+
+  /* project */
+  .project-section {
+    padding: 100px 50px 50px;
+  }
+
+  .project-heading {
+    font-size: 55px;
+    margin-bottom: 25px;
+  }
+
+  .project-container {
+    grid-gap: 45px;
+  }
+
+  .project-card {
+    height: 275px;
+  }
+
+  .project-content {
+    padding: 20px;
+  }
+
+  .project-title {
+    font-size: 38px;
+  }
+
+  .project-info {
+    padding: 8px 20px 20px 20px;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .project-btn-grp {
+    grid-gap: 12px;
+    left: 30px;
+    right: 30px;
+  }
+
+  .project-btn {
+    height: 25px;
+    font-size: 14px;
+  }
+
+  .pagination {
+    margin-top: 45px;
+  }
+
+  .pagination-btn-grp {
+    grid-template-columns: 110px 20px 110px;
+    grid-gap: 10px;
+  }
+
+  .pagination-btn {
+    height: 25px;
+    font-size: 14px;
+  }
+
+  .pagination-btn-nb {
+    font-size: 14px;
+    margin: 0 6px;
+  }
+
+  /* about */
+  .about-section {
+    padding: 90px 50px 0;
+  }
+
+  .about {
+    grid-template-columns: 35% 60%;
+    grid-gap: 30px;
+  }
+
+  .about-info {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .download-cv-btn {
+    bottom: 14px;
+    font-size: 12px;
+  }
+
+  /* skill */
+  .skill-section {
+    margin: 50px auto;
+  }
+
+  .heading {
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 35px;
+  }
+
+  .skill-name {
+    font-size: 20px;
+    margin: 18px 0 8px;
+  }
+
+  .skill-info {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .skill-level {
+    width: 85px;
+    height: 85px;
+    font-size: 16px;
+    border: 8px solid;
+  }
+
+
+
+  /* timeline */
+  .timeline {
+    margin: 90px auto;
+  }
+
+  .timeline .heading {
+    margin-bottom: 90px;
+  }
+
+  .card {
+    height: 260px;
+    padding: 8px;
+
+  }
+
+  .card-body {
+    padding: 4px;
+  }
+
+  .card-title {
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 4px;
+  }
+
+  .card-title-info {
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 4px;
+  }
+
+  .card-title-description {
+    font-size: 18px;
+    padding-bottom: 2px;
+  }
+
+  .card-title-text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1;
+  }
+
+  /* contact */
+  .contact-section {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 95px 30px;
+    grid-gap: 40px;
+  }
+
+  .contact-list {
+    height: 70px;
+  }
+
+  .contact-list-icon {
+    padding-right: 20px;
+  }
+
+  .contact-list-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .map {
+    width: 100%;
+    height: 400px;
+  }
+
+  .form-submit-btn {
+    padding: 8px 25px;
+  }
+}
+
+@media (max-width: 720px) {
+
+  /* navbar */
+  .navbar {
+    height: 65px;
+  }
+
+  .link a {
+    padding: 5px 10px;
     margin: 0 16px;
     font-size: 16px;
     line-height: 3;
@@ -1034,45 +1259,190 @@ body {
   }
 
   .home-img {
+    width: 85%;
+  }
+
+  /* project */
+  .project-section {
+    padding: 90px 50px 50px;
+  }
+
+  .project-heading {
+    font-size: 38px;
+    margin-bottom: 25px;
+  }
+
+  .project-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 25px;
+  }
+
+  .project-content {
+    padding: 18px;
+  }
+
+  .project-title {
+    font-size: 40px;
+  }
+
+  .project-btn {
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .pagination {
+    margin-top: 20px;
+  }
+
+  .pagination-btn {
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .pagination-btn-nb {
+    font-size: 16px;
+  }
+
+  /* about */
+  .about-section {
+    padding: 60px 45px 0;
+  }
+
+  .about {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about-info {
+    font-size: 18px;
+  }
+
+  .download-cv-btn {
+    bottom: 25px;
+    font-size: 16px;
+  }
+
+  /* skill */
+  .skill-section {
+    margin: 70px auto;
+  }
+
+  .heading {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+  }
+
+  .skill-name {
+    font-size: 25px;
+    margin: 20px 0 10px;
+  }
+
+  .skill-info {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+
+  .skill-level {
+    width: 20vw;
+    height: 20dvw;
+    font-size: 20px;
+    border: 10px solid;
+  }
+
+  /* timeline */
+  .timeline {
+    margin: 70px auto;
+  }
+
+  .timeline .heading {
+    margin-bottom: 60px;
+    font-size: 36px;
+  }
+
+  .card {
+    width: 100%;
+    height: 200px;
+    margin: 20px auto;
+    padding: 5px;
+  }
+
+  .card:nth-child(even),
+  .card:nth-child(odd) {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .card:before,
+  .card:after {
+    top: 10px;
+    left: -12%;
+  }
+
+  .card-body {
+    padding: 8px;
+  }
+
+  .card-title {
+    font-size: 18px;
+    line-height: 1.5;
+    padding-bottom: 2px;
+  }
+
+  .card-title-info {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 2px;
+  }
+
+  .card-title-description {
+    font-weight: 500;
+    line-height: 1.25;
+    padding-bottom: 2px;
+  }
+
+  .card-title-text {
+    line-height: 1.25;
+  }
+}
+
+
+@media (max-width: 540px) {
+
+  /* navbar */
+  .navbar {
+    height: 60px;
+  }
+
+  .link a {
+    padding: 4px 8px;
+    margin: 0 10px;
+    line-height: 2;
+  }
+
+  /* home */
+  .home-section {
+    padding: 0 20px;
+  }
+
+  .home-img {
     width: 80%;
   }
 
   /* project */
   .project-section {
-    padding: 75px 45px 45px;
+    padding: 60px 40px 40px;
   }
 
   .project-heading {
-    font-size: 45px;
-    margin-bottom: 20px;
-  }
-
-  .project-container {
-    grid-gap: 30px;
+    font-size: 35px;
   }
 
   .project-card {
-    height: 250px;
-  }
-
-  .project-content {
-    padding: 20px;
-  }
-
-  .project-title {
-    font-size: 36px;
-  }
-
-  .project-info {
-    padding: 8px 20px 20px 20px;
-    font-size: 14px;
-    line-height: 1;
-  }
-
-  .project-btn-grp {
-    grid-gap: 12px;
-    left: 30px;
-    right: 30px;
+    height: 230px;
   }
 
   .project-btn {
@@ -1101,206 +1471,12 @@ body {
 
   /* about */
   .about-section {
-    padding: 75px 45px 0;
-  }
-  .about {
-    grid-template-columns: 35% 60%;
-    grid-gap: 30px;
+    padding: 50px 35px 0;
   }
 
   .about-info {
     font-size: 16px;
     line-height: 1.5;
-  }
-
-  .download-cv-btn {
-    bottom: 14px;
-    font-size: 10px;
-  }
-
-  /* skill */
-  .skill-section {
-    margin: 40px auto;
-  }
-
-  .heading {
-    font-size: 36px;
-    margin-bottom: 40px;
-  }
-
-  .skills-container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 35px;
-  }
-
-  .skill-level {
-    width: 85px;
-    height: 85px;
-    font-size: 16px;
-    border: 6px solid;
-  }
-
-  .skill-name {
-    font-size: 18px;
-    margin: 18px 0 8px;
-  }
-
-  .skill-info {
-    font-size: 12px;
-    line-height: 1.25;
-  }
-
-  /* timeline */
-  .timeline {
-    margin: 40px auto;
-  }
-
-  .card {
-    height: 230px;
-    padding: 8px;
-  }
-
-  .card-body {
-    padding: 4px;
-  }
-
-  .card-title {
-    font-size: 16px;
-    font-weight: 500;
-    padding-bottom: 4px;
-  }
-
-  .card-title-info {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.25;
-    padding-bottom: 4px;
-  }
-
-  .card-title-description {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.25;
-    padding-bottom: 2px;
-  }
-
-  .card-title-text {
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 1.25;
-  }
-
-  /* contact */
-  .contact-section {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 75px 30px;
-    grid-gap: 30px;
-  }
-
-  .contact-list {
-    height: 60px;
-  }
-
-  .contact-list-icon {
-    padding-right: 20px;
-  }
-
-  .contact-list-logo {
-    width: 40px;
-    height: 40px;
-  }
-
-  .map {
-    width: 100%;
-    height: 400px;
-  }
-
-  .form-submit-btn {
-    padding: 8px 25px;
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 740px) {
-
-  /* navbar */
-  .navbar {
-    height: 50px;
-  }
-
-  .link a {
-    padding: 5px 10px;
-    margin: 0 16px;
-    font-size: 14px;
-    line-height: 3;
-  }
-
-  /* home */
-  .home-section {
-    padding: 0 30px;
-  }
-
-  .home-img {
-    width: 90%;
-  }
-
-  /* project */
-  .project-section {
-    padding: 60px 25px 25px;
-  }
-
-  .project-heading {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-
-  .project-container {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
-  }
-
-  .project-content {
-    padding: 18px;
-  }
-
-  .project-title {
-    font-size: 40px;
-  }
-
-  .project-info {
-    font-size: 16px;
-    line-height: 1.25;
-  }
-
-  .project-btn {
-    height: 30px;
-    font-size: 16px;
-  }
-
-  .pagination {
-    margin-top: 20px;
-  }
-
-  .pagination-btn {
-    height: 30px;
-    font-size: 16px;
-  }
-
-  .pagination-btn-nb {
-    font-size: 16px;
-  }
-
-  /* about */
-  .about {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .about-section {
-    padding: 60px 45px 0;
-  }
-
-  .about-info {
-    line-height: 1.25;
   }
 
   .download-cv-btn {
@@ -1310,94 +1486,29 @@ body {
 
   /* skill */
   .skill-section {
-    margin: 20px auto;
-  }
-
-  .heading {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-
-  .skills-container {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
+    margin: 60px auto;
   }
 
   .skill-level {
-    width: 20vw;
-    height: 20dvw;
-    font-size: 20px;
-    border: 10px solid;
-  }
-
-  .skill-name {
-    font-size: 26px;
-    margin: 18px 0 8px;
-  }
-
-  .skill-info {
-    font-size: 14px;
-    line-height: 1.25;
+    width: 85px;
+    height: 85px;
+    font-size: 16px;
+    border: 8px solid;
   }
 
   /* timeline */
   .timeline {
-    margin: 20px auto;
-  }
-
-  .timeline .heading {
-    margin-bottom: 20px;
-    font-size: 36px;
+    margin: 40px auto;
   }
 
   .card {
-    width: 100%;
-    height: 230px;
-    margin: 10px auto;
-    padding: 5px;
+    height: 260px;
   }
 
-  .card:nth-child(even),
-  .card:nth-child(odd) {
-    margin-left: 0;
-    margin-bottom: 10px;
-    /* Додаємо відступ між картками */
-  }
-
-  .card:before,
-  .card:after {
-    top: 10px;
-    left: -12%;
-    /* Змінюємо положення позначення для всіх карток */
-  }
-
-  .card-body {
-    padding: 8px;
-  }
-
-  .card-title {
-    font-size: 16px;
-    font-weight: 500;
-    padding-bottom: 2px;
-  }
-
-  .card-title-info {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1;
-    padding-bottom: 2px;
-  }
-
-  .card-title-description {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.25;
-    padding-bottom: 2px;
-  }
-
-  .card-title-text {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1;
+  /* contact */
+  .contact-section {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 75px 10px;
+    grid-gap: 30px;
   }
 }
