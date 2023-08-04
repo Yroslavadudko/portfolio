@@ -28,7 +28,7 @@ body {
   align-items: center;
   width: 100%;
   z-index: 9;
-  background: #4A4A4A;
+  background: #343232;
   cursor: pointer;
   padding: 0;
 }
@@ -42,7 +42,7 @@ body {
 
 .link a {
   color: #ffffff;
-  opacity: 0.5;
+  opacity: 0.75;
   text-decoration: none;
   text-transform: capitalize;
   padding: 10px 30px;
@@ -55,7 +55,9 @@ body {
 
 .link a:hover,
 .link.active a {
+  font-weight: 700;
   opacity: 1;
+  text-decoration: underline;
 }
 
 /* home section */
