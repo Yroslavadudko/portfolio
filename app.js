@@ -29,32 +29,33 @@ function openResume() {
   window.open("./img/Mykola_QA.pdf", "_blank");
 }
 
-// tap on mobile
- function handleTapEvent(event) {
-   const projectContent = event.currentTarget.querySelector(".project-content");
-   const projectBtnGrp = event.currentTarget.querySelector(".project-btn-grp");
+  document.addEventListener("DOMContentLoaded", function () {
+    function handleTapEvent(event) {
+      const projectContent =
+        event.currentTarget.querySelector(".project-content");
+      const projectBtnGrp =
+        event.currentTarget.querySelector(".project-btn-grp");
 
-   projectContent.style.opacity = "1";
-   projectBtnGrp.style.opacity = "1";
- }
+      if (projectContent && projectBtnGrp) {
+        projectContent.classList.toggle("visible");
+        projectBtnGrp.classList.toggle("visible");
+      }
+    }
 
- // A function that removes the contents of the project at the end of the tap (for mobile)
- function handleTapEndEvent(event) {
-   const projectContent = event.currentTarget.querySelector(".project-content");
-   const projectBtnGrp = event.currentTarget.querySelector(".project-btn-grp");
+    // We add event handlers on touch events for all projects
+    const projectCards = document.querySelectorAll(".project-card");
 
-   projectContent.style.opacity = "0";
-   projectBtnGrp.style.opacity = "0";
- }
+    projectCards.forEach((projectCard) => {
+      const hammer = new Hammer(projectCard);
+      hammer.on("tap", handleTapEvent);
+    });
+  });
 
- // We add event handlers on touch events for all projects
- const projectCards = document.querySelectorAll(".project-card");
 
- projectCards.forEach((projectCard) => {
-   const hammer = new Hammer(projectCard);
-   hammer.on("tap", handleTapEvent);
-   hammer.on("pressup", handleTapEndEvent);
- });
+
+
+
+
 
 
 // Paginator

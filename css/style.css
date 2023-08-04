@@ -111,7 +111,8 @@ body {
   padding: 150px 100px 100px;
   position: fixed;
   top: 0;
-  transition: 1s;
+  transition: opacity 1s;
+  /* Змінили transition на opacity тільки для прозорості */
   opacity: 0;
 }
 
@@ -128,7 +129,6 @@ body {
 }
 
 .project-container {
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 80px;
@@ -137,6 +137,7 @@ body {
 .project-card {
   height: 400px;
   position: relative;
+  touch-action: manipulation;
 }
 
 .project-img {
@@ -151,14 +152,18 @@ body {
 
 .project-content {
   position: relative;
+  visibility: hidden;
   padding: 40px;
   color: #fff;
-  transition: opacity 0.5s;
   opacity: 0;
   height: 70%;
+  touch-action: auto;
   overflow: auto;
-  /* overflow: scroll; */
-  /* overflow: hidden; */
+}
+
+.project-content.visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .project-title {
@@ -187,8 +192,18 @@ body {
   left: 80px;
   right: 80px;
   justify-content: center;
-  opacity: 0;
-  transition: opacity 0.5s;
+  touch-action: auto;
+  visibility: hidden;
+  transition: visibility 0.5s;
+}
+
+.project-card:hover .project-content,
+.project-card:hover .project-btn-grp {
+  visibility: visible;
+}
+
+.project-btn-grp.visible {
+  visibility: visible;
 }
 
 .project-btn {
@@ -201,7 +216,6 @@ body {
   color: #fff;
   cursor: pointer;
 }
-
 
 .project-btn.live {
   background: none;
