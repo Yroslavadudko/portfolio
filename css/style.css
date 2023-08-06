@@ -156,7 +156,7 @@ body {
 .project-content {
   position: relative;
   visibility: hidden;
-  padding: 40px;
+  padding: 40px 20px;
   color: #fff;
   opacity: 0;
   height: 70%;
@@ -180,11 +180,11 @@ body {
 }
 
 .project-info {
-  padding: 20px 40px 40px 40px;
+  padding: 20px 15px 40px 15px;
   margin: 0;
   font-size: 20px;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
 }
 
 .project-btn-grp {
@@ -708,7 +708,7 @@ body {
   }
 
   .project-content {
-    padding: 35px;
+    padding: 35px 15px;
   }
 
   .project-title {
@@ -717,7 +717,7 @@ body {
   }
 
   .project-info {
-    padding: 15px 30px 30px 30px;
+    padding: 15px 10px 30px 10px;
     font-size: 20px;
     line-height: 1.25;
   }
@@ -864,7 +864,7 @@ body {
   }
 
   .project-content {
-    padding: 30px;
+    padding: 30px 15px;
   }
 
   .project-title {
@@ -873,7 +873,7 @@ body {
   }
 
   .project-info {
-    padding: 10px 25px 25px 25px;
+    padding: 10px;
     font-size: 18px;
     line-height: 1;
   }
@@ -952,7 +952,6 @@ body {
     font-size: 20px;
     border: 7px solid;
   }
-
 
 
   /* timeline */
@@ -1070,7 +1069,7 @@ body {
   }
 
   .project-content {
-    padding: 20px;
+    padding: 20px 10px;
   }
 
   .project-title {
@@ -1078,7 +1077,7 @@ body {
   }
 
   .project-info {
-    padding: 8px 20px 20px 20px;
+    padding: 8px;
     font-size: 16px;
     line-height: 1;
   }
@@ -1278,7 +1277,7 @@ body {
   }
 
   .project-content {
-    padding: 18px;
+    padding: 15px 5px;
   }
 
   .project-title {
