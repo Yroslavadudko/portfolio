@@ -175,6 +175,7 @@ body {
   text-transform: capitalize;
   text-align: center;
   font-weight: 300;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   margin: 0;
   padding: 0;
 }
@@ -185,6 +186,7 @@ body {
   font-size: 20px;
   line-height: 1.5;
   text-align: left;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .project-btn-grp {
@@ -594,12 +596,10 @@ body {
   list-style: none;
   height: 90px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0;
   margin: 0;
-}
-
-.contact-list-icon {
-  padding-right: 30px;
 }
 
 .contact-list-logo {
@@ -607,6 +607,20 @@ body {
   height: 60px;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  display: none;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.contact-list-icon:hover .tooltip {
+  display: block;
 }
 
 .contact-form input,
@@ -793,7 +807,7 @@ body {
 
   /* contact */
   .contact-section {
-    padding: 90px 40px;
+    padding: 90px 50px;
     grid-gap: 45px;
   }
 
@@ -999,7 +1013,7 @@ body {
 
   /* contact */
   .contact-section {
-    padding: 75px 40px;
+    padding: 75px 45px;
     grid-gap: 40px;
   }
 
@@ -1164,8 +1178,6 @@ body {
     border: 8px solid;
   }
 
-
-
   /* timeline */
   .timeline {
     margin: 90px auto;
@@ -1210,9 +1222,7 @@ body {
 
   /* contact */
   .contact-section {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 95px 30px;
-    grid-gap: 40px;
+    padding: 70px 40px;
   }
 
   .contact-list {
@@ -1406,6 +1416,13 @@ body {
   .card-title-text {
     line-height: 1.25;
   }
+
+  /* contact */
+  .contact-section {
+    padding: 65px 80px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+  }
 }
 
 
@@ -1505,9 +1522,13 @@ body {
   }
 
   /* contact */
+  .contact-list-logo {
+    width: 35px;
+    height: 35px;
+  }
   .contact-section {
     grid-template-columns: repeat(1, 1fr);
-    padding: 75px 10px;
+    padding: 60px 30px;
     grid-gap: 30px;
   }
 }
