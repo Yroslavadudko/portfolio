@@ -111,7 +111,7 @@ body {
 .project-section {
   width: 100%;
   min-height: 100vh;
-  padding: 150px 100px 100px;
+  padding: 150px 100px  100px;
   position: fixed;
   top: 0;
   transition: opacity 1s;
@@ -705,7 +705,7 @@ body {
 
   /* project */
   .project-section {
-    padding: 140px 90px 00px;
+    padding: 140px 90px 90px;
   }
 
   .project-heading {
@@ -1526,6 +1526,7 @@ body {
     width: 35px;
     height: 35px;
   }
+
   .contact-section {
     grid-template-columns: repeat(1, 1fr);
     padding: 60px 30px;

@@ -4,20 +4,25 @@ const sections = document.querySelectorAll("section");
 
 let activeLink = 0;
 
-links.forEach((link, i) => {
-  link.addEventListener("click", () => {
-    if (activeLink != i) {
+links.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault(); // Це заборонить перехід за посиланням
+
+    const newIndex = parseInt(link.getAttribute("data-index"), 10);
+
+    if (activeLink !== newIndex) {
       links[activeLink].classList.remove("active");
       link.classList.add("active");
       sections[activeLink].classList.remove("active");
 
       setTimeout(() => {
-        activeLink = i;
-        sections[i].classList.add("active");
+        activeLink = newIndex;
+        sections[newIndex].classList.add("active");
       }, 1000);
     }
   });
 });
+
 
 // URL new page
 function redirectTo(url) {
@@ -29,34 +34,26 @@ function openResume() {
   window.open("./img/Mykola_QA.pdf", "_blank");
 }
 
-  document.addEventListener("DOMContentLoaded", function () {
-    function handleTapEvent(event) {
-      const projectContent =
-        event.currentTarget.querySelector(".project-content");
-      const projectBtnGrp =
-        event.currentTarget.querySelector(".project-btn-grp");
+document.addEventListener("DOMContentLoaded", function () {
+  function handleTapEvent(event) {
+    const projectContent =
+      event.currentTarget.querySelector(".project-content");
+    const projectBtnGrp = event.currentTarget.querySelector(".project-btn-grp");
 
-      if (projectContent && projectBtnGrp) {
-        projectContent.classList.toggle("visible");
-        projectBtnGrp.classList.toggle("visible");
-      }
+    if (projectContent && projectBtnGrp) {
+      projectContent.classList.toggle("visible");
+      projectBtnGrp.classList.toggle("visible");
     }
+  }
 
-    // We add event handlers on touch events for all projects
-    const projectCards = document.querySelectorAll(".project-card");
+  // We add event handlers on touch events for all projects
+  const projectCards = document.querySelectorAll(".project-card");
 
-    projectCards.forEach((projectCard) => {
-      const hammer = new Hammer(projectCard);
-      hammer.on("tap", handleTapEvent);
-    });
+  projectCards.forEach((projectCard) => {
+    const hammer = new Hammer(projectCard);
+    hammer.on("tap", handleTapEvent);
   });
-
-
-
-
-
-
-
+});
 
 // Paginator
 document.addEventListener("DOMContentLoaded", function () {
