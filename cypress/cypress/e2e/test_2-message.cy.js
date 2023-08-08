@@ -1,5 +1,5 @@
 describe("My Test Message", () => {
-  it("should visit the homepage", () => {
+  it("should visit the contactpage", () => {
     cy.visit("https://mykoladudko.netlify.app"); // Замініть URL на ваш
   });
 
