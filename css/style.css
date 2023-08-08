@@ -10,11 +10,9 @@ body {
   display: block;
   margin: auto;
   min-height: 100vh;
-  /* font-family: "Montserrat", sans-serif; */
   font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-weight: 300;
-  /* font-display: swap; */
   background: #343232;
 }
 
@@ -28,7 +26,7 @@ body {
   align-items: center;
   width: 100%;
   z-index: 9;
-  background: #343232d7;
+  background: #343232;
   cursor: pointer;
   padding: 0;
 }
@@ -420,8 +418,8 @@ body {
 
 .skill-card:nth-child(2) .skill-level {
   background: #4fa0ff28;
-  border-color: yellow;
-  color: yellow;
+  border-color: rgb(35, 33, 35);
+  color: rgb(35, 33, 35);
 }
 
 .skill-card:nth-child(3) .skill-level {
@@ -432,8 +430,8 @@ body {
 
 .skill-card:nth-child(4) .skill-level {
   background: #52ff4f28;
-  border-color: #52ff4f;
-  color: #52ff4f;
+  border-color: #137411;
+  color: #137411;
 }
 
 .skill-card:nth-child(5) .skill-level {
@@ -519,17 +517,17 @@ body {
 
 .card:nth-child(2),
 .card:nth-child(2):before {
-  background: hsl(0, 100%, 65%);
+  background: hsl(268, 73%, 42%);
 }
 
 .card:nth-child(3),
 .card:nth-child(3):before {
-  background: hsl(36, 92%, 68%);
+  background: hsl(36, 86%, 57%);
 }
 
 .card:nth-child(4),
 .card:nth-child(4):before {
-  background: hsl(133, 57%, 52%);
+  background: hsl(133, 52%, 33%);
 }
 
 .card:nth-child(5),

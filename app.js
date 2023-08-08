@@ -30,7 +30,7 @@ function redirectTo(url) {
 
 // download CV new page
 function openResume() {
-  window.open("./img/Mykola_QA.pdf", "_blank");
+  window.open("./img/CV_Mykola_Dudko.pdf", "_blank");
 }
 
 // touch tap
