@@ -28,7 +28,7 @@ body {
   align-items: center;
   width: 100%;
   z-index: 9;
-  background: #343232;
+  background: #343232d7;
   cursor: pointer;
   padding: 0;
 }
