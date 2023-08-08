@@ -1,0 +1,15 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "my first portfolio https://mykoladudko.netlify.app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.17.3"
+  }
+}
