@@ -13,7 +13,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-weight: 300;
-  background: #343232;
+  background: hwb(0 96% 4%);
   scrollbar-gutter: stable;
 }
 
@@ -27,7 +27,7 @@ body {
   align-items: center;
   width: 100%;
   z-index: 9;
-  background: #343232;
+  background: hwb(0 96% 4%);
   cursor: pointer;
   padding: 0;
 }
@@ -40,10 +40,13 @@ body {
 }
 
 .link a {
+  background: rgb(35, 35, 35);
   color: #ffffff;
   opacity: 0.75;
   text-decoration: none;
   text-transform: capitalize;
+  border: #c35719 solid 5px;
+  border-radius: 25px;
   padding: 10px 30px;
   margin: 0 20px;
   transition: 0.5s;
@@ -63,13 +66,17 @@ body {
 .home-section {
   width: 100%;
   height: 100vh;
-  padding: 0 150px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  padding: 20px 150px;
   display: flex;
   align-items: center;
   position: fixed;
-  top: 0;
+  background: rgb(35, 35, 35);
   opacity: 0;
   transition: 1s;
+  border: #c35719 solid 5px;
+  border-radius: 45px;
 }
 
 .hero-heading {
@@ -91,7 +98,9 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  height: 100vh;
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
+  height: 100%;
   width: 50%;
   object-fit: cover;
   opacity: 0.2;
@@ -110,12 +119,16 @@ body {
 .project-section {
   width: 100%;
   min-height: 100vh;
-  padding: 150px 100px 100px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  padding: 40px 100px 80px;
+  background: rgb(35, 35, 35);
   position: fixed;
   top: 0;
   transition: opacity 1s;
-  /* Змінили transition на opacity тільки для прозорості */
   opacity: 0;
+  border: #c35719 solid 5px;
+  border-radius: 45px;
 }
 
 .project-heading {
@@ -289,11 +302,16 @@ body {
 .about-section {
   width: 100%;
   min-height: 100vh;
-  padding: 150px 100px 0;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  padding: 80px 100px 40px;
+  background: rgb(35, 35, 35);
   position: fixed;
   top: 0;
   opacity: 0;
   transition: 1s;
+  border: #c35719 solid 5px;
+  border-radius: 45px;
 }
 
 .about {
@@ -590,11 +608,16 @@ body {
   top: 0;
   opacity: 0;
   transition: 1s;
-  padding: 100px 50px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  padding: 80px 50px 40px;
+  background: rgb(35, 35, 35);
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
+  border: #c35719 solid 5px;
+  border-radius: 45px;
 }
 
 .contact-list {
@@ -636,7 +659,7 @@ body {
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid #fff;
   margin-bottom: 30px;
-  border-radius: 5px;
+  border-radius: 0 25px 25px 25px;
   color: #fff;
   padding: 5px 10px;
 }
@@ -685,7 +708,7 @@ body {
   padding: 10px;
   border: 2px solid #fff;
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
+  border-radius: 25px;
 }
 
 .map iframe {
@@ -695,6 +718,7 @@ body {
 }
 
 .information {
+  height: 100%;
   margin: auto;
 }
 
@@ -723,7 +747,7 @@ body {
 
   /* project */
   .project-section {
-    padding: 140px 90px 90px;
+    padding: 40px 90px 70px;
   }
 
   .project-heading {
@@ -769,7 +793,7 @@ body {
 
   /* about */
   .about-section {
-    padding: 140px 90px 0;
+    padding: 90px 90px 70px;
   }
 
   .about-info {
@@ -825,7 +849,7 @@ body {
 
   /* contact */
   .contact-section {
-    padding: 90px 50px;
+    padding: 55px 50px;
     grid-gap: 45px;
   }
 
@@ -865,7 +889,9 @@ body {
 
   /* home */
   .home-section {
-    padding: 0 100px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    padding: 20px 100px;
   }
 
   .home-heading {
@@ -879,7 +905,9 @@ body {
 
   /* project */
   .project-section {
-    padding: 120px 75px 75px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    padding: 30px 75px;
   }
 
   .project-heading {
@@ -941,7 +969,9 @@ body {
 
   /* about */
   .about-section {
-    padding: 120px 70px 0;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    padding: 70px 70px 30px;
   }
 
   .about-info {
@@ -1032,7 +1062,9 @@ body {
 
   /* contact */
   .contact-section {
-    padding: 75px 45px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    padding: 40px 45px;
     grid-gap: 40px;
   }
 
@@ -1085,7 +1117,7 @@ body {
 
   /* project */
   .project-section {
-    padding: 100px 50px 50px;
+    padding: 30px 75px;
   }
 
   .project-heading {
@@ -1147,7 +1179,7 @@ body {
 
   /* about */
   .about-section {
-    padding: 85px 50px 0;
+    padding: 50px 50px 40px;
   }
 
   .about {
@@ -1241,7 +1273,7 @@ body {
 
   /* contact */
   .contact-section {
-    padding: 70px 40px;
+    padding: 40px;
   }
 
   .contact-list {
@@ -1283,6 +1315,8 @@ body {
 
   /* home */
   .home-section {
+    margin-top: 70px;
+    margin-bottom: 70px;
     padding: 0 50px;
   }
 
@@ -1292,7 +1326,9 @@ body {
 
   /* project */
   .project-section {
-    padding: 90px 50px 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 30px 50px 30px;
   }
 
   .project-heading {
@@ -1333,7 +1369,9 @@ body {
 
   /* about */
   .about-section {
-    padding: 80px 45px 0;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 45px;
   }
 
   .about {
@@ -1439,7 +1477,9 @@ body {
 
   /* contact */
   .contact-section {
-    padding: 65px 80px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 60px 80px 65px;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 40px;
   }
@@ -1470,7 +1510,7 @@ body {
 
   /* project */
   .project-section {
-    padding: 60px 40px 40px;
+    padding: 30px 40px 30px;
   }
 
   .project-heading {
@@ -1507,7 +1547,7 @@ body {
 
   /* about */
   .about-section {
-    padding: 70px 35px 0;
+    padding: 35px;
   }
 
   .about-info {
