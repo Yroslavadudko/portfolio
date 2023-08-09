@@ -640,8 +640,10 @@
                     <img src="./img/agile.png" class="skill-img" alt="skill-6" width="800" height="600" loading="lazy">
                     <div class="skill-level">80%</div>
                     <h1 class="skill-name">Agile</h1>
-                    <p class="skill-info">I have the knowledge and practical experience of working with the Scrum methodology in projects.
-                    In the projects I participated in, I performed various roles in Scrum teams, such as Scrum Master and Tester.
+                    <p class="skill-info">I have the knowledge and practical experience of working with the Scrum
+                        methodology in projects.
+                        In the projects I participated in, I performed various roles in Scrum teams, such as Scrum
+                        Master and Tester.
                     </p>
                 </div>
                 <div class="skill-card">
@@ -714,6 +716,7 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- contact section -->
@@ -749,6 +752,8 @@
                     <span class="tooltip">Strava</span>
                 </li>
             </ul>
+
+            <!-- form message -->
             <form action="#" class="contact-form" id="form" netlify>
                 <input class="contact-form-name" type="text" name="name" id="name" autocomplete="off" placeholder="name"
                     required>
@@ -758,20 +763,83 @@
                     required></textarea>
                 <button type="submit" class="form-submit-btn">contact</button>
             </form>
-
-
-
         </div>
 
         <!-- map -->
-
         <iframe class="map"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2543.8113063724672!2d30.3796202!3d50.388716!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ca2a570a6d55%3A0x3626f7d1abd34461!2z0JLQuNGI0L3QtdCy0LU!5e0!3m2!1suk!2sua!4v1690531497263!5m2!1suk!2sua"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <!-- information -->
+        <div class="information">
+            <!-- sinoptik -->
+            <div id="SinoptikInformer" style="width:240px;" class="SinoptikInformer type1c1">
+                <div class="siHeader">
+                    <div class="siLh">
+                        <div class="siMh"><a onmousedown="siClickCount();" class="siLogo" href="https://ua.sinoptik.ua/"
+                                target="_blank" rel="nofollow" title="Погода"> </a>Погода <span id="siHeader"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="siBody"><a onmousedown="siClickCount();"
+                        href="https://ua.sinoptik.ua/погода-вишневе-303004100" title="Погода у Вишневому"
+                        target="_blank">
+                        <div class="siCity">
+                            <div class="siCityName"><span>Вишневе</span></div>
+                            <div id="siCont0" class="siBodyContent">
+                                <div class="siLeft">
+                                    <div class="siTerm"></div>
+                                    <div class="siT" id="siT0"></div>
+                                    <div id="weatherIco0"></div>
+                                </div>
+                                <div class="siInf">
+                                    <p>вологість: <span id="vl0"></span></p>
+                                    <p>тиск: <span id="dav0"></span></p>
+                                    <p>вітер: <span id="wind0"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="siLinks">Погода на 10 днів від <a href="https://ua.sinoptik.ua/10-днів"
+                            title="Погода на 10 днів" target="_blank" onmousedown="siClickCount();"> sinoptik.ua</a>
+                    </div>
+                </div>
+                <div class="siFooter">
+                    <div class="siLf">
+                        <div class="siMf"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--//Kurs.com.ua main-ukraine 240x130 blue-->
+            <div class="kurs" id='kurs-com-ua-informer-main-ukraine-240x130-blue-container'>
+                <a href="//old.kurs.com.ua/informer" id="kurs-com-ua-informer-main-ukraine-240x130-blue"
+                    title="Курс валют информер Украина" rel="nofollow" target="_blank">Информер курса валют
+                </a>
+            </div>
+
+            <noscript>
+                <img src='//old.kurs.com.ua/static/images/informer/kurs.png' width='52' height='26'
+                    alt='kurs.com.ua: курс валют в Украине!' title='Курс валют' border='0' />
+            </noscript>
+        </div>
+
+
+
+
+
     </section>
 
+    <!-- scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+    <script type="text/javascript" charset="UTF-8"
+        src="//sinoptik.ua/informers_js.php?title=4&amp;wind=3&amp;cities=303004100&amp;lang=ua"></script>
+
+    <script type='text/javascript'>
+        (function () { var iframe = '<ifr' + 'ame src="//old.kurs.com.ua/informer/inf2?color=blue" width="240" height="130" frameborder="0" vspace="0" scrolling="no" hspace="0"></ifr' + 'ame>'; var container = document.getElementById('kurs-com-ua-informer-main-ukraine-240x130-blue'); container.parentNode.innerHTML = iframe; })();
+    </script>
 
     <script src="./app.js"></script>
 </body>
