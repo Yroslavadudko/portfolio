@@ -14,6 +14,7 @@ body {
   font-style: normal;
   font-weight: 300;
   background: #343232;
+  scrollbar-gutter: stable;
 }
 
 /* navbar */
@@ -109,7 +110,7 @@ body {
 .project-section {
   width: 100%;
   min-height: 100vh;
-  padding: 150px 100px  100px;
+  padding: 150px 100px 100px;
   position: fixed;
   top: 0;
   transition: opacity 1s;
@@ -310,6 +311,7 @@ body {
 
 .about-img {
   width: 100%;
+  /* aspect-ratio: 7 / 16; */
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
@@ -334,6 +336,7 @@ body {
 .download-cv-btn:hover {
   background: gray;
 }
+
 .about-info {
   height: 650px;
   overflow: auto;
