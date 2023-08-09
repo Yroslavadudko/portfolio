@@ -175,7 +175,7 @@ body {
   text-transform: capitalize;
   text-align: center;
   font-weight: 300;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -0.75px 0 black, 0 0.75px black, 0.75px 0 black, 0 -0.75px black;
   margin: 0;
   padding: 0;
 }
@@ -186,7 +186,7 @@ body {
   font-size: 20px;
   line-height: 1.5;
   text-align: left;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 }
 
 .project-btn-grp {
@@ -392,7 +392,7 @@ body {
 }
 
 .skill-info {
-  text-align: center;
+  text-align: start;
   opacity: 0.5;
   font-size: 18px;
   line-height: 1.5;
@@ -439,8 +439,13 @@ body {
 
 .skill-card:nth-child(5) .skill-level {
   background: #4fdfff28;
-  border-color: #4fdfff;
-  color: #4fdfff;
+  border-color: hsl(339, 100%, 65%);
+  color: hsl(339, 100%, 65%);
+}
+.skill-card:nth-child(6) .skill-level {
+  background: #4fdfff28;
+  border-color: hsl(197, 84%, 51%);
+  color: hsl(197, 84%, 51%);
 }
 
 /* timeline */
