@@ -8,7 +8,8 @@ body {
   width: 100%;
   max-width: 1400px;
   display: block;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0 30px;
   min-height: 100vh;
   font-family: "Ubuntu", sans-serif;
   font-style: normal;
@@ -45,7 +46,7 @@ body {
   opacity: 0.75;
   text-decoration: none;
   text-transform: capitalize;
-  border: #c35719 solid 5px;
+  border: #666666 solid 5px;
   border-radius: 25px;
   padding: 10px 30px;
   margin: 0 20px;
@@ -75,7 +76,7 @@ body {
   background: rgb(35, 35, 35);
   opacity: 0;
   transition: 1s;
-  border: #c35719 solid 5px;
+  border: #666666 solid 5px;
   border-radius: 45px;
 }
 
@@ -118,7 +119,8 @@ body {
 /* project-section */
 .project-section {
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
+  /* min-height: 100vh; */
   margin-top: 120px;
   margin-bottom: 120px;
   padding: 40px 100px 80px;
@@ -127,7 +129,7 @@ body {
   top: 0;
   transition: opacity 1s;
   opacity: 0;
-  border: #c35719 solid 5px;
+  border: #666666 solid 5px;
   border-radius: 45px;
 }
 
@@ -310,7 +312,7 @@ body {
   top: 0;
   opacity: 0;
   transition: 1s;
-  border: #c35719 solid 5px;
+  border: #666666 solid 5px;
   border-radius: 45px;
 }
 
@@ -612,11 +614,11 @@ body {
   margin-bottom: 120px;
   padding: 80px 50px 40px;
   background: rgb(35, 35, 35);
-  height: 100vh;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
-  border: #c35719 solid 5px;
+  border: #666666 solid 5px;
   border-radius: 45px;
 }
 
@@ -731,6 +733,13 @@ body {
 }
 
 @media (max-width: 1320px) {
+
+  /* body */
+  body {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 
   /* home */
   .home-section {
@@ -885,6 +894,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 3.5;
+    border: #666666 solid 4px;
   }
 
   /* home */
@@ -892,6 +902,7 @@ body {
     margin-top: 90px;
     margin-bottom: 90px;
     padding: 20px 100px;
+    border: #666666 solid 4px;
   }
 
   .home-heading {
@@ -908,6 +919,7 @@ body {
     margin-top: 90px;
     margin-bottom: 90px;
     padding: 30px 75px;
+    border: #666666 solid 4px;
   }
 
   .project-heading {
@@ -972,6 +984,7 @@ body {
     margin-top: 90px;
     margin-bottom: 90px;
     padding: 70px 70px 30px;
+    border: #666666 solid 4px;
   }
 
   .about-info {
@@ -1066,6 +1079,7 @@ body {
     margin-bottom: 90px;
     padding: 40px 45px;
     grid-gap: 40px;
+    border: #666666 solid 4px;
   }
 
   .contact-list {
@@ -1093,6 +1107,10 @@ body {
 }
 
 @media (max-width: 960px) {
+  /* body */
+  body {
+    padding: 0 15px;
+  }
 
   /* navbar */
   .navbar {
@@ -1104,11 +1122,13 @@ body {
     margin: 0 16px;
     font-size: 18px;
     line-height: 3;
+    border: #666666 solid 3px;
   }
 
   /* home */
   .home-section {
     padding: 0 70px;
+    border: #666666 solid 3px;
   }
 
   .home-img {
@@ -1118,6 +1138,7 @@ body {
   /* project */
   .project-section {
     padding: 30px 75px;
+    border: #666666 solid 3px;
   }
 
   .project-heading {
@@ -1180,6 +1201,7 @@ body {
   /* about */
   .about-section {
     padding: 50px 50px 40px;
+    border: #666666 solid 3px;
   }
 
   .about {
@@ -1274,6 +1296,7 @@ body {
   /* contact */
   .contact-section {
     padding: 40px;
+    border: #666666 solid 3px;
   }
 
   .contact-list {
@@ -1300,6 +1323,10 @@ body {
 }
 
 @media (max-width: 720px) {
+  /* body */
+    body {
+      padding: 0 10px;
+    }
 
   /* navbar */
   .navbar {
@@ -1311,6 +1338,7 @@ body {
     margin: 0 16px;
     font-size: 16px;
     line-height: 3;
+    border: #666666 solid 2px;
   }
 
   /* home */
@@ -1318,6 +1346,7 @@ body {
     margin-top: 70px;
     margin-bottom: 70px;
     padding: 0 50px;
+    border: #666666 solid 2px;
   }
 
   .home-img {
@@ -1329,6 +1358,7 @@ body {
     margin-top: 70px;
     margin-bottom: 70px;
     padding: 30px 50px 30px;
+    border: #666666 solid 2px;
   }
 
   .project-heading {
@@ -1372,6 +1402,7 @@ body {
     margin-top: 70px;
     margin-bottom: 70px;
     padding: 45px;
+    border: #666666 solid 2px;
   }
 
   .about {
@@ -1482,6 +1513,7 @@ body {
     padding: 60px 80px 65px;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 40px;
+    border: #666666 solid 2px;
   }
 }
 
