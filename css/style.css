@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -68,7 +70,7 @@ body {
   width: 100%;
   height: 100vh;
   margin-top: 120px;
-  margin-bottom: 120px;
+  margin-bottom: 30px;
   padding: 20px 150px;
   display: flex;
   align-items: center;
@@ -122,7 +124,7 @@ body {
   height: 100%;
   /* min-height: 100vh; */
   margin-top: 120px;
-  margin-bottom: 120px;
+  margin-bottom: 30px;
   padding: 40px 100px 80px;
   background: rgb(35, 35, 35);
   position: fixed;
@@ -305,7 +307,7 @@ body {
   width: 100%;
   min-height: 100vh;
   margin-top: 120px;
-  margin-bottom: 120px;
+  margin-bottom: 30px;
   padding: 80px 100px 40px;
   background: rgb(35, 35, 35);
   position: fixed;
@@ -611,7 +613,7 @@ body {
   opacity: 0;
   transition: 1s;
   margin-top: 120px;
-  margin-bottom: 120px;
+  margin-bottom: 30px;
   padding: 80px 50px 40px;
   background: rgb(35, 35, 35);
   height: 100%;
@@ -744,6 +746,7 @@ body {
   /* home */
   .home-section {
     padding: 0 125px;
+    margin-bottom: 20px;
   }
 
   .home-heading {
@@ -757,6 +760,7 @@ body {
   /* project */
   .project-section {
     padding: 40px 90px 70px;
+    margin-bottom: 20px;
   }
 
   .project-heading {
@@ -803,6 +807,7 @@ body {
   /* about */
   .about-section {
     padding: 90px 90px 70px;
+    margin-bottom: 20px;
   }
 
   .about-info {
@@ -859,6 +864,7 @@ body {
   /* contact */
   .contact-section {
     padding: 55px 50px;
+    margin-bottom: 20px;
     grid-gap: 45px;
   }
 
@@ -1128,6 +1134,7 @@ body {
   /* home */
   .home-section {
     padding: 0 70px;
+    margin-bottom: 15px;
     border: #666666 solid 3px;
   }
 
@@ -1138,6 +1145,7 @@ body {
   /* project */
   .project-section {
     padding: 30px 75px;
+    margin-bottom: 15px;
     border: #666666 solid 3px;
   }
 
@@ -1201,6 +1209,7 @@ body {
   /* about */
   .about-section {
     padding: 50px 50px 40px;
+    margin-bottom: 15px;
     border: #666666 solid 3px;
   }
 
@@ -1296,6 +1305,7 @@ body {
   /* contact */
   .contact-section {
     padding: 40px;
+    margin-bottom: 15px;
     border: #666666 solid 3px;
   }
 
@@ -1344,7 +1354,7 @@ body {
   /* home */
   .home-section {
     margin-top: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
     padding: 0 50px;
     border: #666666 solid 2px;
   }
@@ -1356,7 +1366,7 @@ body {
   /* project */
   .project-section {
     margin-top: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
     padding: 30px 50px 30px;
     border: #666666 solid 2px;
   }
@@ -1400,7 +1410,7 @@ body {
   /* about */
   .about-section {
     margin-top: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
     padding: 45px;
     border: #666666 solid 2px;
   }
@@ -1509,7 +1519,7 @@ body {
   /* contact */
   .contact-section {
     margin-top: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
     padding: 60px 80px 65px;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 40px;
@@ -1518,7 +1528,7 @@ body {
 }
 
 
-@media (max-width: 540px) {
+@media (max-width: 550px) {
 
   /* navbar */
   .navbar {
@@ -1614,14 +1624,28 @@ body {
   }
 
   /* contact */
-  .contact-list-logo {
-    width: 35px;
-    height: 35px;
-  }
-
   .contact-section {
     grid-template-columns: repeat(1, 1fr);
     padding: 60px 30px;
     grid-gap: 30px;
   }
+    .contact-list-logo {
+      width: 35px;
+      height: 35px;
+    }
+       
+} 
+@media (max-width: 440px) {
+.contact-list-logo {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (min-width: 360px) {
+  body {
+max-width: 1400px;
+  }
+  
+  
 }
