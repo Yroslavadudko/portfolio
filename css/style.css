@@ -491,7 +491,7 @@ body {
   display: block;
   margin: -80px 0;
   position: relative;
-  background: #f00;
+  background: rgb(185, 177, 177);
 }
 
 .card:nth-child(even) {
@@ -548,17 +548,17 @@ body {
 
 .card:nth-child(2),
 .card:nth-child(2):before {
-  background: hsl(268, 73%, 42%);
+  background: hsl(268, 89%, 29%);
 }
 
 .card:nth-child(3),
 .card:nth-child(3):before {
-  background: hsl(36, 86%, 57%);
+  background: hsl(36, 93%, 48%);
 }
 
 .card:nth-child(4),
 .card:nth-child(4):before {
-  background: hsl(133, 52%, 33%);
+  background: hsl(133, 92%, 15%);
 }
 
 .card:nth-child(5),
@@ -568,7 +568,7 @@ body {
 
 .card:nth-child(6),
 .card:nth-child(6):before {
-  background: hsl(212, 100%, 65%);
+  background: hsl(212, 94%, 27%);
 }
 
 .card:nth-child(even) .card-body:before {
@@ -1113,6 +1113,7 @@ body {
 }
 
 @media (max-width: 960px) {
+
   /* body */
   body {
     padding: 0 15px;
@@ -1172,7 +1173,8 @@ body {
 
   .project-info {
     padding: 8px;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 400;
     line-height: 1;
   }
 
@@ -1333,10 +1335,11 @@ body {
 }
 
 @media (max-width: 720px) {
+
   /* body */
-    body {
-      padding: 0 10px;
-    }
+  body {
+    padding: 0 10px;
+  }
 
   /* navbar */
   .navbar {
@@ -1484,11 +1487,17 @@ body {
     margin-bottom: 10px;
   }
 
-  .card:before,
+  .card:before {
+    content: "";
+    top: 10px;
+    left: -15%;
+  }
+
   .card:after {
     top: 10px;
-    left: -12%;
+    left: -8.5%;
   }
+
 
   .card-body {
     padding: 8px;
@@ -1629,17 +1638,18 @@ body {
     padding: 60px 30px;
     grid-gap: 30px;
   }
-    .contact-list-logo {
-      width: 35px;
-      height: 35px;
-    }
-       
-} 
+
+  .contact-list-logo {
+    width: 35px;
+    height: 35px;
+  }
+
+}
 
 @media (min-width: 440px) {
   body {
-max-width: 1400px;
+    max-width: 1400px;
   }
-  
-  
+
+
 }
