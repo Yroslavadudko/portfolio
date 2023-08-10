@@ -1635,14 +1635,8 @@ body {
     }
        
 } 
-@media (max-width: 440px) {
-.contact-list-logo {
-    width: 25px;
-    height: 25px;
-  }
-}
 
-@media (min-width: 360px) {
+@media (min-width: 440px) {
   body {
 max-width: 1400px;
   }
