@@ -69,7 +69,7 @@ body {
 .home-section {
   width: 100%;
   height: 100vh;
-  margin-top: 120px;
+  margin-top: 100px;
   margin-bottom: 30px;
   padding: 20px 150px;
   display: flex;
@@ -123,7 +123,7 @@ body {
   width: 100%;
   height: 100%;
   /* min-height: 100vh; */
-  margin-top: 120px;
+  margin-top: 100px;
   margin-bottom: 30px;
   padding: 40px 100px 80px;
   background: rgb(35, 35, 35);
@@ -196,6 +196,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 
 .project-info {
   padding: 20px 15px 40px 15px;
@@ -306,7 +307,7 @@ body {
 .about-section {
   width: 100%;
   min-height: 100vh;
-  margin-top: 120px;
+  margin-top: 100px;
   margin-bottom: 30px;
   padding: 80px 100px 40px;
   background: rgb(35, 35, 35);
@@ -612,9 +613,9 @@ body {
   top: 0;
   opacity: 0;
   transition: 1s;
-  margin-top: 120px;
+  margin-top: 100px;
   margin-bottom: 30px;
-  padding: 80px 50px 40px;
+  padding: 50px;
   background: rgb(35, 35, 35);
   height: 100%;
   display: grid;
@@ -905,7 +906,7 @@ body {
 
   /* home */
   .home-section {
-    margin-top: 90px;
+    margin-top: 85px;
     margin-bottom: 90px;
     padding: 20px 100px;
     border: #666666 solid 4px;
@@ -922,7 +923,7 @@ body {
 
   /* project */
   .project-section {
-    margin-top: 90px;
+    margin-top: 85px;
     margin-bottom: 90px;
     padding: 30px 75px;
     border: #666666 solid 4px;
@@ -987,7 +988,7 @@ body {
 
   /* about */
   .about-section {
-    margin-top: 90px;
+    margin-top: 85px;
     margin-bottom: 90px;
     padding: 70px 70px 30px;
     border: #666666 solid 4px;
@@ -1081,7 +1082,7 @@ body {
 
   /* contact */
   .contact-section {
-    margin-top: 90px;
+    margin-top: 85px;
     margin-bottom: 90px;
     padding: 40px 45px;
     grid-gap: 40px;
@@ -1117,11 +1118,6 @@ body {
   /* body */
   body {
     padding: 0 15px;
-  }
-
-  /* navbar */
-  .navbar {
-    height: 70px;
   }
 
   .link a {
@@ -1356,7 +1352,7 @@ body {
 
   /* home */
   .home-section {
-    margin-top: 70px;
+    margin-top: 75px;
     margin-bottom: 10px;
     padding: 0 50px;
     border: #666666 solid 2px;
@@ -1368,7 +1364,7 @@ body {
 
   /* project */
   .project-section {
-    margin-top: 70px;
+    margin-top: 75px;
     margin-bottom: 10px;
     padding: 30px 50px 30px;
     border: #666666 solid 2px;
@@ -1412,7 +1408,7 @@ body {
 
   /* about */
   .about-section {
-    margin-top: 70px;
+    margin-top: 75px;
     margin-bottom: 10px;
     padding: 45px;
     border: #666666 solid 2px;
@@ -1527,7 +1523,7 @@ body {
 
   /* contact */
   .contact-section {
-    margin-top: 70px;
+    margin-top: 75px;
     margin-bottom: 10px;
     padding: 60px 80px 65px;
     grid-template-columns: repeat(1, 1fr);
@@ -1636,7 +1632,7 @@ body {
   /* contact */
   .contact-section {
     grid-template-columns: repeat(1, 1fr);
-    padding: 60px 10px;
+    padding: 20px 10px;
     grid-gap: 30px;
   }
 
