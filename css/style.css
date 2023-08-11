@@ -6,6 +6,41 @@
   box-sizing: border-box;
 }
 
+:root {
+  --body-light-color: hwb(0 96% 4%);
+  --body-color: rgb(35, 35, 35);
+  --body-border-color: #666666;
+  --text-color: #FFFFFF;
+  --project-heading-border-color: yellow;
+  --project-heading-color: blue;
+  --project-hover-color: gray;
+  --body-btn-color: #000000;
+  --body-btn-border-color: #FFFFFF;
+  --skill1-level-background-color: #ff4f4f28;
+  --skill1-level-color: blueviolet;
+  --skill2-level-background-color: #4fa0ff28;
+  --skill2-level-color: rgb(35, 33, 35);
+  --skill3-level-background-color: #ffed4f28;
+  --skill3-level-color: gray;
+  --skill4-level-background-color: #52ff4f28;
+  --skill4-level-color: #137411;
+  --skill5-level-background-color: #4fdfff28;
+  --skill5-level-color: hsl(339, 100%, 65%);
+  --skill6-level-background-color: #4fdfff28;
+  --skill6-level-color: hsl(197, 84%, 51%);
+  --timeline-card-color: rgb(185, 177, 177);
+  --timeline-before-border-color: #191919;
+  --timeline-after-color: #FFFFFF;
+  --timeline-card2-color: #5C5C00;
+  --timeline-card3-color: #754B00;
+  --timeline-card4-color: #005200;
+  --timeline-card5-color: #4F4F4F;
+  --timeline-card6-color: #2424FF;
+  --contact-form-color: rgba(255, 255, 255, 0.2);
+  --contact-form-btn-color: #B30000;
+  --contact-form-btn-hover-color: green;
+}
+
 body {
   width: 100%;
   max-width: 1400px;
@@ -15,8 +50,9 @@ body {
   min-height: 100vh;
   font-family: "Ubuntu", sans-serif;
   font-style: normal;
+  color: var(--text-color);
   font-weight: 300;
-  background: hwb(0 96% 4%);
+  background: var(--body-light-color);
   scrollbar-gutter: stable;
 }
 
@@ -30,7 +66,7 @@ body {
   align-items: center;
   width: 100%;
   z-index: 9;
-  background: hwb(0 96% 4%);
+  background: var(--body-light-color);
   cursor: pointer;
   padding: 0;
 }
@@ -43,12 +79,12 @@ body {
 }
 
 .link a {
-  background: rgb(35, 35, 35);
-  color: #ffffff;
+  background: var(--body-color);
+  color: var(--text-color);
   opacity: 0.75;
   text-decoration: none;
   text-transform: capitalize;
-  border: #666666 solid 5px;
+  border: 5px solid var(--body-border-color);
   border-radius: 25px;
   padding: 10px 30px;
   margin: 0 20px;
@@ -75,10 +111,10 @@ body {
   display: flex;
   align-items: center;
   position: fixed;
-  background: rgb(35, 35, 35);
+  background: var(--body-color);
   opacity: 0;
   transition: 1s;
-  border: #666666 solid 5px;
+  border: 5px solid var(--body-border-color);
   border-radius: 45px;
 }
 
@@ -87,7 +123,6 @@ body {
   top: 50%;
   left: 30%;
   transform: translate(-30%, -50%);
-  color: #fff;
   font-size: 8vw;
   top: 75%;
   text-transform: capitalize;
@@ -122,26 +157,25 @@ body {
 .project-section {
   width: 100%;
   height: 100%;
-  /* min-height: 100vh; */
   margin-top: 100px;
   margin-bottom: 30px;
   padding: 40px 100px 80px;
-  background: rgb(35, 35, 35);
+  background: var(--body-color);
   position: fixed;
   top: 0;
   transition: opacity 1s;
   opacity: 0;
-  border: #666666 solid 5px;
+  border: 5px solid var(--body-border-color);
   border-radius: 45px;
 }
 
 .project-heading {
   font-size: 100px;
-  background: yellow;
+  background: var(--project-heading-border-color);
   text-transform: capitalize;
   text-align: center;
   margin-bottom: 50px;
-  color: blue;
+  color: var(--project-heading-color);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-stroke: 8px transparent;
@@ -174,7 +208,6 @@ body {
   position: relative;
   visibility: hidden;
   padding: 40px 20px;
-  color: #fff;
   opacity: 0;
   height: 70%;
   touch-action: auto;
@@ -236,18 +269,18 @@ body {
   font-size: 18px;
   border: none;
   border-radius: 45px;
-  background: #000;
-  color: #fff;
+  background: var(--body-btn-color);
+  color: var(--text-color);
   cursor: pointer;
 }
 
 .project-btn.live {
   background: none;
-  border: 2px solid #fff;
+  border: 2px solid var(--body-btn-border-color);
 }
 
 .project-btn:hover {
-  background: gray;
+  background: var(--project-hover-color);
 }
 
 .project-card:hover .project-img {
@@ -283,24 +316,24 @@ body {
   font-size: 18px;
   border: none;
   border-radius: 45px;
-  background: #000;
-  color: #fff;
+  background: var(--body-btn-color);
+  color: var(--text-color);
   cursor: pointer;
 }
 
 .pagination-btn.Next {
   background: none;
-  border: 2px solid #fff;
+  border: 2px solid var(--body-btn-border-color);
 }
 
 .pagination-btn:hover {
-  background: gray;
+  background: var(--project-hover-color);
 }
 
 .pagination-btn-nb {
   margin: 0 10px;
   font-size: 20px;
-  color: #fff;
+  color: var(--text-color);
 }
 
 /* about-section */
@@ -310,12 +343,12 @@ body {
   margin-top: 100px;
   margin-bottom: 30px;
   padding: 80px 100px 40px;
-  background: rgb(35, 35, 35);
+  background: var(--body-color);
   position: fixed;
   top: 0;
   opacity: 0;
   transition: 1s;
-  border: #666666 solid 5px;
+  border: 5px solid var(--body-border-color);
   border-radius: 45px;
 }
 
@@ -334,7 +367,6 @@ body {
 
 .about-img {
   width: 100%;
-  /* aspect-ratio: 7 / 16; */
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
@@ -346,24 +378,24 @@ body {
   left: 50%;
   transform: translateX(-50%);
   padding: 10px 15px;
-  color: #fff;
+  color: var(--text-color);
   border: none;
   border-radius: 45px;
   font-size: 16px;
   text-transform: capitalize;
   cursor: pointer;
   transition: 0.5s;
-  background: #343232;
+  background: var(--body-btn-color);
 }
 
 .download-cv-btn:hover {
-  background: gray;
+  background: var(--project-hover-color);
 }
 
 .about-info {
   height: 650px;
   overflow: auto;
-  color: #fff;
+  color: var(--text-color);
   opacity: 0.6;
   font-size: 20px;
   line-height: 2;
@@ -378,7 +410,7 @@ body {
 .heading {
   text-align: center;
   font-size: 60px;
-  color: #fff;
+  color: var(--text-color);
   text-transform: capitalize;
   font-weight: 300;
   margin-bottom: 100px;
@@ -390,7 +422,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 80px;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .skill-card {
@@ -437,39 +469,39 @@ body {
 }
 
 .skill-card:nth-child(1) .skill-level {
-  background: #ff4f4f28;
-  border-color: blueviolet;
-  color: blueviolet;
+  background: var(--skill1-level-background-color);
+  border-color: var(--skill1-level-color);
+  color: var(--skill1-level-color);
 }
 
 .skill-card:nth-child(2) .skill-level {
-  background: #4fa0ff28;
-  border-color: rgb(35, 33, 35);
-  color: rgb(35, 33, 35);
+  background: var(--skill2-level-background-color);
+  border-color: var(--skill2-level-color);
+  color: var(--skill2-level-color);
 }
 
 .skill-card:nth-child(3) .skill-level {
-  background: #ffed4f28;
-  border-color: gray;
-  color: gray;
+  background: var(--skill3-level-background-color);
+  border-color: var(--skill3-level-color);
+  color: var(--skill3-level-color);
 }
 
 .skill-card:nth-child(4) .skill-level {
-  background: #52ff4f28;
-  border-color: #137411;
-  color: #137411;
+  background: var(--skill4-level-background-color);
+  border-color: var(--skill4-level-color);
+  color: var(--skill4-level-color);
 }
 
 .skill-card:nth-child(5) .skill-level {
-  background: #4fdfff28;
-  border-color: hsl(339, 100%, 65%);
-  color: hsl(339, 100%, 65%);
+  background: var(--skill5-level-background-color);
+  border-color: var(--skill5-level-color);
+  color: var(--skill5-level-color);
 }
 
 .skill-card:nth-child(6) .skill-level {
-  background: #4fdfff28;
-  border-color: hsl(197, 84%, 51%);
-  color: hsl(197, 84%, 51%);
+  background: var(--skill6-level-background-color);
+  border-color: var(--skill6-level-color);
+  color: var(--skill6-level-color);
 }
 
 /* timeline */
@@ -488,11 +520,11 @@ body {
   height: 250px;
   padding: 20px;
   border-radius: 20px;
-  color: #fff;
+  color: var(--text-color);
   display: block;
   margin: -80px 0;
   position: relative;
-  background: rgb(185, 177, 177);
+  background: var(--timeline-card-color);
 }
 
 .card:nth-child(even) {
@@ -507,7 +539,7 @@ body {
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  border: 5px solid #191919;
+  border: 5px solid var(--timeline-before-border-color);
   border-radius: 50%;
 }
 
@@ -519,7 +551,7 @@ body {
   transform: translateY(-50%);
   width: 7%;
   height: 2px;
-  background: #fff;
+  background: var(--timeline-after-color);
   z-index: -1;
 }
 
@@ -531,7 +563,7 @@ body {
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  border: 5px solid #191919;
+  border: 5px solid var(--timeline-before-border-color);
   border-radius: 50%;
 }
 
@@ -543,33 +575,33 @@ body {
   transform: translateY(-50%);
   width: 7%;
   height: 2px;
-  background: #fff;
+  background: var(--timeline-after-color);
   z-index: -1;
 }
 
 .card:nth-child(2),
 .card:nth-child(2):before {
-  background: #5C5C00;
+  background: var(--timeline-card2-color);
 }
 
 .card:nth-child(3),
 .card:nth-child(3):before {
-  background: #754B00;
+  background: var(--timeline-card3-color);
 }
 
 .card:nth-child(4),
 .card:nth-child(4):before {
-  background: #005200;
+  background: var(--timeline-card4-color);
 }
 
 .card:nth-child(5),
 .card:nth-child(5):before {
-  background: #4F4F4F;
+  background: var(--timeline-card5-color);
 }
 
 .card:nth-child(6),
 .card:nth-child(6):before {
-  background: #2424FF;
+  background: var(--timeline-card6-color);
 }
 
 .card:nth-child(even) .card-body:before {
@@ -579,7 +611,7 @@ body {
   top: 0;
   width: 0px;
   height: 100%;
-  border: 1px dashed #fff;
+  border: 1px dashed var(--timeline-after-color);
   z-index: -1;
 }
 
@@ -616,12 +648,12 @@ body {
   margin-top: 100px;
   margin-bottom: 30px;
   padding: 50px;
-  background: rgb(35, 35, 35);
+  background: var(--body-color);
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
-  border: #666666 solid 5px;
+  border: 5px solid var(--body-border-color);
   border-radius: 45px;
 }
 
@@ -646,8 +678,7 @@ body {
 .tooltip {
   position: absolute;
   display: none;
-  background-color: #000;
-  color: #fff;
+  background-color: var(--body-btn-color);
   padding: 5px;
   border-radius: 5px;
   z-index: 1;
@@ -655,22 +686,23 @@ body {
 
 .contact-list-icon:hover .tooltip {
   display: block;
+  color: var(--text-color);
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
   height: 40px;
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid #fff;
+  color: var(--text-color);
+  background: var(--contact-form-color);
+  border: 2px solid var(--body-border-color);
   margin-bottom: 30px;
   border-radius: 0 25px 25px 25px;
-  color: #fff;
   padding: 5px 10px;
 }
 
 ::placeholder {
-  color: #fff;
+  color: var(--text-color);
 }
 
 .contact-form-name {
@@ -692,8 +724,7 @@ body {
 }
 
 .form-submit-btn {
-  background: #B30000;
-  color: #fff;
+  background: var(--contact-form-btn-color);
   text-transform: capitalize;
   padding: 15px 40px;
   display: block;
@@ -701,18 +732,19 @@ body {
   border: none;
   border-radius: 45px;
   cursor: pointer;
+  color: var(--text-color);
 }
 
 .form-submit-btn:hover {
-  background: green;
+  background: var(--contact-form-btn-hover-color);
 }
 
 .map {
   width: 600px;
   height: 450px;
-  padding: 10px;
-  border: 2px solid #fff;
-  background: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  border: 2px solid var(--body-border-color);
+  background: var(--body-border-color);
   border-radius: 25px;
 }
 
@@ -858,7 +890,7 @@ body {
   }
 
   .card {
-    height: 250px;
+    height: 270px;
     padding: 15px;
   }
 
@@ -901,7 +933,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 3.5;
-    border: #666666 solid 4px;
+    border: 4px solid var(--body-border-color);
   }
 
   /* home */
@@ -909,7 +941,7 @@ body {
     margin-top: 85px;
     margin-bottom: 90px;
     padding: 20px 100px;
-    border: #666666 solid 4px;
+    border: 4px solid var(--body-border-color);
   }
 
   .home-heading {
@@ -926,7 +958,7 @@ body {
     margin-top: 85px;
     margin-bottom: 90px;
     padding: 30px 75px;
-    border: #666666 solid 4px;
+    border: 4px solid var(--body-border-color);
   }
 
   .project-heading {
@@ -991,7 +1023,7 @@ body {
     margin-top: 85px;
     margin-bottom: 90px;
     padding: 70px 70px 30px;
-    border: #666666 solid 4px;
+    border: 4px solid var(--body-border-color);
   }
 
   .about-info {
@@ -1047,7 +1079,7 @@ body {
   }
 
   .card {
-    height: 250px;
+    height: 260px;
     padding: 10px;
   }
 
@@ -1086,7 +1118,7 @@ body {
     margin-bottom: 90px;
     padding: 40px 45px;
     grid-gap: 40px;
-    border: #666666 solid 4px;
+    border: 4px solid var(--body-border-color);
   }
 
   .contact-list {
@@ -1105,6 +1137,7 @@ body {
   .map {
     width: 100%;
     height: 400px;
+    padding: 4px;
   }
 
   .form-submit-btn {
@@ -1125,14 +1158,14 @@ body {
     margin: 0 16px;
     font-size: 18px;
     line-height: 3;
-    border: #666666 solid 3px;
+    border: 3px solid var(--body-border-color);
   }
 
   /* home */
   .home-section {
     padding: 0 70px;
     margin-bottom: 15px;
-    border: #666666 solid 3px;
+    border: 3px solid var(--body-border-color);
   }
 
   .home-img {
@@ -1143,7 +1176,7 @@ body {
   .project-section {
     padding: 30px 75px;
     margin-bottom: 15px;
-    border: #666666 solid 3px;
+    border: 3px solid var(--body-border-color);
   }
 
   .project-heading {
@@ -1208,7 +1241,7 @@ body {
   .about-section {
     padding: 50px 50px 40px;
     margin-bottom: 15px;
-    border: #666666 solid 3px;
+    border: 3px solid var(--body-border-color);
   }
 
   .about {
@@ -1268,7 +1301,7 @@ body {
   }
 
   .card {
-    height: 260px;
+    height: 280px;
     padding: 8px;
 
   }
@@ -1304,7 +1337,7 @@ body {
   .contact-section {
     padding: 40px;
     margin-bottom: 15px;
-    border: #666666 solid 3px;
+    border: 3px solid var(--body-border-color);
   }
 
   .contact-list {
@@ -1323,6 +1356,7 @@ body {
   .map {
     width: 100%;
     height: 400px;
+    padding: 3px;
   }
 
   .form-submit-btn {
@@ -1347,7 +1381,7 @@ body {
     margin: 0 16px;
     font-size: 16px;
     line-height: 3;
-    border: #666666 solid 2px;
+    border: 2px solid var(--body-border-color);
   }
 
   /* home */
@@ -1355,7 +1389,7 @@ body {
     margin-top: 75px;
     margin-bottom: 10px;
     padding: 0 50px;
-    border: #666666 solid 2px;
+    border: 2px solid var(--body-border-color);
   }
 
   .home-img {
@@ -1367,7 +1401,7 @@ body {
     margin-top: 75px;
     margin-bottom: 10px;
     padding: 30px 50px 30px;
-    border: #666666 solid 2px;
+    border: 2px solid var(--body-border-color);
   }
 
   .project-heading {
@@ -1411,7 +1445,7 @@ body {
     margin-top: 75px;
     margin-bottom: 10px;
     padding: 45px;
-    border: #666666 solid 2px;
+    border: 2px solid var(--body-border-color);
   }
 
   .about {
@@ -1528,7 +1562,11 @@ body {
     padding: 60px 80px 65px;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 40px;
-    border: #666666 solid 2px;
+    border: 2px solid var(--body-border-color);
+  }
+
+  .map {
+    padding: 2px;
   }
 }
 
