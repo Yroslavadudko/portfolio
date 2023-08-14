@@ -28,9 +28,14 @@ function redirectTo(url) {
   window.open(url, "_blank");
 }
 
-// download CV new page
+// open CV new page
 function openResume() {
   window.open("./img/CV_Mykola_Dudko.pdf", "_blank");
+}
+
+// open Sertificate new page
+function openCertificateQa() {
+  window.open("./img/MD_certificat_QA.pdf", "_blank");
 }
 
 // touch tap

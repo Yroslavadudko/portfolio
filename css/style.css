@@ -461,6 +461,30 @@ body {
   position: relative;
 }
 
+.skill-img-container {
+  position: relative;
+}
+
+.download-sr-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 15px;
+  color: var(--text-color);
+  border: none;
+  border-radius: 45px;
+  font-size: 16px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.5s;
+  background: var(--body-btn-color);
+}
+
+.download-sr-btn:hover {
+  background: var(--project-hover-color);
+}
+
 .skill-img {
   display: block;
   margin: auto;
@@ -893,6 +917,7 @@ body {
     grid-gap: 70px;
   }
 
+
   .skill-name {
     font-size: 30px;
     line-height: 1.5;
@@ -1081,6 +1106,10 @@ body {
 
   .skills-container {
     grid-gap: 55px;
+  }
+
+  .download-sr-btn {
+    font-size: 14px;
   }
 
   .skill-name {
@@ -1306,6 +1335,10 @@ body {
     grid-gap: 35px;
   }
 
+  .download-sr-btn {
+    font-size: 12px;
+  }
+
   .skill-name {
     font-size: 20px;
     margin: 18px 0 8px;
@@ -1512,6 +1545,10 @@ body {
     grid-gap: 40px;
   }
 
+  .download-sr-btn {
+    font-size: 16px;
+  }
+
   .skill-name {
     font-size: 25px;
     margin: 20px 0 10px;
@@ -1708,7 +1745,7 @@ body {
 
   .contact-list-icon {
     padding-right: 15px;
- 
+
   }
 
   .contact-list-logo {
