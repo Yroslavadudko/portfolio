@@ -6,7 +6,7 @@ let activeLink = 0;
 
 links.forEach((link) => {
   link.addEventListener("click", (event) => {
-    event.preventDefault(); // Це заборонить перехід за посиланням
+    event.preventDefault(); // This will disable link traversal
 
     const newIndex = parseInt(link.getAttribute("data-index"), 10);
 
@@ -311,35 +311,35 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add Hammer.js event handlers to the prevBtn and nextBtn elements
   // ...
 
-  // Функція для оновлення номеру поточної сторінки
+  // Function to update the current page number
   function updateCurrentPage() {
-    currentPageSpan.textContent = currentPage; // Оновлюємо значення елементу, що показує номер поточної сторінки
+    currentPageSpan.textContent = currentPage; // Update the value of the element showing the number of the current page
   }
 
-  // Функція, яка виконується при переході на попередню сторінку
+  // Function that is executed when going to the previous page
   function goToPrevPage() {
-    // Ваш код для переходу на попередню сторінку
+    // Your code to go to the next page
     // ...
 
-    // Оновлюємо номер поточної сторінки і оновлюємо його відображення
+    // Update the number of the current page and update its display
     currentPage--;
     updateCurrentPage();
   }
 
-  // Функція, яка виконується при переході на наступну сторінку
+  // Function that is executed when moving to the next page
   function goToNextPage() {
-    // Ваш код для переходу на наступну сторінку
+    // Your code to go to the next page
     // ...
 
-    // Оновлюємо номер поточної сторінки і оновлюємо його відображення
+    // Update the number of the current page and update its display
     currentPage++;
     updateCurrentPage();
   }
 
-  // Додаємо обробники подій для кнопок prevBtn і nextBtn
+  // Add event handlers for prevBtn and nextBtn buttons
   prevBtn.addEventListener("click", goToPrevPage);
   nextBtn.addEventListener("click", goToNextPage);
 
-  // Оновлюємо номер поточної сторінки при завантаженні сторінки
+  // Update the current page number when the page is loaded
   updateCurrentPage();
 });
