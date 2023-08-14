@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /img/family.jpg
+Sitemap: https://mykoladudko.netlify.app/sitemap.xml
 
 
