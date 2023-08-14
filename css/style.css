@@ -1714,6 +1714,14 @@ body {
     height: 48px;
   }
 
+  .SinoptikInformer * {
+    font-size: 12px;
+  }
+
+  .SinoptikInformer .siHeader .siMh {
+    font-size: 12px;
+  }
+
 }
 
 @media (min-width: 450px) {
