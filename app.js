@@ -33,7 +33,7 @@ function openResume() {
   window.open("./img/CV_Mykola_Dudko.pdf", "_blank");
 }
 
-// open Sertificate new page
+// open Certificate new page
 function openCertificateQa() {
   window.open("./img/MD_certificat_QA.pdf", "_blank");
 }
