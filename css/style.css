@@ -117,7 +117,7 @@ body {
   text-decoration: none;
   text-transform: capitalize;
   border: 5px solid var(--body-border-color);
-  border-radius: 25px;
+  border-radius: 10px 25px 25px 25px;
   padding: 10px 30px;
   margin: 0 20px;
   transition: 0.5s;
@@ -146,8 +146,8 @@ body {
   background: var(--body-color);
   opacity: 0;
   transition: 1s;
-  border: 5px solid var(--body-border-color);
-  border-radius: 45px;
+  border-left: 5px solid var(--body-border-color);
+  border-radius: 10px 25px 25px 25px;
 }
 
 .hero-heading {
@@ -168,8 +168,8 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  border-top-right-radius: 45px;
-  border-bottom-right-radius: 45px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
   height: 100%;
   width: 50%;
   object-fit: cover;
@@ -199,7 +199,7 @@ body {
   transition: opacity 1s;
   opacity: 0;
   border: 5px solid var(--body-border-color);
-  border-radius: 45px;
+  border-radius: 10px 25px 25px 25px;
 }
 
 .project-heading {
@@ -229,7 +229,7 @@ body {
 .project-img {
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 10px 25px 25px 25px;
   position: absolute;
   top: 0;
   left: 0;
@@ -302,7 +302,7 @@ body {
   text-transform: capitalize;
   font-size: 18px;
   border: none;
-  border-radius: 45px;
+  border-radius: 10px 25px 25px 25px;;
   background: var(--body-btn-color);
   color: var(--text-color);
   cursor: pointer;
@@ -349,7 +349,7 @@ body {
   text-transform: capitalize;
   font-size: 18px;
   border: none;
-  border-radius: 45px;
+  border-radius: 10px 25px 25px 25px;
   background: var(--body-btn-color);
   color: var(--text-color);
   cursor: pointer;
@@ -383,7 +383,7 @@ body {
   opacity: 0;
   transition: 1s;
   border: 5px solid var(--body-border-color);
-  border-radius: 45px;
+  border-radius: 10px 25px 25px 25px;
 }
 
 .about {
@@ -403,7 +403,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 10px 25px 25px 25px;
 }
 
 .download-cv-btn {
@@ -414,7 +414,7 @@ body {
   padding: 10px 15px;
   color: var(--text-color);
   border: none;
-  border-radius: 45px;
+  border-radius: 10px 25px 25px 25px;
   font-size: 16px;
   text-transform: capitalize;
   cursor: pointer;
@@ -475,7 +475,7 @@ body {
   padding: 10px 15px;
   color: var(--text-color);
   border: none;
-  border-radius: 45px;
+  border-radius: 10px 25px 25px 25px;
   font-size: 16px;
   text-transform: capitalize;
   cursor: pointer;
@@ -492,7 +492,7 @@ body {
   margin: auto;
   width: 80%;
   height: auto;
-  border-radius: 20px;
+  border-radius: 10px 25px 25px 25px;
   border: 5px solid var(--body-border-color);
 }
 
@@ -578,7 +578,7 @@ body {
   width: 45%;
   height: 250px;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 10px 25px 25px 25px;
   color: var(--text-color);
   display: block;
   margin: -80px 0;
@@ -714,7 +714,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
   border: 5px solid var(--body-border-color);
-  border-radius: 45px;
+  border-radius: 10px 25px 25px 25px;
 }
 
 .contact-list {
@@ -791,7 +791,7 @@ body {
   display: block;
   margin: auto;
   border: none;
-  border-radius: 45px;
+  border-radius: 10px 25px 25px 25px;
   cursor: pointer;
   color: var(--text-color);
   border: 5px solid var(--body-border-color);
@@ -1014,7 +1014,7 @@ body {
     margin-top: 85px;
     margin-bottom: 90px;
     padding: 20px 100px;
-    border: 4px solid var(--body-border-color);
+    border-left: 4px solid var(--body-border-color);
   }
 
   .home-heading {
@@ -1267,7 +1267,7 @@ body {
   .home-section {
     padding: 0 70px;
     margin-bottom: 15px;
-    border: 3px solid var(--body-border-color);
+    border-left: 3px solid var(--body-border-color);
   }
 
   .home-img {
@@ -1524,7 +1524,7 @@ body {
     margin-top: 75px;
     margin-bottom: 10px;
     padding: 0 50px;
-    border: 2px solid var(--body-border-color);
+    border-left: 2px solid var(--body-border-color);
   }
 
   .home-img {
