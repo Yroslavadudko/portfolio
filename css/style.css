@@ -235,6 +235,7 @@ body {
   left: 0;
   object-fit: cover;
   transition: 0.5s;
+  border: 5px solid var(--body-border-color);
 }
 
 .project-content {
@@ -492,6 +493,7 @@ body {
   width: 80%;
   height: auto;
   border-radius: 20px;
+  border: 5px solid var(--body-border-color);
 }
 
 .skill-name {
@@ -662,7 +664,7 @@ body {
   background: var(--timeline-card6-color);
 }
 
-.card:nth-child(even) .card-body:before {
+/* .card:nth-child(even) .card-body:before {
   content: "";
   position: absolute;
   left: -11%;
@@ -671,7 +673,7 @@ body {
   height: 100%;
   border: 1px dashed var(--timeline-after-color);
   z-index: -1;
-}
+} */
 
 .card-title {
   font-size: 20px;
@@ -1045,6 +1047,10 @@ body {
     height: 320px;
   }
 
+  .project-img {
+    border: 4px solid var(--body-border-color);
+  }
+
   .project-content {
     padding: 30px 15px;
   }
@@ -1124,6 +1130,10 @@ body {
 
   .download-sr-btn {
     font-size: 14px;
+  }
+
+  .skill-img {
+    border: 4px solid var(--body-border-color);
   }
 
   .skill-name {
@@ -1284,6 +1294,10 @@ body {
     height: 275px;
   }
 
+  .project-img {
+    border: 3px solid var(--body-border-color);
+  }
+
   .project-content {
     padding: 20px 10px;
   }
@@ -1368,6 +1382,10 @@ body {
 
   .download-sr-btn {
     font-size: 12px;
+  }
+
+  .skill-img {
+    border: 3px solid var(--body-border-color);
   }
 
   .skill-name {
@@ -1474,10 +1492,7 @@ body {
   .map {
     width: 100%;
     height: 400px;
-
   }
-
-
 
   .SinoptikInformer {
     padding: 2px;
@@ -1532,6 +1547,10 @@ body {
   .project-container {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 25px;
+  }
+
+  .project-img {
+    border: 2px solid var(--body-border-color);
   }
 
   .project-content {
@@ -1599,6 +1618,10 @@ body {
 
   .download-sr-btn {
     font-size: 16px;
+  }
+
+  .skill-img {
+    border: 2px solid var(--body-border-color);
   }
 
   .skill-name {
