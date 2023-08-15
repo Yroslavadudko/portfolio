@@ -618,7 +618,7 @@ body {
 .card:nth-child(odd):before {
   content: "";
   position: absolute;
-  right: -18%;
+  right: -15%;
   top: 50%;
   transform: translateY(-50%);
   width: 20px;
@@ -630,7 +630,7 @@ body {
 .card:nth-child(odd):after {
   content: "";
   position: absolute;
-  right: -9%;
+  right: -8%;
   top: 50%;
   transform: translateY(-50%);
   width: 7%;
@@ -1671,17 +1671,21 @@ body {
   .card:before {
     content: "";
     top: 10px;
-    left: -13%;
+    left: -10%;
   }
 
   .card:nth-child(even):before {
-    left: -13%;
+    left: -10%;
   }
 
   .card:after {
     top: 10px;
-    left: -8.5%;
+    left: -6%;
   }
+
+    .card:nth-child(even):after {
+      left: -6%;
+    }
 
 
   .card-body {
