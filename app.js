@@ -37,6 +37,9 @@ function openResume() {
 function openCertificateQa() {
   window.open("./img/MD_certificat_QA.pdf", "_blank");
 }
+function openCertificateHtml() {
+  window.open("./img/html-css.pdf", "_blank");
+}
 
 // touch tap
 document.addEventListener("DOMContentLoaded", function () {
