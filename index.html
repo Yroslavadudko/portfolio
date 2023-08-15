@@ -523,13 +523,14 @@
                 </div>
             </div>
         </div>
+
+        <!-- pagination -->
         <div class="pagination">
             <div class="pagination-btn-grp">
                 <button class="pagination-btn Previous" id="prevBtn">Previous</button>
                 <span class="pagination-btn-nb" id="currentPage"></span>
                 <button class="pagination-btn Next" id="nextBtn">Next</button>
             </div>
-
         </div>
 
     </section>
@@ -537,7 +538,6 @@
     <!-- about section -->
     <section class="about-section active">
         <h1 hidden>my about</h1>
-
         <div class="about">
             <div class="about-img-container">
                 <picture>
@@ -546,9 +546,7 @@
                     <img src="./img/family.jpg" class="about-img" alt="family dudko" width="449" height="772"
                         loading="lazy">
                 </picture>
-                <!-- <button class="download-cv-btn">downlaod cv</button> -->
                 <button class="download-cv-btn" onclick="openResume()">My resume</button>
-
             </div>
             <p class="about-info">I am Mykola Dudko.<br>
                 I am from Ukraine, from Vyshneve.<br>
@@ -607,16 +605,18 @@
                 punctuality, a tendency to solve complex tasks and self-development.
             </p>
         </div>
+
         <!-- skills -->
         <div class="skill-section">
             <h1 class="heading">skills</h1>
             <div class="skills-container">
+
+                <!-- skill QA -->
                 <div class="skill-card">
                     <div class="skill-img-container">
                         <img src="./img/qa.png" class="skill-img" alt="skill-1" width="800" height="600" loading="lazy">
                         <button class="download-sr-btn" onclick="openCertificateQa()">Certificate</button>
                     </div>
-
                     <div class="skill-level">90%</div>
                     <h1 class="skill-name">QA</h1>
                     <p class="skill-info">I know how to work with testing documentation such as test-plan, test
@@ -624,8 +624,9 @@
                         test cases, bug reports, and other
                         kinds of documentation.
                     </p>
-
                 </div>
+
+                <!-- skill AQA -->
                 <div class="skill-card">
                     <img src="./img/cypress.png" class="skill-img" alt="skill-2" width="800" height="600"
                         loading="lazy">
@@ -634,6 +635,8 @@
                     <p class="skill-info">In the process of training, Cypress was used in extreme projects.
                     </p>
                 </div>
+
+                <!-- skill Tools -->
                 <div class="skill-card">
                     <img src="./img/tool-stack.png" class="skill-img" alt="skill-3" width="800" height="600"
                         loading="lazy">
@@ -644,6 +647,8 @@
                         Trello and XCode, others can be seen on my resume.
                     </p>
                 </div>
+
+                <!-- skill Agile -->
                 <div class="skill-card">
                     <img src="./img/agile.png" class="skill-img" alt="skill-6" width="800" height="600" loading="lazy">
                     <div class="skill-level">80%</div>
@@ -654,19 +659,22 @@
                         Master and Tester.
                     </p>
                 </div>
+
+                <!-- skill HTML/CSS/JS -->
                 <div class="skill-card">
                     <div class="skill-img-container">
                         <img src="./img/html_css_js.png" class="skill-img" alt="skill-4" width="800" height="600"
                             loading="lazy">
                         <button class="download-sr-btn" onclick="openCertificateHtml()">Certificate</button>
                     </div>
-
                     <div class="skill-level">50%</div>
                     <h1 class="skill-name">HTML/CSS/JS</h1>
                     <p class="skill-info">I have passed several marathons, I can create a simple site at the level of
                         HTML, CSS, and JS and place it on hosting.
                     </p>
                 </div>
+
+                <!-- skill Node -->
                 <div class="skill-card">
                     <img src="./img/node.png" class="skill-img" alt="skill-5" width="800" height="600" loading="lazy">
                     <div class="skill-level">8%</div>
@@ -677,9 +685,12 @@
                 </div>
             </div>
         </div>
+
         <!-- timeline -->
         <div class="timeline">
             <h1 class="heading">education and experience</h1>
+
+            <!-- card-1 -->
             <div class="card">
                 <div class="card-body">
                     <h1 class="card-title">1995-2000</h1>
@@ -690,6 +701,8 @@
                     </p>
                 </div>
             </div>
+
+            <!-- card-2 -->
             <div class="card">
                 <div class="card-body">
                     <h1 class="card-title">2001-2013</h1>
@@ -699,6 +712,8 @@
                         branch.</p>
                 </div>
             </div>
+
+            <!-- card-3 -->
             <div class="card">
                 <div class="card-body">
                     <h1 class="card-title">2013-2015</h1>
@@ -707,6 +722,8 @@
                     <p class="card-title-text">Appointment as a senior manager.</p>
                 </div>
             </div>
+
+            <!-- card-4 -->
             <div class="card">
                 <div class="card-body">
                     <h1 class="card-title">2015-2022</h1>
@@ -715,6 +732,8 @@
                     <p class="card-title-text">Appointment as the head of the "Chemistry" department.</p>
                 </div>
             </div>
+
+            <!-- card-5 -->
             <div class="card">
                 <div class="card-body">
                     <h1 class="card-title">2023</h1>
@@ -735,30 +754,42 @@
         <h1 hidden>Contact Information</h1>
         <div class="contact-communication">
             <ul class="contact-list">
+
+                <!-- Skype -->
                 <li class="contact-list-icon">
                     <a href="skype:dudko_78?userinfo">
                         <img class="contact-list-logo" src="./img/skype.avif" alt="skype">
                         <span class="tooltip">Skype</span>
                     </a>
                 </li>
+
+                <!-- Telegram -->
                 <li class="contact-list-icon" onclick="redirectTo('https://telegram.me/dudko_78')">
                     <img class="contact-list-logo" src="./img/telegram.avif" alt="telegram">
                     <span class="tooltip">Telegram</span>
                 </li>
+
+                <!-- Linkidin -->
                 <li class="contact-list-icon"
                     onclick="redirectTo('https://www.linkedin.com/in/mykola-dudko-105561266/')">
                     <img class="contact-list-logo" src="./img/linkedin.jpg" alt="linkidin">
                     <span class="tooltip">Linkidin</span>
                 </li>
+
+                <!-- GitHub -->
                 <li class="contact-list-icon" onclick="redirectTo('https://github.com/Yroslavadudko')">
                     <img class="contact-list-logo" src="./img/github.jpg" alt="GitHub">
                     <span class="tooltip">GitHub</span>
                 </li>
+
+                <!-- Facebook -->
                 <li class="contact-list-icon"
                     onclick="redirectTo('https://www.facebook.com/profile.php?id=100004297503863')">
                     <img class="contact-list-logo" src="./img/facebook.jpg" alt="facebook">
                     <span class="tooltip">Facebook</span>
                 </li>
+
+                <!-- Strava -->
                 <li class="contact-list-icon" onclick="redirectTo('https://www.strava.com/athletes/15704091')">
                     <img class="contact-list-logo" src="./img/strava.jpg" alt="strava">
                     <span class="tooltip">Strava</span>
@@ -827,12 +858,14 @@
     </section>
 
     <!-- scripts -->
+
+    <!-- tap Hammer -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 
-
+    <!-- Sinoptik -->
     <script src="//sinoptik.ua/informers_js.php?title=4&amp;wind=3&amp;cities=303004100&amp;lang=ua"></script>
 
-
+    <!-- app.js -->
     <script src="./app.js"></script>
 </body>
 
