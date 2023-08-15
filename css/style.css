@@ -174,6 +174,7 @@ body {
   width: 50%;
   object-fit: cover;
   opacity: 0.2;
+  border: 5px solid var(--body-border-color);
 }
 
 .home-section.active,
@@ -581,6 +582,7 @@ body {
   margin: -80px 0;
   position: relative;
   background: var(--timeline-card-color);
+  border: 5px solid var(--body-border-color);
 }
 
 .card:nth-child(even) {
@@ -595,7 +597,7 @@ body {
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  border: 5px solid var(--timeline-before-border-color);
+  border: 5px solid var(--body-border-color);
   border-radius: 50%;
 }
 
@@ -607,31 +609,31 @@ body {
   transform: translateY(-50%);
   width: 7%;
   height: 2px;
-  background: var(--timeline-after-color);
+  background: var(--body-border-color);
   z-index: -1;
 }
 
 .card:nth-child(odd):before {
   content: "";
   position: absolute;
-  right: -13%;
+  right: -18%;
   top: 50%;
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  border: 5px solid var(--timeline-before-border-color);
+  border: 5px solid var(--body-border-color);
   border-radius: 50%;
 }
 
 .card:nth-child(odd):after {
   content: "";
   position: absolute;
-  right: -8.5%;
+  right: -9%;
   top: 50%;
   transform: translateY(-50%);
   width: 7%;
   height: 2px;
-  background: var(--timeline-after-color);
+  background: var(--body-border-color);
   z-index: -1;
 }
 
@@ -663,7 +665,7 @@ body {
 .card:nth-child(even) .card-body:before {
   content: "";
   position: absolute;
-  left: -12%;
+  left: -11%;
   top: 0;
   width: 0px;
   height: 100%;
@@ -729,12 +731,13 @@ body {
   height: 60px;
   border-radius: 50%;
   cursor: pointer;
+  border: 5px solid var(--body-border-color);
 }
 
 .tooltip {
   position: absolute;
   display: none;
-  background-color: var(--body-btn-color);
+  background-color: none;
   padding: 5px;
   border-radius: 5px;
   z-index: 1;
@@ -751,9 +754,9 @@ body {
   height: 40px;
   color: var(--text-color);
   background: var(--contact-form-color);
-  border: 2px solid var(--body-border-color);
+  border: 5px solid var(--body-border-color);
   margin-bottom: 30px;
-  border-radius: 0 25px 25px 25px;
+  border-radius: 10px 25px 25px 25px;
   padding: 5px 10px;
 }
 
@@ -789,6 +792,7 @@ body {
   border-radius: 45px;
   cursor: pointer;
   color: var(--text-color);
+  border: 5px solid var(--body-border-color);
 }
 
 .form-submit-btn:hover {
@@ -801,7 +805,7 @@ body {
   padding: 5px;
   border: 2px solid var(--body-border-color);
   background: var(--body-border-color);
-  border-radius: 25px;
+  border-radius: 10px 25px 25px 25px;
 }
 
 .map iframe {
@@ -817,11 +821,21 @@ body {
 
 .SinoptikInformer {
   padding-top: 20px;
+  padding: 3px;
+  border: 2px solid var(--body-border-color);
+  background: var(--body-border-color);
+  border-radius: 10px 25px 25px 25px;
 }
 
-.kurs {
-  padding-top: 20px;
+.siHeader {
+  border-radius: 0 20px 0 0;
 }
+
+.siBody {
+  border-radius: 0 0 20px 20px;
+}
+
+
 
 @media (max-width: 1320px) {
 
@@ -1142,6 +1156,7 @@ body {
   .card {
     height: 260px;
     padding: 10px;
+    border: 4px solid var(--body-border-color);
   }
 
   .card-body {
@@ -1173,6 +1188,15 @@ body {
     line-height: 1.25;
   }
 
+  .card:nth-child(even):before {
+    border: 4px solid var(--body-border-color);
+  }
+
+  .card:nth-child(odd):before {
+    border: 4px solid var(--body-border-color);
+  }
+
+
   /* contact */
   .contact-section {
     margin-top: 85px;
@@ -1193,6 +1217,12 @@ body {
   .contact-list-logo {
     width: 48px;
     height: 48px;
+    border: 4px solid var(--body-border-color);
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    border: 4px solid var(--body-border-color);
   }
 
   .map {
@@ -1204,6 +1234,7 @@ body {
   .form-submit-btn {
     padding: 10px 30px;
     font-size: 14px;
+    border: 4px solid var(--body-border-color);
   }
 }
 
@@ -1366,8 +1397,9 @@ body {
   }
 
   .card {
-    height: 280px;
+    height: 300px;
     padding: 8px;
+    border: 3px solid var(--body-border-color);
 
   }
 
@@ -1398,6 +1430,14 @@ body {
     line-height: 1;
   }
 
+  .card:nth-child(even):before {
+    border: 3px solid var(--body-border-color);
+  }
+
+  .card:nth-child(odd):before {
+    border: 3px solid var(--body-border-color);
+  }
+
   /* contact */
   .contact-section {
     margin-top: 75px;
@@ -1419,16 +1459,28 @@ body {
   .contact-list-logo {
     width: 48px;
     height: 48px;
+    border: 3px solid var(--body-border-color);
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    border: 3px solid var(--body-border-color);
+  }
+
+  .form-submit-btn {
+    padding: 8px 25px;
   }
 
   .map {
     width: 100%;
     height: 400px;
-    padding: 3px;
+
   }
 
-  .form-submit-btn {
-    padding: 8px 25px;
+
+
+  .SinoptikInformer {
+    padding: 2px;
   }
 }
 
@@ -1581,6 +1633,7 @@ body {
     height: 200px;
     margin: 20px auto;
     padding: 5px;
+    border: 2px solid var(--body-border-color);
   }
 
   .card:nth-child(even),
@@ -1592,7 +1645,11 @@ body {
   .card:before {
     content: "";
     top: 10px;
-    left: -15%;
+    left: -13%;
+  }
+
+  .card:nth-child(even):before {
+    left: -13%;
   }
 
   .card:after {
@@ -1627,14 +1684,39 @@ body {
     line-height: 1.25;
   }
 
+  .card:nth-child(even):before {
+    border: 2px solid var(--body-border-color);
+  }
+
+  .card:nth-child(odd):before {
+    border: 2px solid var(--body-border-color);
+  }
+
   /* contact */
   .contact-section {
     padding: 50px 30px;
     border: 2px solid var(--body-border-color);
   }
 
+  .contact-list-logo {
+    border: 2px solid var(--body-border-color);
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    border: 2px solid var(--body-border-color);
+  }
+
+  .form-submit-btn {
+    border: 2px solid var(--body-border-color);
+  }
+
   .map {
     padding: 2px;
+  }
+
+  .SinoptikInformer {
+    padding: 1px;
   }
 }
 
