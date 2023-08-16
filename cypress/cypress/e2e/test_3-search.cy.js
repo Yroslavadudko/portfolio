@@ -1,6 +1,6 @@
 describe("My Test Search", () => {
   it("should visit the contact page", () => {
-    cy.visit("https://mykoladudko.netlify.app"); // Замініть URL на ваш
+    cy.visit("https://mykoladudko.netlify.app"); 
   });
 
   it("should click a search Google map", () => {
