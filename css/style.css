@@ -40,12 +40,12 @@
 }
 
 :root {
-  --body-light-color: hwb(0 96% 4%);
-  --body-color: rgb(35, 35, 35);
+  --body-light-color: linear-gradient(#F9F2F2, #F9F2F2);
+  --body-color: linear-gradient(#272727, #353535);
   --body-border-color: #666666;
   --text-color: #FFFFFF;
   --project-heading-border-color: yellow;
-  --project-heading-color: blue;
+  --project-heading-color: rgb(13, 13, 244);
   --project-hover-color: gray;
   --body-btn-color: #000000;
   --body-btn-border-color: #FFFFFF;
@@ -64,15 +64,16 @@
   --timeline-card-color: rgb(185, 177, 177);
   --timeline-before-border-color: #191919;
   --timeline-after-color: #FFFFFF;
-  --timeline-card2-color: #5C5C00;
-  --timeline-card3-color: #754B00;
-  --timeline-card4-color: #005200;
-  --timeline-card5-color: #4F4F4F;
-  --timeline-card6-color: #2424FF;
+  --timeline-card2-color: linear-gradient(#b1b12d, #3d3d04);
+  --timeline-card3-color: linear-gradient(#754B00, #271a04);
+  --timeline-card4-color: linear-gradient(#005200, #021502);
+  --timeline-card5-color: linear-gradient(#8b8989, #282727);
+  --timeline-card6-color: linear-gradient(#5353f5, #2828b0);
+  --timeline-card7-color: linear-gradient(#4ce0bb, #145746);
   --contact-form-color: rgba(255, 255, 255, 0.2);
   --contact-form-btn-color: #B30000;
   --contact-form-btn-hover-color: green;
-  --contact-form-body: #f7f3f3;
+  --contact-form-body: #F7F3F3;
 }
 
 body {
@@ -665,6 +666,15 @@ body {
 .card:nth-child(6):before {
   background: var(--timeline-card6-color);
 }
+
+
+.card:nth-child(7),
+.card:nth-child(7):before {
+  background: var(--timeline-card7-color);
+}
+
+
+
 
 /* .card:nth-child(even) .card-body:before {
   content: "";
