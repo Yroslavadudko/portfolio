@@ -49,17 +49,12 @@
   --body-btn-color: linear-gradient(#000000, #808080);
   --button-hover-color: linear-gradient(#808080, #000000);
   --body-btn-border-color: #FFFFFF;
-  --skill1-level-background-color: #FF4F4F28;
+  --skill-level-precent-color: #141313;
   --skill1-level-color: #8A1BF3;
-  --skill2-level-background-color: #4FA0FF28;
   --skill2-level-color: #232123;
-  --skill3-level-background-color: #FFED4F28;
   --skill3-level-color: #808080;
-  --skill4-level-background-color: #52FF4F28;
   --skill4-level-color: #137411;
-  --skill5-level-background-color: #4FDFFF28;
   --skill5-level-color: #FF4D8B;
-  --skill6-level-background-color: #4FDFFF28;
   --skill6-level-color: #19B0EB;
   --timeline-card-color: #B9B1B1;
   --timeline-before-border-color: #191919;
@@ -525,42 +520,48 @@ body {
   line-height: 2;
   border-radius: 50%;
   border: 9px solid;
+  background: conic-gradient(from -90deg,
+        transparent 0,
+        transparent calc(100% - 90% * var(--skill-percent)),
+        rgb(133, 239, 133) calc(100% - 90% * var(--skill-percent)),
+        rgb(6, 246, 6) 100%);
 }
 
 .skill-card:nth-child(1) .skill-level {
-  background: var(--skill1-level-background-color);
   border-color: var(--skill1-level-color);
-  color: var(--skill1-level-color);
+  color: var(--skill-level-precent-color);
+  font-weight: 500;
 }
 
 .skill-card:nth-child(2) .skill-level {
-  background: var(--skill2-level-background-color);
   border-color: var(--skill2-level-color);
-  color: var(--skill2-level-color);
+  color: var(--skill-level-precent-color);
+  font-weight: 500;
 }
 
+
 .skill-card:nth-child(3) .skill-level {
-  background: var(--skill3-level-background-color);
   border-color: var(--skill3-level-color);
-  color: var(--skill3-level-color);
+  color: var(--skill-level-precent-color);
+  font-weight: 500;
 }
 
 .skill-card:nth-child(4) .skill-level {
-  background: var(--skill4-level-background-color);
   border-color: var(--skill4-level-color);
-  color: var(--skill4-level-color);
+  color: var(--skill-level-precent-color);
+  font-weight: 500;
 }
 
 .skill-card:nth-child(5) .skill-level {
-  background: var(--skill5-level-background-color);
   border-color: var(--skill5-level-color);
-  color: var(--skill5-level-color);
+  color: var(--skill-level-precent-color);
+  font-weight: 500;
 }
 
 .skill-card:nth-child(6) .skill-level {
-  background: var(--skill6-level-background-color);
   border-color: var(--skill6-level-color);
-  color: var(--skill6-level-color);
+  color: var(--skill-level-precent-color);
+  font-weight: 500;
 }
 
 /* timeline */
