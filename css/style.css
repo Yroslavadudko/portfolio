@@ -46,8 +46,8 @@
   --text-color: #FFFFFF;
   --project-heading-border-color: #F9F919;
   --project-heading-color: #0808F1;
-  --project-hover-color: gray;
-  --body-btn-color: #000000;
+  --body-btn-color: linear-gradient(#000000, #808080);
+  --button-hover-color: linear-gradient(#808080, #000000);
   --body-btn-border-color: #FFFFFF;
   --skill1-level-background-color: #FF4F4F28;
   --skill1-level-color: #8A1BF3;
@@ -63,7 +63,6 @@
   --skill6-level-color: #19B0EB;
   --timeline-card-color: #B9B1B1;
   --timeline-before-border-color: #191919;
-  --timeline-after-color: #FFFFFF;
   --timeline-card2-color: linear-gradient(#B1B12D, #3D3D04);
   --timeline-card3-color: linear-gradient(#754B00, #271A04);
   --timeline-card4-color: linear-gradient(#005200, #021502);
@@ -71,9 +70,8 @@
   --timeline-card6-color: linear-gradient(#5353F5, #2828B0);
   --timeline-card7-color: linear-gradient(#4CE0BB, #145746);
   --contact-form-color: #FFFFFF33;
-  --contact-form-btn-color: #B30000;
-  --contact-form-btn-hover-color: #008000;
-  --contact-form-body: #F7F3F3;
+  --contact-form-btn-color: linear-gradient(#B30000, #D96262);
+  --contact-form-btn-hover-color: linear-gradient(#B7D5b7, #015B01);
 }
 
 body {
@@ -305,7 +303,6 @@ body {
   font-size: 18px;
   border: none;
   border-radius: 10px 25px 25px 25px;
-  ;
   background: var(--body-btn-color);
   color: var(--text-color);
   cursor: pointer;
@@ -317,7 +314,7 @@ body {
 }
 
 .project-btn:hover {
-  background: var(--project-hover-color);
+  background: var(--button-hover-color);
 }
 
 .project-card:hover .project-img {
@@ -364,7 +361,7 @@ body {
 }
 
 .pagination-btn:hover {
-  background: var(--project-hover-color);
+  background: var(--button-hover-color);
 }
 
 .pagination-btn-nb {
@@ -426,7 +423,7 @@ body {
 }
 
 .download-cv-btn:hover {
-  background: var(--project-hover-color);
+  background: var(--button-hover-color);
 }
 
 .about-info {
@@ -487,7 +484,7 @@ body {
 }
 
 .download-sr-btn:hover {
-  background: var(--project-hover-color);
+  background: var(--button-hover-color);
 }
 
 .skill-img {
@@ -672,9 +669,6 @@ body {
 .card:nth-child(7):before {
   background: var(--timeline-card7-color);
 }
-
-
-
 
 /* .card:nth-child(even) .card-body:before {
   content: "";
