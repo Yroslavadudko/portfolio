@@ -501,10 +501,12 @@ body {
 }
 
 .skill-info {
+  height: 150px;
   text-align: start;
   opacity: 0.5;
   font-size: 18px;
   line-height: 1.5;
+  overflow: auto;
 }
 
 .skill-level {
