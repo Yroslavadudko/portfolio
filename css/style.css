@@ -523,10 +523,10 @@ body {
   border-radius: 50%;
   border: 9px solid;
   background: conic-gradient(from -90deg,
-        transparent 0,
-        transparent calc(100% - 90% * var(--skill-percent)),
-        rgb(133, 239, 133) calc(100% - 90% * var(--skill-percent)),
-        rgb(6, 246, 6) 100%);
+      transparent 0,
+      transparent calc(100% - 90% * var(--skill-percent)),
+      rgb(133, 239, 133) calc(100% - 90% * var(--skill-percent)),
+      rgb(6, 246, 6) 100%);
 }
 
 .skill-card:nth-child(1) .skill-level {
@@ -1802,6 +1802,10 @@ body {
 
   .home-img {
     width: 80%;
+    max-width: 360px;
+    height: 100%;
+    border-left: none;
+    opacity: 0.25;
   }
 
   /* project */
