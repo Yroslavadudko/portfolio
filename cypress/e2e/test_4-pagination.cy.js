@@ -31,7 +31,9 @@ describe("My Test Pagination", () => {
       .trigger("mouseover")
       .wait(1000);
 
+    cy.get("body");
+
     cy.get('[data-index="2"] > a').click();
-    cy.wait(4000);
+ 
   });
 });
