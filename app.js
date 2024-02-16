@@ -33,10 +33,15 @@ function openResume() {
   window.open("./img/CV_Mykola_Dudko.pdf", "_blank");
 }
 
-// open Certificate new page
+// open Certificate QA new page
 function openCertificateQa() {
   window.open("./img/MD_certificat_QA.pdf", "_blank");
 }
+// open Certificate AQA new page
+function openCertificateAqa(){
+  window.open("./img/MD_certificat_AQA.pdf", "_blank");
+}
+// open Certificate HTML new page
 function openCertificateHtml() {
   window.open("./img/html-css.pdf", "_blank");
 }
