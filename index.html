@@ -53,171 +53,9 @@
             <!-- progect_1 -->
             <div class="project-card hidden" id="projectCard1">
                 <picture>
-                    <source srcset="./img/project-1.avif" class="project-img" type="image/avif">
-                    <source srcset="./img/project-1.webp" class="project-img" type="image/webp">
-                    <img src="./img/project-1.jpg" class="project-img" alt="project-2" loading="lazy">
-                </picture>
-                <div class="project-content">
-                    <h1 class="project-title">Postman</h1>
-                    <p class="project-info">
-                        Open the Trello API documentation<br><br>
-
-                        Study the documentation, and see what actions can be performed through queries. Create one
-                        test board through API
-                        and
-                        Postman to perform all further tasks.<br>
-                        Create the following requests through Postman:<br><br>
-
-                        1- Create a column on the board on the left, in the documentation, the section is called
-                        "Create a new List", add
-                        tests:
-                        to check the status of the code; check the request time; check that the value “name” is a
-                        string;<br><br>
-
-                        2- Create a column on the board on the right, in the documentation, the section is called
-                        "Create a new List", add
-                        tests: to check the status of the code; check the request time; check that the value “name”
-                        is a string;<br><br>
-
-                        3- Create one card in each of the columns that were created in tasks 1 and 2 on the board (2
-                        cards in total), in the
-                        documentation, the section is called "Create a new Card", add tests to the requests for
-                        creating cards: to check the
-                        status of the code; to check the request time; to check that the value of "id" is a
-                        string;<br><br>
-
-                        4- Update information about the created board, in the documentation the section is called
-                        “Update a Board”, change
-                        the
-                        name of the board, add a description of the board, and add tests: to check the status of the
-                        code; to check the
-                        request
-                        time.
-                    </p>
-                </div>
-                <div class="project-btn-grp">
-                    <button class="project-btn github" id="gitBtn1"
-                        onclick="redirectTo('https://github.com/Yroslavadudko/homework_QA.git')">
-                        github repo</button>
-                    <button class="project-btn live" id="seeBtn1"
-                        onclick="redirectTo('https://api.postman.com/collections/21524776-df9b1847-c65d-42b8-ae04-c22c39ebb4df?access_key=PMAT-01GZGRWKJ689GTMN7F52YVQ2MK')">see
-                        live</button>
-                </div>
-            </div>
-
-            <!-- progect_2 -->
-            <div class="project-card hidden" id="projectCard2">
-                <picture>
-                    <source srcset="./img/project-2.avif" class="project-img" type="image/avif">
-                    <source srcset="./img/project-2.webp" class="project-img" type="image/webp">
-                    <img src="./img/project-2.jpg" class="project-img" alt="project-2" loading="lazy">
-                </picture>
-                <div class="project-content">
-                    <h1 class="project-title">SQL</h1>
-                    <p class="project-info">
-                        Install DBeaver, import the database file into DBeaver.<br><br>
-
-                        Then perform the following tasks:<br><br>
-
-                        Select employees from the employees table and sort them by hire_date in descending order. Select
-                        ID (employee_no),
-                        first_name (first_name), last_name (last_name) and hire date (hire_date).<br><br>
-
-                        Select employees born after 1960 (inclusive) from the Employees table. Select first name, last
-                        name and date of birth.<br><br>
-
-                        Select employees whose name starts with "Ma" in the Employees table. Select first name, last
-                        name and date of birth.<br><br>
-
-                        Select the IDs of employees from the EmployeeTerritory table who live in Kyiv, Dnipro, and Lviv.
-                        Select the ID
-                        (employee_no) and the city (city).<br><br>
-
-                        Count the number of employees from the job title list who hold the position (title) -
-                        "Engineer". Name the resulting
-                        column "total number of engineers".<br><br>
-
-                        Retrieve the number of employees for each city from the employeeTerritory table. Only include
-                        cities with more than 10
-                        employees. Display the number of employees and the name of the city.<br><br>
-
-                        Choose the name and surname of the employees, their positions in the company. Display the
-                        first_name, last_name, and
-                        title using the employee and job tables.<br><br>
-
-                        Select the first and last names of the employees whose salary will be between 50,000 and 60,000.
-                        Select the first and
-                        last name and salary using the employee and salary tables.
-                    </p>
-                </div>
-                <div class="project-btn-grp">
-                    <button class="project-btn github" id="gitBtn2"
-                        onclick="redirectTo('https://github.com/Yroslavadudko/homework_QA/tree/main/HW_12')">github
-                        repo
-                    </button>
-                    <button class="project-btn live" id="seeBtn2"
-                        onclick="redirectTo('https://github.com/Yroslavadudko/homework_QA/tree/main/HW_12')">see
-                        live</button>
-                </div>
-            </div>
-
-            <!-- progect_3 -->
-            <div class="project-card hidden" id="projectCard3">
-                <picture>
-                    <source srcset="./img/project-3.avif" class="project-img" type="image/avif">
-                    <source srcset="./img/project-3.webp" class="project-img" type="image/webp">
-                    <img src="./img/project-3.jpg" class="project-img" alt="project-2" loading="lazy">
-                </picture>
-                <div class="project-content">
-                    <h1 class="project-title">Kapusta</h1>
-                    <p class="project-info">
-                        Work plan on a team project<br><br>
-
-                        1- Students are assigned to teams by the client-manager.<br>
-                        2- Each team gets a separate channel in Slack.<br>
-                        3- The team needs to complete the task:<br>
-                        - choose the name of the team;<br>
-                        - select a Team Lead;<br>
-                        - choose a Scrum Master;<br>
-                        - view project materials.<br>
-                        4- Attend the introductory webinar on "Project start. Planning with a mentor."<br>
-                        5- The Scrum Master needs to populate the Trello board and invite all team members to
-                        it.<br>
-                        6- The team needs to distribute tasks among all project participants.<br>
-                        7- Everyone works on their task and timely updates information about the task during its
-                        execution.<br>
-                        8- The team addresses the Team Lead with technical questions.<br>
-                        9- The Team Lead communicates with the mentor if there are issues that could not be resolved as
-                        a team.<br>
-                        10- The team conducts a daily Stand Up lasting 15-20 minutes.<br>
-                        11- Each tester on Stand Up answers three questions: What did he do yesterday (today)? What will
-                        be done today (tomorrow)?
-                        What do you need help with?<br><br>
-
-                        !!!Importantly!!! at Stand Up, we don't start analyzing the moments where help is needed, we
-                        talk about them so that the
-                        whole team understands how the process of completing the task goes. After the Stand Up, a tester
-                        who needs help can stay
-                        and discuss their questions with a team member who knows the answer or with the Team Lead.
-                    </p>
-
-                </div>
-                <div class="project-btn-grp">
-                    <button class="project-btn github" id="gitBtn3"
-                        onclick="redirectTo('https://docs.google.com/presentation/d/10gqm37kJP_KBlPBW2pkh0ll1pbEpbjAz4JoZZbiuPNw/edit?usp=sharing')">
-                        Presentation</button>
-                    <button class="project-btn live" id="seeBtn3"
-                        onclick="redirectTo('https://kapusta-qa.netlify.app/')">see
-                        live</button>
-                </div>
-            </div>
-
-            <!-- progect_4 -->
-            <div class="project-card hidden" id="projectCard4">
-                <picture>
-                    <source srcset="./img/project-4.avif" class="project-img" type="image/avif">
-                    <source srcset="./img/project-4.webp" class="project-img" type="image/webp">
-                    <img src="./img/project-4.jpg" class="project-img" alt="project-2" loading="lazy">
+                    <source srcset="./img/drinkmaster.avif" class="project-img" type="image/avif">
+                    <source srcset="./img/drinkmaster.webp" class="project-img" type="image/webp">
+                    <img src="./img/drinkmaster.jpg" class="project-img" alt="project-2" loading="lazy">
                 </picture>
                 <div class="project-content">
                     <h1 class="project-title">Drink Master</h1>
@@ -303,6 +141,141 @@
                 </div>
             </div>
 
+            <!-- progect_2 -->
+            <div class="project-card hidden" id="projectCard2">
+                <picture>
+                    <source srcset="./img/javatests.avif" class="project-img" type="image/avif">
+                    <source srcset="./img/javatests.webp" class="project-img" type="image/webp">
+                    <img src="./img/javatests.jpg" class="project-img" alt="project-2" loading="lazy">
+                </picture>
+                <div class="project-content">
+                    <h1 class="project-title">Java Tests AQA</h1>
+                    <p class="project-info">
+                        Individual Project Mykola Dudko<br><br>
+
+                        Project for Testing Kanboard<br><br>
+
+                        The project is created for automated testing of project
+                        management software – Kanboard.
+                        Technologies and libraries such
+                        as testNG, Selenide, Rest Assured, and Allure are used.
+                    </p>
+                </div>
+                <div class="project-btn-grp">
+                    <button class="project-btn github" id="gitBtn7"
+                        onclick="redirectTo('https://github.com/Yroslavadudko/individualProjectMykolaDudko')">github
+                        repo
+                    </button>
+                    <button class="project-btn live" id="seeBtn7" onclick="redirectTo('http://localhost/login')">see
+                        live</button>
+                </div>
+            </div>
+
+            <!-- progect_3 -->
+            <div class="project-card hidden" id="projectCard3">
+                <picture>
+                    <source srcset="./img/kapusta.avif" class="project-img" type="image/avif">
+                    <source srcset="./img/kapusta.webp" class="project-img" type="image/webp">
+                    <img src="./img/kapusta.jpg" class="project-img" alt="project-2" loading="lazy">
+                </picture>
+                <div class="project-content">
+                    <h1 class="project-title">Kapusta</h1>
+                    <p class="project-info">
+                        Work plan on a team project<br><br>
+
+                        1- Students are assigned to teams by the client-manager.<br>
+                        2- Each team gets a separate channel in Slack.<br>
+                        3- The team needs to complete the task:<br>
+                        - choose the name of the team;<br>
+                        - select a Team Lead;<br>
+                        - choose a Scrum Master;<br>
+                        - view project materials.<br>
+                        4- Attend the introductory webinar on "Project start. Planning with a mentor."<br>
+                        5- The Scrum Master needs to populate the Trello board and invite all team members to
+                        it.<br>
+                        6- The team needs to distribute tasks among all project participants.<br>
+                        7- Everyone works on their task and timely updates information about the task during its
+                        execution.<br>
+                        8- The team addresses the Team Lead with technical questions.<br>
+                        9- The Team Lead communicates with the mentor if there are issues that could not be resolved as
+                        a team.<br>
+                        10- The team conducts a daily Stand Up lasting 15-20 minutes.<br>
+                        11- Each tester on Stand Up answers three questions: What did he do yesterday (today)? What will
+                        be done today (tomorrow)?
+                        What do you need help with?<br><br>
+
+                        !!!Importantly!!! at Stand Up, we don't start analyzing the moments where help is needed, we
+                        talk about them so that the
+                        whole team understands how the process of completing the task goes. After the Stand Up, a tester
+                        who needs help can stay
+                        and discuss their questions with a team member who knows the answer or with the Team Lead.
+                    </p>
+                </div>
+                <div class="project-btn-grp">
+                    <button class="project-btn github" id="gitBtn3"
+                        onclick="redirectTo('https://docs.google.com/presentation/d/10gqm37kJP_KBlPBW2pkh0ll1pbEpbjAz4JoZZbiuPNw/edit?usp=sharing')">
+                        Presentation</button>
+                    <button class="project-btn live" id="seeBtn3"
+                        onclick="redirectTo('https://kapusta-qa.netlify.app/')">see
+                        live</button>
+                </div>
+            </div>
+
+            <!-- progect_4 -->
+            <div class="project-card hidden" id="projectCard4">
+                <picture>
+                    <source srcset="./img/postman.avif" class="project-img" type="image/avif">
+                    <source srcset="./img/postman.webp" class="project-img" type="image/webp">
+                    <img src="./img/postman.jpg" class="project-img" alt="project-2" loading="lazy">
+                </picture>
+                <div class="project-content">
+                    <h1 class="project-title">Postman</h1>
+                    <p class="project-info">
+                        Open the Trello API documentation<br><br>
+
+                        Study the documentation, and see what actions can be performed through queries. Create one
+                        test board through API
+                        and
+                        Postman to perform all further tasks.<br>
+                        Create the following requests through Postman:<br><br>
+
+                        1- Create a column on the board on the left, in the documentation, the section is called
+                        "Create a new List", add
+                        tests:
+                        to check the status of the code; check the request time; check that the value “name” is a
+                        string;<br><br>
+
+                        2- Create a column on the board on the right, in the documentation, the section is called
+                        "Create a new List", add
+                        tests: to check the status of the code; check the request time; check that the value “name”
+                        is a string;<br><br>
+
+                        3- Create one card in each of the columns that were created in tasks 1 and 2 on the board (2
+                        cards in total), in the
+                        documentation, the section is called "Create a new Card", add tests to the requests for
+                        creating cards: to check the
+                        status of the code; to check the request time; to check that the value of "id" is a
+                        string;<br><br>
+
+                        4- Update information about the created board, in the documentation the section is called
+                        “Update a Board”, change
+                        the
+                        name of the board, add a description of the board, and add tests: to check the status of the
+                        code; to check the
+                        request
+                        time.
+                    </p>
+                </div>
+                <div class="project-btn-grp">
+                    <button class="project-btn github" id="gitBtn1"
+                        onclick="redirectTo('https://github.com/Yroslavadudko/homework_QA.git')">
+                        github repo</button>
+                    <button class="project-btn live" id="seeBtn1"
+                        onclick="redirectTo('https://api.postman.com/collections/21524776-df9b1847-c65d-42b8-ae04-c22c39ebb4df?access_key=PMAT-01GZGRWKJ689GTMN7F52YVQ2MK')">see
+                        live</button>
+                </div>
+            </div>
+
             <!-- progect_5 -->
             <div class="project-card hidden" id="projectCard5">
                 <picture>
@@ -367,43 +340,62 @@
                         live</button>
                 </div>
             </div>
-
             <!-- progect_7 -->
             <div class="project-card hidden" id="projectCard7">
                 <picture>
-                    <source srcset="./img/project-7.avif" class="project-img" type="image/avif">
-                    <source srcset="./img/project-7.webp" class="project-img" type="image/webp">
-                    <img src="./img/project-7.jpg" class="project-img" alt="project-2" loading="lazy">
+                    <source srcset="./img/project-2.avif" class="project-img" type="image/avif">
+                    <source srcset="./img/project-2.webp" class="project-img" type="image/webp">
+                    <img src="./img/project-2.jpg" class="project-img" alt="project-2" loading="lazy">
                 </picture>
                 <div class="project-content">
-                    <h1 class="project-title">Mobile Testing.</h1>
+                    <h1 class="project-title">SQL</h1>
                     <p class="project-info">
-                        Install the TODO mobile app on your mobile device.<br><br>
+                        Install DBeaver, import the database file into DBeaver.<br><br>
 
-                        For Android:
-                        <a
-                            href="https://drive.google.com/file/d/1Qzakcm1yWyP7RzZSWEDvseWiItmJBbB4/view?usp=sharing">link</a>
-                        <br><br>
+                        Then perform the following tasks:<br><br>
 
-                        For IOS:
-                        <a href="https://testflight.apple.com/join/sOzUHseP">link</a>
-                        <br><br>
+                        Select employees from the employees table and sort them by hire_date in descending order. Select
+                        ID (employee_no),
+                        first_name (first_name), last_name (last_name) and hire date (hire_date).<br><br>
 
-                        Test the TODO mobile application. Create 5 bug reports for found defects (defects may overlap
-                        with those discussed with
-                        the teacher during the practical session).
+                        Select employees born after 1960 (inclusive) from the Employees table. Select first name, last
+                        name and date of birth.<br><br>
+
+                        Select employees whose name starts with "Ma" in the Employees table. Select first name, last
+                        name and date of birth.<br><br>
+
+                        Select the IDs of employees from the EmployeeTerritory table who live in Kyiv, Dnipro, and Lviv.
+                        Select the ID
+                        (employee_no) and the city (city).<br><br>
+
+                        Count the number of employees from the job title list who hold the position (title) -
+                        "Engineer". Name the resulting
+                        column "total number of engineers".<br><br>
+
+                        Retrieve the number of employees for each city from the employeeTerritory table. Only include
+                        cities with more than 10
+                        employees. Display the number of employees and the name of the city.<br><br>
+
+                        Choose the name and surname of the employees, their positions in the company. Display the
+                        first_name, last_name, and
+                        title using the employee and job tables.<br><br>
+
+                        Select the first and last names of the employees whose salary will be between 50,000 and 60,000.
+                        Select the first and
+                        last name and salary using the employee and salary tables.
                     </p>
                 </div>
                 <div class="project-btn-grp">
-                    <button class="project-btn github" id="gitBtn7"
+                    <button class="project-btn github" id="gitBtn2"
                         onclick="redirectTo('https://github.com/Yroslavadudko/homework_QA/tree/main/HW_12')">github
                         repo
                     </button>
-                    <button class="project-btn live" id="seeBtn7"
+                    <button class="project-btn live" id="seeBtn2"
                         onclick="redirectTo('https://github.com/Yroslavadudko/homework_QA/tree/main/HW_12')">see
                         live</button>
                 </div>
             </div>
+
 
             <!-- progect_8 -->
             <div class="project-card hidden" id="projectCard8">
@@ -750,18 +742,17 @@
                     <h2 class="card-title-info">IT School GO IT</h2>
                     <h3 class="card-title-description">QA Engineer</h3>
                     <p class="card-title-text">Completed the full course in QA Engineer. Took part in 2 team
-                        projects. Now I
-                        am studying automated testing and Java
-                        Script.</p>
+                        projects.</p>
                 </div>
             </div>
             <!-- card-6 -->
             <div class="card">
                 <div class="card-body">
-                    <h1 class="card-title">2023</h1>
+                    <h1 class="card-title">2024</h1>
                     <h2 class="card-title-info">r_d future thinking school</h2>
                     <h3 class="card-title-description">QA Automation</h3>
-                    <p class="card-title-text">Study</p>
+                    <p class="card-title-text">Completed the full AQA Engineer course, 66 study hours 44 lessons.
+                         Made a graduation individual project.</p>
                 </div>
             </div>
         </div>
