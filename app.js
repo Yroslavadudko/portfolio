@@ -30,7 +30,7 @@ function redirectTo(url) {
 
 // open CV new page
 function openResume() {
-  window.open("./img/CV_Mykola_Dudko.pdf", "_blank");
+  window.open("./img/CV_Mykola_Dudko-2024.pdf", "_blank");
 }
 
 // open Certificate QA new page
